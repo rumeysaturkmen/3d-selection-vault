@@ -3,6 +3,7 @@ import { Link, NavLink, Route, Routes, useLocation } from 'react-router-dom';
 import Catalogue from './pages/Catalogue';
 import TechniquePage from './pages/Technique';
 import About from './pages/About';
+import Papers from './pages/Papers';
 import ThemeToggle from './ThemeToggle';
 
 // The 3D graph pulls in three.js, so it loads only when someone opens it.
@@ -37,6 +38,7 @@ export default function App() {
             Techniques
           </NavLink>
           <NavLink to="/graph">Graph</NavLink>
+          <NavLink to="/papers">Papers</NavLink>
           <NavLink to="/about">About</NavLink>
           <a
             className="nav-cta"
@@ -62,6 +64,7 @@ export default function App() {
               </Suspense>
             }
           />
+          <Route path="/papers" element={<Papers />} />
           <Route path="/about" element={<About />} />
           <Route
             path="*"

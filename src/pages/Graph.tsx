@@ -4,6 +4,7 @@ import ForceGraph3D, { type ForceGraph3DInstance } from '3d-force-graph';
 import SpriteText from 'three-spritetext';
 import { attributes, getTechnique, techniques, valueLabel } from '../lib/data';
 import { nearest, similarityLinks, type Coding, type Neighbour } from '../lib/similarity';
+import CitationGraph from './CitationGraph';
 
 const MINE = '__mine__';
 const NEIGHBOURS = 8;
@@ -63,7 +64,7 @@ function NeighbourList({ items, onPick }: { items: Neighbour[]; onPick: (id: str
   );
 }
 
-export default function GraphPage() {
+function SimilarityGraph() {
   const [params, setParams] = useSearchParams();
   const selected = params.get('t') ?? '';
   const colorBy = (COLOR_BY as readonly string[]).includes(params.get('color') ?? '')
@@ -239,7 +240,7 @@ export default function GraphPage() {
     : [];
 
   return (
-    <div className="graph-page">
+    <div>
       <div className="graph-intro">
         <h1>Similarity graph</h1>
         <p className="muted">
@@ -408,6 +409,26 @@ export default function GraphPage() {
         <Link to="/about#attributes">attribute scheme</Link>). Most codings are still drafts, so treat the graph as a
         starting point for your related-work search, not a final answer.
       </p>
+    </div>
+  );
+}
+
+/** The graph page holds two views: technique similarity and paper citations. */
+export default function GraphPage() {
+  const [params, setParams] = useSearchParams();
+  const view = params.get('view') === 'citations' ? 'citations' : 'similarity';
+  const go = (v: 'similarity' | 'citations') => setParams(v === 'citations' ? { view: v } : {}, { replace: false });
+  return (
+    <div className="graph-page">
+      <div className="view-switch" role="tablist" aria-label="Graph">
+        <button type="button" role="tab" aria-selected={view === 'similarity'} className={view === 'similarity' ? 'on' : ''} onClick={() => go('similarity')}>
+          Technique similarity
+        </button>
+        <button type="button" role="tab" aria-selected={view === 'citations'} className={view === 'citations' ? 'on' : ''} onClick={() => go('citations')}>
+          Paper citations
+        </button>
+      </div>
+      {view === 'citations' ? <CitationGraph key="c" /> : <SimilarityGraph key="s" />}
     </div>
   );
 }

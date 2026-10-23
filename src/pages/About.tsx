@@ -38,28 +38,36 @@ export default function About() {
           reality. It is built for researchers: when you design a new technique, it helps you find the existing
           techniques closest to yours, and so the ones to compare against in your paper.
         </p>
-        <dl className="stats">
-          <div>
-            <dt>Techniques</dt>
-            <dd>{techniques.length}</dd>
-          </div>
-          <div>
-            <dt>Papers</dt>
-            <dd>{publications.length}</dd>
-          </div>
-          <div>
-            <dt>Attributes</dt>
-            <dd>{attributes.length}</dd>
-          </div>
+        <div className="stats">
+          <Link to="/" className="stat">
+            <span className="stat-label">Techniques</span>
+            <span className="stat-value">{techniques.length}</span>
+          </Link>
+          <Link to="/papers" className="stat" title="See all papers">
+            <span className="stat-label">Papers</span>
+            <span className="stat-value">{publications.length}</span>
+            <span className="stat-more">See the list →</span>
+          </Link>
+          <a
+            href="#/about#attributes"
+            className="stat"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('attributes')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            <span className="stat-label">Attributes</span>
+            <span className="stat-value">{attributes.length}</span>
+          </a>
           {years.length > 0 && (
-            <div>
-              <dt>Years covered</dt>
-              <dd>
+            <div className="stat">
+              <span className="stat-label">Years covered</span>
+              <span className="stat-value">
                 {Math.min(...years)}–{Math.max(...years)}
-              </dd>
+              </span>
             </div>
           )}
-        </dl>
+        </div>
       </header>
 
       <section className="about-section">
@@ -144,6 +152,29 @@ export default function About() {
               </article>
             );
           })}
+        </div>
+      </section>
+
+      <section className="about-section" id="people">
+        <h2>People</h2>
+        <p className="muted">The vault is maintained at Concordia University in Montréal, Canada.</p>
+        <div className="people">
+          <div className="person">
+            <span className="avatar" aria-hidden="true">RT</span>
+            <div>
+              <h3>Rumeysa Turkmen</h3>
+              <p>PhD candidate</p>
+              <p className="muted small">Department of Computer Science and Software Engineering, Concordia University</p>
+            </div>
+          </div>
+          <div className="person">
+            <span className="avatar" aria-hidden="true">AUB</span>
+            <div>
+              <h3>Anil Ufuk Batmaz</h3>
+              <p>Assistant Professor</p>
+              <p className="muted small">Department of Computer Science and Software Engineering, Concordia University</p>
+            </div>
+          </div>
         </div>
       </section>
 

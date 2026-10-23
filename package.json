@@ -14,7 +14,8 @@
     "preview": "vite preview",
     "validate": "node scripts/validate-data.mjs",
     "test": "vitest run",
-    "check": "pnpm validate && pnpm test && pnpm build"
+    "check": "pnpm validate && pnpm test && pnpm build",
+    "citations": "node scripts/build-citations.mjs"
   },
   "dependencies": {
     "3d-force-graph": "^1.80.1",
