@@ -73,6 +73,11 @@ button, input, select { font: inherit; color: inherit; }
 .site-nav a { padding: 6px 10px; border-radius: 6px; color: var(--muted); text-decoration: none; font-size: 14px; }
 .site-nav a:hover { color: var(--text); background: var(--surface-2); }
 .site-nav a.active { color: var(--text); background: var(--surface-2); }
+.site-nav { align-items: center; }
+.site-nav a.nav-cta { margin-left: 6px; background: var(--accent); color: var(--on-accent, #fff); font-weight: 600; }
+.site-nav a.nav-cta:hover { background: var(--accent-text); color: var(--on-accent, #fff); }
+.nav-cta .short { display: none; }
+@media (max-width: 520px) { .nav-cta .long { display: none; } .nav-cta .short { display: inline; } }
 
 .site-footer { padding: 20px 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; text-align: center; }
 

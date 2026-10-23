@@ -36,6 +36,15 @@ export default function App() {
           <a href={REPO_URL} target="_blank" rel="noreferrer">
             GitHub
           </a>
+          <a
+            className="nav-cta"
+            href={`${REPO_URL}/issues/new/choose`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="long">Suggest a technique</span>
+            <span className="short">Suggest</span>
+          </a>
         </nav>
       </header>
       <main className="site-main">
@@ -58,10 +67,7 @@ export default function App() {
       </main>
       <footer className="site-footer">
         <span>
-          {techniques.length} techniques · Open data under MIT ·{' '}
-          <a href={`${REPO_URL}/issues/new/choose`} target="_blank" rel="noreferrer">
-            Suggest a technique
-          </a>
+          {techniques.length} techniques · Open data under MIT
         </span>
       </footer>
     </div>
