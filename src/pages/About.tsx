@@ -18,12 +18,8 @@ export default function About() {
         to compare against in your paper.
       </p>
       <p>
-        It follows the model of the{' '}
-        <a href="https://locomotionvault.github.io/" target="_blank" rel="noreferrer">
-          Locomotion Vault
-        </a>
-        : every technique is coded against the same set of attributes, and similarity between
-        techniques is computed from those attributes.
+        Every technique is coded against the same set of attributes, so techniques can be filtered,
+        compared and, in a coming release, placed in a similarity graph.
       </p>
 
       <h2>Where the data lives</h2>

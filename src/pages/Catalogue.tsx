@@ -3,6 +3,8 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { attributes, techniques, valueLabel } from '../lib/data';
 import { countValues, search, type Filters, type SortKey } from '../lib/search';
 
+const OPEN_BY_DEFAULT = new Set(['selectionTool', 'inputModality', 'disambiguation']);
+
 // Filter state lives in the URL so a filtered view can be shared as a link.
 function readFilters(params: URLSearchParams): Filters {
   const f: Filters = {};
@@ -68,26 +70,33 @@ export default function Catalogue() {
               </button>
             )}
           </div>
-          {facetGroups.map(({ attr, counts }) => (
-            <fieldset key={attr.id} className="facet">
-              <legend title={attr.description}>{attr.label}</legend>
-              {attr.values
-                .filter((v) => counts.has(v.id))
-                .map((v) => {
-                  const on = filters[attr.id]?.includes(v.id) ?? false;
-                  return (
-                    <label key={v.id} className={on ? 'facet-option on' : 'facet-option'}>
-                      <input type="checkbox" checked={on} onChange={() => toggle(attr.id, v.id)} />
-                      <span>{v.label}</span>
-                      <span className="count">{counts.get(v.id)}</span>
-                    </label>
-                  );
-                })}
-            </fieldset>
-          ))}
+          {facetGroups.map(({ attr, counts }) => {
+            const activeHere = filters[attr.id]?.length ?? 0;
+            return (
+              <details key={attr.id} className="facet" open={OPEN_BY_DEFAULT.has(attr.id) || activeHere > 0}>
+                <summary title={attr.description}>
+                  <span>{attr.label}</span>
+                  {activeHere > 0 && <span className="facet-active">{activeHere}</span>}
+                </summary>
+                <div className="facet-options">
+                  {attr.values
+                    .filter((v) => counts.has(v.id))
+                    .map((v) => {
+                      const on = filters[attr.id]?.includes(v.id) ?? false;
+                      return (
+                        <label key={v.id} className={on ? 'facet-option on' : 'facet-option'}>
+                          <input type="checkbox" checked={on} onChange={() => toggle(attr.id, v.id)} />
+                          <span>{v.label}</span>
+                          <span className="count">{counts.get(v.id)}</span>
+                        </label>
+                      );
+                    })}
+                </div>
+              </details>
+            );
+          })}
           <p className="filters-note">
-            More filters appear as techniques are coded against the{' '}
-            <Link to="/about#attributes">attribute scheme</Link>.
+            What each filter means: <Link to="/about#attributes">attribute scheme</Link>.
           </p>
         </aside>
 
