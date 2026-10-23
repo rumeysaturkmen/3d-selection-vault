@@ -76,6 +76,11 @@
       "publication": "weise-2019",
       "role": "surveyed",
       "where": "3.6"
+    },
+    {
+      "publication": "bowman-1999-thesis",
+      "role": "surveyed",
+      "where": "5.3.3"
     }
   ],
   "relationships": [

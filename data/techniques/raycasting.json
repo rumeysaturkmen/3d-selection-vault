@@ -97,6 +97,11 @@
     {
       "publication": "legacy-paper-voiceray",
       "role": "evaluated"
+    },
+    {
+      "publication": "bowman-1999-thesis",
+      "role": "surveyed",
+      "where": "5.3, 5.5"
     }
   ],
   "relationships": [

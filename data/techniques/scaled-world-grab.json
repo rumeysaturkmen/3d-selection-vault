@@ -1,0 +1,78 @@
+{
+  "id": "scaled-world-grab",
+  "name": "Scaled-World Grab",
+  "aliases": [],
+  "year": 1997,
+  "summary": "Select a distant object with an image-plane technique, then the world scales down so the object lands in the user's hand.",
+  "howItWorks": "The user selects an object by visually placing the hand over it. The world is then scaled about the user's eye so the selected object is within reach of the real hand, letting the user manipulate it with natural, proprioceptive hand motions; on release the world returns to its normal scale.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "mine-1997-proprioception",
+      "role": "introduced"
+    },
+    {
+      "publication": "bowman-1999-thesis",
+      "role": "surveyed",
+      "where": "5.2.1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "occlusion-selection",
+      "type": "related",
+      "note": "Selects by covering the object with the hand."
+    },
+    {
+      "technique": "worlds-in-miniature",
+      "type": "related",
+      "note": "Both rescale the world relative to the user."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "inputModality"
+    ]
+  }
+}

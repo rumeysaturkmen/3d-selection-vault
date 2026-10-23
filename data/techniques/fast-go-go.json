@@ -1,0 +1,76 @@
+{
+  "id": "fast-go-go",
+  "name": "Fast Go-Go",
+  "aliases": [],
+  "year": 1997,
+  "summary": "Go-Go without the one-to-one zone: the virtual arm grows non-linearly from the first movement, giving longer (but still bounded) reach.",
+  "howItWorks": "The physical-to-virtual arm mapping follows Go-Go's non-linear curve at every distance from the body, instead of being 1:1 close to the body, so the virtual hand reaches farther at the cost of fine control nearby.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "anisomorphic-adaptive"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "legacy-paper-homer",
+      "role": "introduced"
+    },
+    {
+      "publication": "bowman-1999-thesis",
+      "role": "surveyed",
+      "where": "5.3.1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "go-go",
+      "type": "variant-of",
+      "note": "Removes Go-Go's 1:1 region."
+    },
+    {
+      "technique": "stretch-go-go",
+      "type": "related",
+      "note": "From the same paper."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}

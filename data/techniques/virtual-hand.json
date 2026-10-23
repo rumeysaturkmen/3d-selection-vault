@@ -80,6 +80,11 @@
       "publication": "weise-2019",
       "role": "surveyed",
       "where": "Table 1"
+    },
+    {
+      "publication": "bowman-1999-thesis",
+      "role": "surveyed",
+      "where": "5.1"
     }
   ],
   "relationships": [

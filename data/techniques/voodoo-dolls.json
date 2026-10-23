@@ -60,6 +60,11 @@
       "publication": "seed-yu-2024",
       "role": "surveyed",
       "where": "5.1.1"
+    },
+    {
+      "publication": "bowman-1999-thesis",
+      "role": "surveyed",
+      "where": "5.2.1"
     }
   ],
   "relationships": [

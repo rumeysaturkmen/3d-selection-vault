@@ -58,6 +58,11 @@
     {
       "publication": "survey2013-ref-53",
       "role": "reference"
+    },
+    {
+      "publication": "bowman-1999-thesis",
+      "role": "surveyed",
+      "where": "5.2.1"
     }
   ],
   "relationships": [],

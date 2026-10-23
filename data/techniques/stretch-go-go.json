@@ -26,7 +26,7 @@
       "anisomorphic-adaptive"
     ],
     "motorVisualSpace": [
-      "remote"
+      "offset"
     ],
     "disambiguation": [
       "none"
@@ -50,6 +50,11 @@
     {
       "publication": "legacy-paper-homer",
       "role": "introduced"
+    },
+    {
+      "publication": "bowman-1999-thesis",
+      "role": "surveyed",
+      "where": "5.3.1"
     }
   ],
   "relationships": [

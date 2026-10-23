@@ -1,0 +1,72 @@
+{
+  "id": "raycasting-with-reeling",
+  "name": "Ray-casting with Reeling",
+  "aliases": [
+    "Fishing reel"
+  ],
+  "year": 1997,
+  "summary": "Ray-casting where the selected object can be reeled in or out along the ray with buttons, like a fishing line.",
+  "howItWorks": "Selection is ordinary ray-casting. Once attached to the ray, the object can be moved nearer or farther along it with two buttons, which plain ray-casting cannot do.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "legacy-paper-homer",
+      "role": "introduced"
+    },
+    {
+      "publication": "bowman-1999-thesis",
+      "role": "surveyed",
+      "where": "5.3.1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "variant-of",
+      "note": "Adds reeling for depth control after selection."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}
