@@ -1,0 +1,94 @@
+{
+  "id": "virtual-hand",
+  "name": "Virtual Hand",
+  "aliases": [],
+  "year": 1997,
+  "summary": "A direct 3D selection technique where the user controls a virtual hand to touch, grab, and manipulate nearby objects in the virtual environment.",
+  "howItWorks": "Move the tracked hand or controller so that the virtual hand overlaps with the target object, then confirm the selection by grabbing, pressing a button, or performing a pinch gesture.",
+  "advantages": [
+    "Natural selection and manipulation of nearby objects, especially when the interaction benefits from proprioception and direct hand-object contact."
+  ],
+  "limitations": [
+    "Less suitable for distant targets because the user must reach toward the object or rely on an extended mapping. It can also cause fatigue during repeated or long interactions."
+  ],
+  "primaryTask": "manipulation",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "hand",
+      "controller"
+    ],
+    "confirmation": [
+      "gesture",
+      "button"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [
+    "Controller",
+    "Hand tracking",
+    "Direct selection",
+    "Near targets",
+    "Object manipulation"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-virtual-hand",
+      "role": "reference"
+    },
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "go-go",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "aperture-selection",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation"
+    ]
+  }
+}

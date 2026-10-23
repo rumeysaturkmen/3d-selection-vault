@@ -16,18 +16,39 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
+    "selectionTool": [
+      "ray",
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic",
+      "manual"
+    ],
     "inputModality": [
+      "controller",
       "voice"
     ],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
   },
   "tags": [
     "Voice",
@@ -62,7 +83,11 @@
     }
   ],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation",
+      "handlesOcclusion"
+    ]
   }
 }

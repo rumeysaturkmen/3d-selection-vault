@@ -3,8 +3,8 @@
   "name": "Probabilistic pointing",
   "aliases": [],
   "year": 2006,
-  "summary": "Probability-ranked frustum.",
-  "howItWorks": "Probability-ranked frustum. See the survey evidence and associated source for operational details.",
+  "summary": "Objects inside a pointing frustum are ranked by the probability that each is the intended target.",
+  "howItWorks": "A probability score from distance to the pointing direction and other cues ranks the objects in the frustum; the most probable one is selected.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -12,16 +12,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
-    "inputModality": [],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [
     "Selection",
@@ -41,7 +61,10 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool"
+    ]
   }
 }

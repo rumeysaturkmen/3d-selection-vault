@@ -7,7 +7,7 @@
   ],
   "year": 1995,
   "summary": "A hand-held miniature of a virtual environment provides linked proxies for selecting and manipulating objects and changing viewpoint.",
-  "howItWorks": "",
+  "howItWorks": "Hold a small copy of the scene in one hand and touch or grab an object in the copy with the other hand; the full-size object is selected.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "manipulation",
@@ -17,12 +17,24 @@
     "navigation"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "anisomorphic-fixed"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
     "inputModality": [
       "hand",
       "tangible"
@@ -30,8 +42,13 @@
     "confirmation": [
       "button"
     ],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
   },
   "tags": [],
   "publications": [
@@ -51,7 +68,11 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof",
+      "handlesOcclusion"
+    ]
   }
 }

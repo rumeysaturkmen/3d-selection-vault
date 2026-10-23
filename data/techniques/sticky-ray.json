@@ -3,8 +3,8 @@
   "name": "Sticky ray",
   "aliases": [],
   "year": 2004,
-  "summary": "Heuristic cone.",
-  "howItWorks": "Heuristic cone. See the survey evidence and associated source for operational details.",
+  "summary": "A cone that keeps the last object it selected until another object is clearly closer to its axis.",
+  "howItWorks": "The object nearest the cone axis is highlighted and stays selected (\"sticks\") while the user moves, reducing jitter between neighbouring objects.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -12,16 +12,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
-    "inputModality": [],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [
     "Selection",
@@ -41,7 +61,10 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "disambiguation"
+    ]
   }
 }

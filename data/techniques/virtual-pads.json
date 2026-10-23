@@ -3,8 +3,8 @@
   "name": "Virtual pads",
   "aliases": [],
   "year": 2007,
-  "summary": "Decoupled pointing plane.",
-  "howItWorks": "Decoupled pointing plane. See the survey evidence and associated source for operational details.",
+  "summary": "Pointing on a small virtual pad near the hand is mapped to the whole display, decoupling motor and visual space.",
+  "howItWorks": "The user moves within a small input plane close to the body. Positions on the pad map to rays or positions across the large display.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -12,16 +12,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
-    "inputModality": [],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "anisomorphic-fixed"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [
     "Selection",
@@ -41,7 +61,12 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "cdRatio",
+      "motorVisualSpace"
+    ]
   }
 }

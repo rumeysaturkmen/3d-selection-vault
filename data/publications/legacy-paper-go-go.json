@@ -1,0 +1,17 @@
+{
+  "id": "legacy-paper-go-go",
+  "title": "The go-go interaction technique: non-linear mapping for direct manipulation in VR",
+  "authors": [
+    "Ivan Poupyrev",
+    "Mark Billinghurst",
+    "Suzanne Weghorst",
+    "Tadao Ichikawa"
+  ],
+  "year": 1996,
+  "venue": "Proceedings of the 9th annual ACM symposium on User interface software and technology  - UIST '96",
+  "doi": "10.1145/237091.237102",
+  "url": "https://doi.org/10.1145/237091.237102",
+  "type": "paper",
+  "citation": "Poupyrev, I., Billinghurst, M., Weghorst, S., & Ichikawa, T. (1996). The Go-Go Interaction Technique: Non-Linear Mapping for Direct Manipulation in VR. Proceedings of the 9th Annual ACM Symposium on User Interface Software and Technology, 79–80.",
+  "bibtex": "@inproceedings{legacy-paper-go-go,\n  title = {The go-go interaction technique: non-linear mapping for direct manipulation in VR},\n  author = {Ivan Poupyrev and Mark Billinghurst and Suzanne Weghorst and Tadao Ichikawa},\n  year = {1996},\n  booktitle = {Proceedings of the 9th annual ACM symposium on User interface software and technology  - UIST '96},\n  doi = {10.1145/237091.237102},\n  url = {https://doi.org/10.1145/237091.237102}\n}"
+}

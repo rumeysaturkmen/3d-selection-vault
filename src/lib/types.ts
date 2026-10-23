@@ -50,7 +50,12 @@ export interface Technique {
   media?: Media[];
   publications: PublicationLink[];
   relationships?: Relationship[];
-  review: { status: 'migrated' | 'draft' | 'reviewed'; reviewedBy?: string; notes?: string };
+  review: {
+    status: 'migrated' | 'draft' | 'reviewed';
+    reviewedBy?: string;
+    notes?: string;
+    uncertain?: string[];
+  };
 }
 
 export interface Publication {

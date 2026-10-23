@@ -4,7 +4,7 @@
   "aliases": [],
   "year": 2011,
   "summary": "A progressive refinement technique for rapid and accurate 3D selection, where the system repeatedly narrows a group of candidate targets until the intended object can be selected.",
-  "howItWorks": "The user first indicates a group of possible targets. The system divides the candidate set into smaller groups, and the user repeatedly chooses the group containing the intended target until the final object is selected.",
+  "howItWorks": "Sphere-cast to select a group of objects, then pick repeatedly from a four-way menu that splits the remaining candidates until one is left.",
   "advantages": [
     "Selecting small, dense, or distant targets when many objects are close together and a single pointing action may not be accurate enough."
   ],
@@ -16,20 +16,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
     "inputModality": [
       "controller"
     ],
-    "confirmation": [],
+    "confirmation": [
+      "button"
+    ],
     "targetDistance": [
       "far"
     ],
-    "handlesOcclusion": []
+    "handlesOcclusion": [
+      "partly"
+    ]
   },
   "tags": [
     "Controller",
@@ -68,7 +84,10 @@
     }
   ],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "handlesOcclusion"
+    ]
   }
 }

@@ -3,8 +3,8 @@
   "name": "Bubble Cursor",
   "aliases": [],
   "year": 2007,
-  "summary": "An adaptive cursor expands until it encloses the nearest available target.",
-  "howItWorks": "Move the cursor near a target; the selection region adapts to isolate it.",
+  "summary": "A 3D cursor sphere grows or shrinks so that it always contains exactly the nearest target.",
+  "howItWorks": "Move the 3D cursor through the scene. The bubble resizes to capture the closest target, which is selected on a button press. Vanacken et al. (2007) adapted the 2D bubble cursor to 3D.",
   "advantages": [
     "Dense scenes with many small selectable objects."
   ],
@@ -16,18 +16,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
     "inputModality": [
       "controller"
     ],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
   },
   "tags": [
     "Controller",
@@ -63,7 +81,11 @@
     }
   ],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "targetDistance",
+      "handlesOcclusion"
+    ]
   }
 }

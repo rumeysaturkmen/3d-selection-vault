@@ -3,8 +3,8 @@
   "name": "Lock ray",
   "aliases": [],
   "year": 2006,
-  "summary": "Constrained ray cursor.",
-  "howItWorks": "Constrained ray cursor. See the survey evidence and associated source for operational details.",
+  "summary": "Raycasting in two phases: lock the ray on a set of candidates, then move a cursor along it to pick one.",
+  "howItWorks": "After pointing, the ray is locked in place and the user moves a depth marker along it to the intended target among those it intersects.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -12,16 +12,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
-    "inputModality": [],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
   },
   "tags": [
     "Selection",
@@ -41,7 +61,7 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper."
   }
 }

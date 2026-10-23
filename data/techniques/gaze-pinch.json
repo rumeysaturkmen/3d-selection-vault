@@ -16,21 +16,38 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
     "inputModality": [
       "gaze",
       "hand"
     ],
-    "confirmation": [],
+    "confirmation": [
+      "pinch"
+    ],
     "targetDistance": [
+      "near",
       "far"
     ],
-    "handlesOcclusion": []
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [
     "Gaze",
@@ -62,7 +79,7 @@
     }
   ],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper."
   }
 }

@@ -3,8 +3,8 @@
   "name": "Enhanced cone selection",
   "aliases": [],
   "year": 2006,
-  "summary": "Behavior-rated cone.",
-  "howItWorks": "Behavior-rated cone. See the survey evidence and associated source for operational details.",
+  "summary": "A cone selection technique that rates candidate objects using the user's pointing behaviour over time.",
+  "howItWorks": "Each object in the cone gets a score from its position in the cone and how long it has been there; the best-scoring object is selected.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -12,16 +12,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
-    "inputModality": [],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [
     "Selection",
@@ -41,7 +61,7 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper."
   }
 }

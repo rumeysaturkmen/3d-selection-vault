@@ -3,8 +3,8 @@
   "name": "Smart ray",
   "aliases": [],
   "year": 2006,
-  "summary": "Multiple pointing directions.",
-  "howItWorks": "Multiple pointing directions. See the survey evidence and associated source for operational details.",
+  "summary": "Raycasting that accumulates a score for every object the ray passes through over time, resolving targets from multiple pointing directions.",
+  "howItWorks": "Objects intersected by the ray gain weight over time, so pointing at the target from slightly different directions disambiguates it from neighbours.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -12,16 +12,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
-    "inputModality": [],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
   },
   "tags": [
     "Selection",
@@ -41,7 +61,10 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "handlesOcclusion"
+    ]
   }
 }

@@ -3,8 +3,8 @@
   "name": "Sense shapes",
   "aliases": [],
   "year": 2003,
-  "summary": "Behavior-rated selection volume.",
-  "howItWorks": "Behavior-rated selection volume. See the survey evidence and associated source for operational details.",
+  "summary": "Selection volumes attached to the user collect statistics (time inside, distance, visibility) to rank candidate objects.",
+  "howItWorks": "Invisible volumes such as cones track which objects pass through them and for how long; these statistics rank the candidates for selection.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -12,16 +12,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
-    "inputModality": [],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [
     "Selection",
@@ -41,7 +61,11 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "inputModality"
+    ]
   }
 }

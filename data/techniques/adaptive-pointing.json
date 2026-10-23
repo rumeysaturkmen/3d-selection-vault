@@ -5,8 +5,8 @@
     "Adaptative pointing"
   ],
   "year": 2009,
-  "summary": "Velocity/offset-dependent pointing gain.",
-  "howItWorks": "Velocity/offset-dependent pointing gain. See the survey evidence and associated source for operational details.",
+  "summary": "Raycasting whose control-display gain changes with hand speed and the offset between hand and ray.",
+  "howItWorks": "Slow hand movements are scaled down for precision and fast ones pass through, while the accumulated offset is gradually corrected.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -14,16 +14,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
-    "inputModality": [],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "anisomorphic-adaptive"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [
     "Selection",
@@ -43,7 +63,10 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
   }
 }

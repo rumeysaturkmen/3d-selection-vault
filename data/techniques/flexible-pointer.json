@@ -16,20 +16,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
     "inputModality": [
       "controller"
     ],
-    "confirmation": [],
+    "confirmation": [
+      "button"
+    ],
     "targetDistance": [
       "far"
     ],
-    "handlesOcclusion": []
+    "handlesOcclusion": [
+      "yes"
+    ]
   },
   "tags": [
     "Controller",
@@ -66,7 +82,10 @@
     }
   ],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
   }
 }

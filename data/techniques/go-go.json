@@ -1,0 +1,109 @@
+{
+  "id": "go-go",
+  "name": "Go-Go",
+  "aliases": [],
+  "year": 1996,
+  "summary": "A direct 3D selection and manipulation technique that extends the user's virtual reach using a non-linear mapping between the real hand and the virtual hand.",
+  "howItWorks": "Move the tracked hand toward the target. For nearby objects, the virtual hand follows the real hand closely. After a threshold distance, the virtual hand moves farther than the real hand, allowing the user to reach distant objects without physically walking.",
+  "advantages": [
+    "Selecting and manipulating objects that are beyond normal arm reach while preserving the feeling of direct hand-based interaction."
+  ],
+  "limitations": [
+    "The non-linear hand mapping can reduce precision and may require practice, especially when switching between near objects and extended-reach objects."
+  ],
+  "primaryTask": "manipulation",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "anisomorphic-adaptive"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "hand",
+      "controller"
+    ],
+    "confirmation": [
+      "gesture",
+      "button"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [
+    "Controller",
+    "Hand tracking",
+    "Direct selection",
+    "Near targets",
+    "Far targets",
+    "Object manipulation"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-go-go",
+      "role": "reference"
+    },
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed",
+      "where": "3 Selection techniques; Table 1"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "7.3 Comparison framework, p. 98:20"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "virtual-hand",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "aperture-selection",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "note": "Comparison reported by Yu et al.; no historical lineage inferred."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "cdRatio",
+      "motorVisualSpace",
+      "confirmation"
+    ]
+  }
+}

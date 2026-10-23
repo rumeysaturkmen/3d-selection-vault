@@ -3,8 +3,8 @@
   "name": "Eye-gazed selection",
   "aliases": [],
   "year": 2000,
-  "summary": "Gaze-directed ray.",
-  "howItWorks": "Gaze-directed ray. See the survey evidence and associated source for operational details.",
+  "summary": "A ray follows the user's eye gaze and selects the object being looked at.",
+  "howItWorks": "An eye tracker casts a ray along the gaze direction. The fixated object is selected after a dwell time or on a button press.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -12,18 +12,38 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
     "inputModality": [
       "gaze"
     ],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "confirmation": [
+      "dwell",
+      "button"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [
     "Selection",
@@ -47,7 +67,10 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation"
+    ]
   }
 }

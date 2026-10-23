@@ -3,8 +3,8 @@
   "name": "Friction surfaces",
   "aliases": [],
   "year": 2007,
-  "summary": "Target-dependent pointing gain.",
-  "howItWorks": "Target-dependent pointing gain. See the survey evidence and associated source for operational details.",
+  "summary": "Pointing gain drops when the cursor is over a target, making small targets easier to stop on.",
+  "howItWorks": "The control-display ratio depends on what is under the cursor: over interactive targets the cursor slows down, as if the surface had friction.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -12,16 +12,34 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
-    "inputModality": [],
-    "confirmation": [],
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "screen"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "anisomorphic-adaptive"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
     "targetDistance": [],
-    "handlesOcclusion": []
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [
     "Selection",
@@ -41,7 +59,13 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "toolOrigin",
+      "inputModality",
+      "targetDistance"
+    ]
   }
 }

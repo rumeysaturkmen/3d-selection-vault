@@ -3,8 +3,8 @@
   "name": "Shadow cone selection",
   "aliases": [],
   "year": 2004,
-  "summary": "Manually disambiguated cone.",
-  "howItWorks": "Manually disambiguated cone. See the survey evidence and associated source for operational details.",
+  "summary": "Only objects that stay inside the hand's cone for the whole pointing gesture remain selectable.",
+  "howItWorks": "While the button is held, the user sweeps the cone; candidates that leave the cone at any time drop out. The object that remains when the button is released is selected.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -12,16 +12,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
-    "inputModality": [],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "release"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
   },
   "tags": [
     "Selection",
@@ -41,7 +61,11 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation",
+      "handlesOcclusion"
+    ]
   }
 }

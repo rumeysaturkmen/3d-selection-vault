@@ -4,7 +4,7 @@
   "aliases": [],
   "year": 1996,
   "summary": "Targets are acquired through a controllable aperture that balances precision and speed.",
-  "howItWorks": "Adjust an aperture around the intended target, then confirm.",
+  "howItWorks": "A cone runs from the eye through a circular aperture held in the hand. Moving the hand closer or farther widens or narrows the cone; the object best centred in it is selected.",
   "advantages": [
     "Precise selection of small or distant objects."
   ],
@@ -16,21 +16,37 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
     "inputModality": [
       "controller",
       "hand"
     ],
-    "confirmation": [],
+    "confirmation": [
+      "button"
+    ],
     "targetDistance": [
       "far"
     ],
-    "handlesOcclusion": []
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [
     "Controller",
@@ -68,7 +84,10 @@
     }
   ],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
   }
 }

@@ -69,6 +69,7 @@ export default function TechniquePage() {
     (a, b) => ROLE_ORDER.indexOf(a.role) - ROLE_ORDER.indexOf(b.role),
   );
   const coded = attributes.filter((a) => (t.attributes[a.id] ?? []).length > 0).length;
+  const uncertain = new Set(t.review.uncertain ?? []);
 
   return (
     <article className="technique">
@@ -177,6 +178,7 @@ export default function TechniquePage() {
             <h2>Attributes</h2>
             <p className="muted small">
               {coded} of {attributes.length} coded
+              {uncertain.size > 0 && ` · ? = not yet confirmed`}
             </p>
             <dl className="attr-list">
               {attributes.map((a) => {
@@ -186,6 +188,11 @@ export default function TechniquePage() {
                     <dt title={a.description}>{a.label}</dt>
                     <dd className={vals.length ? '' : 'muted'}>
                       {vals.length ? vals.map((v) => valueLabel(a.id, v)).join(', ') : 'Not coded'}
+                      {vals.length > 0 && uncertain.has(a.id) && (
+                        <span className="unsure" title="Best guess, still to be checked against the paper">
+                          ?
+                        </span>
+                      )}
                     </dd>
                   </div>
                 );

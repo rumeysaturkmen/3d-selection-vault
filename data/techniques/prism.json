@@ -6,7 +6,7 @@
   ],
   "year": 2005,
   "summary": "Adjusts control-display gain according to hand movement speed to support precise selection and manipulation in immersive environments.",
-  "howItWorks": "",
+  "howItWorks": "When the hand moves slowly, its motion is scaled down so the ray or object moves less than the hand, allowing precise selection. Fast movements map one-to-one, and the offset is recovered over time.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "manipulation",
@@ -15,18 +15,38 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
-    "inputModality": [
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
       "hand"
     ],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "anisomorphic-adaptive"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller",
+      "hand"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [],
   "publications": [
@@ -46,7 +66,11 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "targetDistance"
+    ]
   }
 }

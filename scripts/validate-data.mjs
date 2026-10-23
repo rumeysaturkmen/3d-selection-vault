@@ -55,9 +55,15 @@ for (const { file, data } of techniques) {
     for (const v of values)
       if (!allowed.has(v)) err(file, `attributes.${attr.id}: "${v}" is not one of ${[...allowed].join(', ')}`);
     if (!attr.multiple && values.length > 1) err(file, `attributes.${attr.id} takes one value only`);
-    if (data.review.status === 'reviewed' && values.length === 0)
+    // Target distance does not apply to desktop (screen-cursor) techniques.
+    const notApplicable = attr.id === 'targetDistance' && data.attributes.toolOrigin?.includes('screen');
+    if (data.review.status === 'reviewed' && values.length === 0 && !notApplicable)
       err(file, `attributes.${attr.id} is empty but the technique is marked reviewed`);
   }
+  for (const k of data.review.uncertain ?? [])
+    if (!scheme.some((a) => a.id === k)) err(file, `review.uncertain: "${k}" is not an attribute`);
+  if (data.review.status === 'reviewed' && (data.review.uncertain ?? []).length)
+    err(file, 'review.uncertain must be empty once the technique is marked reviewed');
   for (const k of Object.keys(data.attributes))
     if (!scheme.some((a) => a.id === k)) err(file, `attributes.${k} is not in schema/attributes.json`);
 

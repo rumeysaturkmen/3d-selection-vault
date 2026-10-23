@@ -3,8 +3,8 @@
   "name": "Occlusion selection",
   "aliases": [],
   "year": 1997,
-  "summary": "Eye-to-hand ray.",
-  "howItWorks": "Eye-to-hand ray. See the survey evidence and associated source for operational details.",
+  "summary": "Select the object that the fingertip or hand covers from the user's point of view.",
+  "howItWorks": "A ray from the eye through the hand or fingertip picks the object hidden behind the hand in the user's view (an image-plane technique).",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -12,16 +12,37 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
-    "inputModality": [],
-    "confirmation": [],
-    "targetDistance": [],
-    "handlesOcclusion": []
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "button",
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [
     "Selection",
@@ -41,7 +62,10 @@
   ],
   "relationships": [],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation"
+    ]
   }
 }

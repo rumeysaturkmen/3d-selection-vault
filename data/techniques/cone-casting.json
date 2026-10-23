@@ -3,8 +3,8 @@
   "name": "Cone Casting",
   "aliases": [],
   "year": 1994,
-  "summary": "A cone-shaped volume expands the effective acquisition area for remote targets.",
-  "howItWorks": "Aim a cone at a region; resolve the chosen object by proximity or ranking.",
+  "summary": "A cone from the hand (flashlight) selects the object closest to its axis.",
+  "howItWorks": "Aim the cone at the target. Among objects inside the cone, the one nearest the central axis, then nearest the user, is selected.",
   "advantages": [
     "Distant targets when exact ray alignment is demanding."
   ],
@@ -16,20 +16,36 @@
     "selection"
   ],
   "attributes": {
-    "selectionTool": [],
-    "toolOrigin": [],
-    "toolDof": [],
-    "cdRatio": [],
-    "motorVisualSpace": [],
-    "disambiguation": [],
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
     "inputModality": [
       "controller"
     ],
-    "confirmation": [],
+    "confirmation": [
+      "button"
+    ],
     "targetDistance": [
       "far"
     ],
-    "handlesOcclusion": []
+    "handlesOcclusion": [
+      "no"
+    ]
   },
   "tags": [
     "Controller",
@@ -67,7 +83,7 @@
     }
   ],
   "review": {
-    "status": "migrated",
-    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+    "status": "draft",
+    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper."
   }
 }
