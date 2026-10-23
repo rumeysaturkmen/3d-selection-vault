@@ -210,3 +210,12 @@ button, input, select { font: inherit; color: inherit; }
   .site-nav a { padding: 6px 6px; font-size: 13px; }
   .brand { gap: 7px; }
 }
+
+/* Shown only if a page fails to draw */
+.crash { position: fixed; inset: 24px; z-index: 1000; overflow: auto; max-width: 760px; margin: 0 auto;
+  background: var(--surface, #fff); color: var(--text, #111); border: 1px solid var(--border, #ccc);
+  border-radius: 12px; padding: 24px; box-shadow: 0 10px 40px rgba(0,0,0,.25); font: 15px/1.5 system-ui, sans-serif; }
+.crash h1 { font-size: 20px; margin: 0 0 8px; }
+.crash pre { white-space: pre-wrap; word-break: break-word; font-size: 12px; background: rgba(127,127,127,.12);
+  padding: 12px; border-radius: 8px; max-height: 50vh; overflow: auto; }
+.crash button { font: inherit; padding: 8px 16px; border-radius: 8px; border: 0; background: var(--accent, #0f7b6c); color: #fff; cursor: pointer; }
