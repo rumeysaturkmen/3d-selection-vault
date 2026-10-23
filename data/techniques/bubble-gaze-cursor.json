@@ -1,0 +1,67 @@
+{
+  "id": "bubble-gaze-cursor",
+  "name": "Bubble Gaze Cursor",
+  "aliases": [],
+  "year": 2020,
+  "summary": "A gaze-based area cursor technique that applies the bubble cursor mechanism to eye-gaze interaction, enlarging the effective selection area around the gaze point.",
+  "howItWorks": "The user looks toward the desired target. The system places a bubble-like area cursor around the gaze position and selects the nearest or most likely target inside the adaptive selection area.",
+  "advantages": [
+    "Selecting small or closely spaced targets with eye gaze when direct gaze pointing is difficult due to eye-tracking noise or limited gaze precision."
+  ],
+  "limitations": [
+    "The technique can still become ambiguous when multiple targets are close to the gaze point, and gaze jitter may affect which object is treated as the nearest candidate."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Gaze",
+    "Bubble cursor",
+    "Area cursor",
+    "Hands-free",
+    "Small targets",
+    "Dense targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-bubble-gaze-cursor",
+      "role": "reference"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "bubble-gaze-lens",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "gazebubble",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "multifingerbubble",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

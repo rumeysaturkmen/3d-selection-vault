@@ -1,0 +1,67 @@
+{
+  "id": "multifingerbubble",
+  "name": "MultiFingerBubble",
+  "aliases": [],
+  "year": 2022,
+  "summary": "A 3D bubble cursor variation for dense environments that uses multiple fingers to support target acquisition in crowded 3D spaces.",
+  "howItWorks": "The user performs selection with multiple tracked fingers. The system uses a bubble-cursor-like mechanism around the fingers to identify and acquire the intended target among nearby candidates.",
+  "advantages": [
+    "Selecting targets in dense 3D environments where several objects are close together and a single-point cursor may not provide enough control or precision."
+  ],
+  "limitations": [
+    "The technique depends on reliable hand and finger tracking. It may also require users to coordinate multiple fingers, which can increase motor complexity compared with single-point selection."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Hand tracking",
+    "Finger input",
+    "Bubble cursor",
+    "Proximity-based",
+    "Dense targets",
+    "Small targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-multifingerbubble",
+      "role": "reference"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "bubble-raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "bubble-cursor",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "gazebubble",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

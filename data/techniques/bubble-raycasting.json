@@ -1,0 +1,75 @@
+{
+  "id": "bubble-raycasting",
+  "name": "Bubble Raycasting",
+  "aliases": [],
+  "year": 2020,
+  "summary": "A ray-casting variation that integrates a bubble mechanism to improve 3D target acquisition in virtual reality.",
+  "howItWorks": "The user points toward the target with a ray. Instead of selecting only the exact ray intersection, the system applies a bubble-like selection region around the ray to determine the most likely target.",
+  "advantages": [
+    "Selecting small, dense, or difficult-to-point-at targets in VR when standard ray-casting requires too much precision."
+  ],
+  "limitations": [
+    "The bubble mechanism can introduce ambiguity when several targets are close to the ray or fall within the adaptive selection region."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Controller",
+    "Ray-based",
+    "Bubble cursor",
+    "Proximity-based",
+    "Small targets",
+    "Dense targets",
+    "Far targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-bubble-raycasting",
+      "role": "reference"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "7.3 Comparison framework, p. 98:20"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "cone-casting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "bubble-cursor",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "aperture-selection",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

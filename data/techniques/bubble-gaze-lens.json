@@ -1,0 +1,68 @@
+{
+  "id": "bubble-gaze-lens",
+  "name": "Bubble Gaze Lens",
+  "aliases": [],
+  "year": 2020,
+  "summary": "A gaze-based selection technique that combines the bubble cursor idea with a lens mechanism to support more accurate target selection through eye gaze.",
+  "howItWorks": "The user looks toward a target region. The system activates a lens around the gaze position, helping reveal, enlarge, or clarify nearby candidate targets so the intended one can be selected more accurately.",
+  "advantages": [
+    "Selecting small or dense targets with gaze when users need additional visual support to distinguish the intended target from nearby alternatives."
+  ],
+  "limitations": [
+    "The lens can add visual complexity and may be less suitable when the interface should remain visually minimal or when targets move quickly."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Gaze",
+    "Bubble cursor",
+    "Lens-based",
+    "Area cursor",
+    "Hands-free",
+    "Small targets",
+    "Dense targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-bubble-gaze-cursor",
+      "role": "reference"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "bubble-gaze-cursor",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "gazebubble",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "multifingerbubble",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

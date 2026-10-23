@@ -1,0 +1,48 @@
+{
+  "id": "port",
+  "name": "PORT",
+  "aliases": [],
+  "year": 2005,
+  "summary": "A 3D multiple object selection technique that allows users to select a group of objects in an immersive virtual environment using a spatial region-based interaction.",
+  "howItWorks": "The user specifies a spatial selection region around the desired objects. Objects that fall within the defined region are selected as a group, reducing the need for repeated single-object selections.",
+  "advantages": [
+    "Selecting multiple objects at once, especially when targets are grouped, clustered, or when selecting objects one by one would be inefficient."
+  ],
+  "limitations": [
+    "The technique can become less precise when objects are densely packed or when intended and unintended objects are close to each other within the selection region."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Multiple selection",
+    "Group selection",
+    "Region-based",
+    "Dense targets",
+    "Clustered targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-port",
+      "role": "reference"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

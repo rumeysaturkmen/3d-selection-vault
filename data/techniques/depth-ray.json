@@ -1,0 +1,75 @@
+{
+  "id": "depth-ray",
+  "name": "Depth Ray",
+  "aliases": [],
+  "year": 2006,
+  "summary": "A 3D selection technique for volumetric displays that extends ray-based pointing by adding control over depth, allowing users to select targets located inside a true 3D volume.",
+  "howItWorks": "The user points toward the target region and adjusts the selection depth along the ray until the intended volumetric target is reached, then confirms the selection.",
+  "advantages": [
+    "Selecting objects in volumetric displays where targets may appear at different depths and where a simple 2D cursor or direct 3D point cursor can be inefficient."
+  ],
+  "limitations": [
+    "It is designed specifically for volumetric display interaction, so its usefulness may depend on the display hardware and the available input device. Users also need to control both pointing direction and target depth."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Controller",
+    "Ray-based",
+    "Depth control",
+    "Volumetric display",
+    "Small targets",
+    "Dense targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-depth-ray",
+      "role": "reference"
+    },
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed"
+    },
+    {
+      "publication": "legacy-paper-bubble-cursor",
+      "role": "reference"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "bubble-raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "cone-casting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "bubble-cursor",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

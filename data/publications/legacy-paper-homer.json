@@ -1,0 +1,15 @@
+{
+  "id": "legacy-paper-homer",
+  "title": "An evaluation of techniques for grabbing and manipulating remote objects in immersive virtual environments",
+  "authors": [
+    "Doug A. Bowman",
+    "Larry F. Hodges"
+  ],
+  "year": 1997,
+  "venue": "Proceedings of the 1997 symposium on Interactive 3D graphics  - SI3D '97",
+  "doi": "10.1145/253284.253301",
+  "url": "https://doi.org/10.1145/253284.253301",
+  "type": "paper",
+  "citation": "Bowman, D. A., & Hodges, L. F. (1997, April). An evaluation of techniques for grabbing and manipulating remote objects in immersive virtual environments. In Proceedings of the 1997 Symposium on Interactive 3D Graphics (pp. 35-ff).",
+  "bibtex": "@inproceedings{legacy-paper-homer,\n  title = {An evaluation of techniques for grabbing and manipulating remote objects in immersive virtual environments},\n  author = {Doug A. Bowman and Larry F. Hodges},\n  year = {1997},\n  booktitle = {Proceedings of the 1997 symposium on Interactive 3D graphics  - SI3D '97},\n  doi = {10.1145/253284.253301},\n  url = {https://doi.org/10.1145/253284.253301}\n}"
+}

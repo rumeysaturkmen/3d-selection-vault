@@ -1,0 +1,16 @@
+{
+  "id": "legacy-paper-bubble-raycasting",
+  "title": "Investigating Bubble Mechanism for Ray-Casting to Improve 3D Target Acquisition in Virtual Reality",
+  "authors": [
+    "Yiqin Lu",
+    "Chun Yu",
+    "Yuanchun Shi"
+  ],
+  "year": 2020,
+  "venue": "2020 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)",
+  "doi": "10.1109/vr46266.2020.00021",
+  "url": "https://doi.org/10.1109/vr46266.2020.00021",
+  "type": "paper",
+  "citation": "Lu, Y., Yu, C., & Shi, Y. (2020, March). Investigating bubble mechanism for ray-casting to improve 3D target acquisition in virtual reality. In 2020 IEEE Conference on Virtual Reality and 3D User Interfaces (VR) (pp. 35–43). IEEE.",
+  "bibtex": "@inproceedings{legacy-paper-bubble-raycasting,\n  title = {Investigating Bubble Mechanism for Ray-Casting to Improve 3D Target Acquisition in Virtual Reality},\n  author = {Yiqin Lu and Chun Yu and Yuanchun Shi},\n  year = {2020},\n  booktitle = {2020 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)},\n  doi = {10.1109/vr46266.2020.00021},\n  url = {https://doi.org/10.1109/vr46266.2020.00021}\n}"
+}

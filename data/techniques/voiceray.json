@@ -1,0 +1,67 @@
+{
+  "id": "voiceray",
+  "name": "VoiceRay",
+  "aliases": [],
+  "year": 2026,
+  "summary": "Ray-based selection enhanced with ordinal voice commands to resolve ambiguity.",
+  "howItWorks": "Aim at a cluster, then say an ordinal command such as “third”.",
+  "advantages": [
+    "Dense and clustered distant objects where raycasting is ambiguous."
+  ],
+  "limitations": [
+    "Speech latency and social or contextual appropriateness can matter."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "controller",
+      "voice"
+    ],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Controller",
+    "Voice",
+    "Ray-based",
+    "Disambiguation",
+    "Dense targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-voiceray",
+      "role": "reference"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "speech-filtered-bubble-ray",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "cone-casting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "gaze-voice",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

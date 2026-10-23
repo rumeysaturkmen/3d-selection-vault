@@ -1,0 +1,67 @@
+{
+  "id": "gaze-voice",
+  "name": "Gaze + Voice",
+  "aliases": [],
+  "year": 2026,
+  "summary": "Gaze narrows the candidate set while voice specifies the final intended item.",
+  "howItWorks": "Look toward the target group and speak a target name or ordinal.",
+  "advantages": [
+    "Highly ambiguous scenes, especially when targets overlap."
+  ],
+  "limitations": [
+    "Depends on reliable speech recognition and concise labels."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "gaze",
+      "voice"
+    ],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Gaze",
+    "Voice",
+    "Disambiguation",
+    "Occluded targets",
+    "Dense targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-gaze-voice",
+      "role": "reference"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "voiceray",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "speech-filtered-bubble-ray",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "gaze-pinch",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

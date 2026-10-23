@@ -1,0 +1,15 @@
+{
+  "id": "legacy-paper-cone-casting",
+  "title": "JDCAD: A highly interactive 3D modeling system",
+  "authors": [
+    "Jiandong Liang",
+    "Mark Green"
+  ],
+  "year": 1994,
+  "venue": "Computers & Graphics",
+  "doi": "10.1016/0097-8493(94)90062-0",
+  "url": "https://doi.org/10.1016/0097-8493(94)90062-0",
+  "type": "paper",
+  "citation": "Liang, J., & Green, M. (1994). JDCAD: A highly interactive 3D modeling system. Computers & graphics, 18(4), 499-506.",
+  "bibtex": "@article{legacy-paper-cone-casting,\n  title = {JDCAD: A highly interactive 3D modeling system},\n  author = {Jiandong Liang and Mark Green},\n  year = {1994},\n  journal = {Computers \\& Graphics},\n  doi = {10.1016/0097-8493(94)90062-0},\n  url = {https://doi.org/10.1016/0097-8493(94)90062-0}\n}"
+}

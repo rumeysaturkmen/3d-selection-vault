@@ -1,0 +1,72 @@
+{
+  "id": "flexible-pointer",
+  "name": "Flexible Pointer",
+  "aliases": [],
+  "year": 2003,
+  "summary": "A flexible 3D pointing technique that bends the pointer path, allowing users to select fully or partially obscured objects in augmented and virtual reality environments.",
+  "howItWorks": "The user controls a virtual pointer whose shape can bend around occluding objects. Instead of pointing only along a straight line, the pointer can curve toward a target that is not directly visible or not easily reachable with standard egocentric pointing.",
+  "advantages": [
+    "Selecting objects that are partially hidden, visually occluded, or difficult to reach with a straight ray-based pointing technique."
+  ],
+  "limitations": [
+    "The curved pointer may require additional control and can be harder to understand than simple raycasting, especially when users need to adjust the pointer shape precisely."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Controller",
+    "Ray-based",
+    "Disambiguation",
+    "Occluded targets",
+    "Far targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-flexible-pointer",
+      "role": "reference"
+    },
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "cone-casting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "voiceray",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

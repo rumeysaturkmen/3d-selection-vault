@@ -1,0 +1,17 @@
+{
+  "id": "seed-yu-2024",
+  "title": "Object Selection and Manipulation in VR Headsets: Research Challenges, Solutions, and Success Measurements",
+  "authors": [
+    "Difeng Yu",
+    "Tilman Dingler",
+    "Eduardo Velloso",
+    "Jorge Goncalves"
+  ],
+  "year": 2024,
+  "venue": "ACM Computing Surveys",
+  "doi": "10.1145/3706417",
+  "url": "https://dl.acm.org/doi/full/10.1145/3706417",
+  "type": "survey",
+  "citation": null,
+  "bibtex": "@article{seed-yu-2024,\n  title = {Object Selection and Manipulation in VR Headsets: Research Challenges, Solutions, and Success Measurements},\n  author = {Difeng Yu and Tilman Dingler and Eduardo Velloso and Jorge Goncalves},\n  year = {2024},\n  journal = {ACM Computing Surveys},\n  doi = {10.1145/3706417},\n  url = {https://dl.acm.org/doi/full/10.1145/3706417}\n}"
+}

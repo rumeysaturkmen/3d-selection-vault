@@ -1,0 +1,57 @@
+{
+  "id": "volumetric-hand-cursor",
+  "name": "Volumetric Hand Cursor",
+  "aliases": [],
+  "year": 2017,
+  "summary": "A 3D cursor volume attached to the hand enables direct spatial selection.",
+  "howItWorks": "Move a hand-aligned cursor volume to intersect a target, then pinch.",
+  "advantages": [
+    "Near-field selection and embodied manipulation."
+  ],
+  "limitations": [
+    "Arm fatigue and occlusion can increase in long sessions."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Hand tracking",
+    "Volume-based",
+    "Proximity-based",
+    "Near targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-volumetric-hand-cursor",
+      "role": "reference"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "multifingerbubble",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "raycasting",
+  "name": "Raycasting",
+  "aliases": [],
+  "year": 1995,
+  "summary": "A ray projected from the user intersects a target for fast distal selection.",
+  "howItWorks": "Point a virtual ray at an object and confirm with a button, pinch, or dwell.",
+  "advantages": [
+    "Fast selection of visible distant targets."
+  ],
+  "limitations": [
+    "Small and occluded targets can be difficult; precision decreases with distance."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "controller",
+      "hand"
+    ],
+    "confirmation": [],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Controller",
+    "Hand tracking",
+    "Ray-based",
+    "Far targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-raycasting",
+      "role": "reference"
+    },
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed",
+      "where": "3 Selection techniques; Table 1"
+    },
+    {
+      "publication": "seed-3dui-2024",
+      "role": "surveyed",
+      "where": "4.2.1 Selection, p. 9"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "7.3 Comparison framework, p. 98:20"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "aperture-selection",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "cone-casting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

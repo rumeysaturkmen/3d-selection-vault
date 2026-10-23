@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "publication.schema.json",
+  "title": "Publication",
+  "description": "One file per publication in data/publications/<id>.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "authors", "type"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "Must match the file name." },
+    "title": { "type": "string", "minLength": 1 },
+    "authors": { "type": "array", "items": { "type": "string" } },
+    "year": { "type": ["integer", "null"], "minimum": 1960, "maximum": 2100 },
+    "venue": { "type": ["string", "null"] },
+    "doi": { "type": ["string", "null"], "pattern": "^10\\.\\S+$" },
+    "url": { "type": ["string", "null"] },
+    "type": { "enum": ["paper", "survey", "thesis", "book", "other"] },
+    "citation": { "type": ["string", "null"], "description": "Free-text citation, kept from the old catalogue." },
+    "bibtex": { "type": ["string", "null"] }
+  }
+}

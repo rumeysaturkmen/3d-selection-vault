@@ -1,0 +1,15 @@
+{
+  "id": "frees-2005-prism",
+  "title": "Precise and rapid interaction through scaled manipulation in immersive virtual environments",
+  "authors": [
+    "S. Frees",
+    "G.D. Kessler"
+  ],
+  "year": 2005,
+  "venue": "IEEE Proceedings. VR 2005. Virtual Reality, 2005.",
+  "doi": "10.1109/vr.2005.1492759",
+  "url": "https://doi.org/10.1109/vr.2005.1492759",
+  "type": "paper",
+  "citation": null,
+  "bibtex": "@inproceedings{frees-2005-prism,\n  title = {Precise and rapid interaction through scaled manipulation in immersive virtual environments},\n  author = {S. Frees and G.D. Kessler},\n  year = {2005},\n  booktitle = {IEEE Proceedings. VR 2005. Virtual Reality, 2005.},\n  doi = {10.1109/vr.2005.1492759},\n  url = {https://doi.org/10.1109/vr.2005.1492759}\n}"
+}

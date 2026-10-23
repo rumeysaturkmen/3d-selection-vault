@@ -1,0 +1,68 @@
+{
+  "id": "gaze-pinch",
+  "name": "Gaze + Pinch",
+  "aliases": [],
+  "year": 2017,
+  "summary": "Gaze identifies an intended object and a pinch confirms the action.",
+  "howItWorks": "Look at a candidate target, then pinch to select it.",
+  "advantages": [
+    "Hands-busy contexts and lightweight XR input."
+  ],
+  "limitations": [
+    "May suffer from Midas-touch effects without deliberate confirmation."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "gaze",
+      "hand"
+    ],
+    "confirmation": [],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Gaze",
+    "Hand tracking",
+    "Disambiguation",
+    "Far targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-gaze-pinch",
+      "role": "reference"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "aperture-selection",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "gaze-voice",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

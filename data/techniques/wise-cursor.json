@@ -1,0 +1,65 @@
+{
+  "id": "wise-cursor",
+  "name": "Wise Cursor",
+  "aliases": [],
+  "year": 2013,
+  "summary": "An assisted 3D selection technique for mouse-driven serious games that estimates which object the user intended to select and supports clarification when the intended target is uncertain.",
+  "howItWorks": "When the user clicks in the 3D environment, the system computes a set of candidate objects and estimates the probability that each one is the intended target. If one candidate is sufficiently likely, it is selected; otherwise, the system asks the user to clarify the selection.",
+  "advantages": [
+    "Improving accessibility and usability in 3D serious games, especially for users who are not experienced with first-person 3D interaction."
+  ],
+  "limitations": [
+    "The technique depends on the quality of the candidate-ranking model. When the system's probability estimate does not match the user's intention, an additional clarification step may be needed."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Mouse",
+    "Assisted selection",
+    "Disambiguation",
+    "Serious games",
+    "Dense targets",
+    "Accessibility"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-wise-cursor",
+      "role": "reference"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "voiceray",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "gaze-voice",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "squad",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

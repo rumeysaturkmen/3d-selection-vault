@@ -1,0 +1,67 @@
+{
+  "id": "gazebubble",
+  "name": "GazeBubble",
+  "aliases": [],
+  "year": 2026,
+  "summary": "A 3D gaze-pointing technique that adapts the bubble cursor mechanism to gaze-based target acquisition in virtual reality.",
+  "howItWorks": "The user points with gaze, and the system applies a bubble-like selection mechanism around the gaze position to determine the most likely target. In dense scenes, an assistive interaction such as Diffuse can help separate or clarify candidate targets.",
+  "advantages": [
+    "Hands-free selection of 3D targets in virtual reality, especially when gaze can quickly indicate the intended region or candidate target."
+  ],
+  "limitations": [
+    "Gaze-based pointing can be affected by eye-tracking precision, visual attention demands, and ambiguity when many targets are close together."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Gaze",
+    "Bubble cursor",
+    "Hands-free",
+    "3D pointing",
+    "Dense targets",
+    "Small targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-gazebubble",
+      "role": "reference"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "bubble-gaze-cursor",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "bubble-gaze-lens",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "multifingerbubble",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

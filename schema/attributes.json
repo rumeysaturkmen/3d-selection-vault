@@ -1,0 +1,150 @@
+{
+  "$comment": "DRAFT attribute scheme for 3D selection techniques (roadmap step 2). The first six attributes follow Argelaguet & Andujar (2013); the rest are additions. Values, names and weights are still to be agreed. This file is the single source of truth: the data validator and the website both read it.",
+  "status": "draft",
+  "attributes": [
+    {
+      "id": "selectionTool",
+      "label": "Selection tool",
+      "description": "The shape of the virtual tool that picks the target.",
+      "basis": "Argelaguet & Andujar 2013",
+      "multiple": true,
+      "weight": 3,
+      "values": [
+        { "id": "ray", "label": "Ray" },
+        { "id": "cone", "label": "Cone" },
+        { "id": "volume", "label": "Volume (sphere, box)" },
+        { "id": "point", "label": "Point cursor" },
+        { "id": "image-plane", "label": "Image plane" },
+        { "id": "other", "label": "Other" }
+      ]
+    },
+    {
+      "id": "toolOrigin",
+      "label": "Tool origin",
+      "description": "Where the selection tool starts from.",
+      "basis": "Argelaguet & Andujar 2013",
+      "multiple": true,
+      "weight": 2,
+      "values": [
+        { "id": "hand", "label": "Hand" },
+        { "id": "controller", "label": "Controller" },
+        { "id": "eye", "label": "Eye / gaze" },
+        { "id": "head", "label": "Head" },
+        { "id": "both-hands", "label": "Both hands" }
+      ]
+    },
+    {
+      "id": "toolDof",
+      "label": "Tool degrees of freedom",
+      "description": "How many degrees of freedom the user controls on the tool.",
+      "basis": "Argelaguet & Andujar 2013",
+      "multiple": false,
+      "weight": 1,
+      "values": [
+        { "id": "2", "label": "2 DoF" },
+        { "id": "3", "label": "3 DoF" },
+        { "id": "4", "label": "4 DoF" },
+        { "id": "5", "label": "5 DoF" },
+        { "id": "6", "label": "6 DoF" }
+      ]
+    },
+    {
+      "id": "cdRatio",
+      "label": "Control-display ratio",
+      "description": "How physical motion maps to tool motion.",
+      "basis": "Argelaguet & Andujar 2013",
+      "multiple": false,
+      "weight": 2,
+      "values": [
+        { "id": "isomorphic", "label": "Isomorphic (1:1)" },
+        { "id": "anisomorphic-fixed", "label": "Anisomorphic, fixed" },
+        { "id": "anisomorphic-adaptive", "label": "Anisomorphic, adaptive" }
+      ]
+    },
+    {
+      "id": "motorVisualSpace",
+      "label": "Motor and visual space",
+      "description": "Whether the hand acts where the user looks.",
+      "basis": "Argelaguet & Andujar 2013",
+      "multiple": false,
+      "weight": 1,
+      "values": [
+        { "id": "direct", "label": "Direct (co-located)" },
+        { "id": "offset", "label": "Offset" },
+        { "id": "remote", "label": "Remote" }
+      ]
+    },
+    {
+      "id": "disambiguation",
+      "label": "Disambiguation",
+      "description": "How the technique picks one target when several are candidates.",
+      "basis": "Argelaguet & Andujar 2013",
+      "multiple": true,
+      "weight": 3,
+      "values": [
+        { "id": "none", "label": "None" },
+        { "id": "manual", "label": "Manual (user refines)" },
+        { "id": "heuristic", "label": "Heuristic (scoring)" },
+        { "id": "behavioural", "label": "Behavioural (over time)" },
+        { "id": "progressive", "label": "Progressive refinement" }
+      ]
+    },
+    {
+      "id": "inputModality",
+      "label": "Input modality",
+      "description": "Which input channels the technique uses.",
+      "basis": "Addition",
+      "multiple": true,
+      "weight": 2,
+      "values": [
+        { "id": "controller", "label": "Controller" },
+        { "id": "hand", "label": "Hand tracking" },
+        { "id": "gaze", "label": "Gaze" },
+        { "id": "head", "label": "Head" },
+        { "id": "voice", "label": "Voice" },
+        { "id": "tangible", "label": "Tangible" }
+      ]
+    },
+    {
+      "id": "confirmation",
+      "label": "Confirmation",
+      "description": "How the user confirms the selection.",
+      "basis": "Addition",
+      "multiple": true,
+      "weight": 1,
+      "values": [
+        { "id": "button", "label": "Button" },
+        { "id": "pinch", "label": "Pinch" },
+        { "id": "gesture", "label": "Other gesture" },
+        { "id": "dwell", "label": "Dwell" },
+        { "id": "voice", "label": "Voice" },
+        { "id": "release", "label": "Release" }
+      ]
+    },
+    {
+      "id": "targetDistance",
+      "label": "Target distance",
+      "description": "Where the targets are relative to the user.",
+      "basis": "Addition",
+      "multiple": true,
+      "weight": 1,
+      "values": [
+        { "id": "near", "label": "Near (within reach)" },
+        { "id": "far", "label": "Far" }
+      ]
+    },
+    {
+      "id": "handlesOcclusion",
+      "label": "Handles occlusion",
+      "description": "Whether hidden or partly hidden targets can be selected.",
+      "basis": "Addition",
+      "multiple": false,
+      "weight": 1,
+      "values": [
+        { "id": "yes", "label": "Yes" },
+        { "id": "partly", "label": "Partly" },
+        { "id": "no", "label": "No" }
+      ]
+    }
+  ]
+}

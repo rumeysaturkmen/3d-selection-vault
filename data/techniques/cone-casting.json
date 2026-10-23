@@ -1,0 +1,73 @@
+{
+  "id": "cone-casting",
+  "name": "Cone Casting",
+  "aliases": [],
+  "year": 1994,
+  "summary": "A cone-shaped volume expands the effective acquisition area for remote targets.",
+  "howItWorks": "Aim a cone at a region; resolve the chosen object by proximity or ranking.",
+  "advantages": [
+    "Distant targets when exact ray alignment is demanding."
+  ],
+  "limitations": [
+    "May create ambiguity when several candidates fall inside the cone."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Controller",
+    "Ray-based",
+    "Volume-based",
+    "Far targets",
+    "Dense targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-cone-casting",
+      "role": "reference"
+    },
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed",
+      "where": "3 Selection techniques; Table 1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "bubble-raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "voiceray",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

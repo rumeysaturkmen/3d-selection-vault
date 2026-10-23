@@ -1,0 +1,18 @@
+{
+  "id": "seed-3dui-2024",
+  "title": "Entering the Next Dimension: A Review of 3D User Interfaces for Virtual Reality",
+  "authors": [
+    "Adriel Yeo",
+    "Benjamin W. J. Kwok",
+    "Angelene Joshna",
+    "Kan Chen",
+    "Jeannie S. A. Lee"
+  ],
+  "year": 2024,
+  "venue": "Electronics",
+  "doi": "10.3390/electronics13030600",
+  "url": "https://www.mdpi.com/2079-9292/13/3/600",
+  "type": "survey",
+  "citation": null,
+  "bibtex": "@article{seed-3dui-2024,\n  title = {Entering the Next Dimension: A Review of 3D User Interfaces for Virtual Reality},\n  author = {Adriel Yeo and Benjamin W. J. Kwok and Angelene Joshna and Kan Chen and Jeannie S. A. Lee},\n  year = {2024},\n  journal = {Electronics},\n  doi = {10.3390/electronics13030600},\n  url = {https://www.mdpi.com/2079-9292/13/3/600}\n}"
+}

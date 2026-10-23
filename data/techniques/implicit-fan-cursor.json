@@ -1,0 +1,65 @@
+{
+  "id": "implicit-fan-cursor",
+  "name": "Implicit Fan Cursor",
+  "aliases": [],
+  "year": 2014,
+  "summary": "A velocity-dependent area cursor that changes its activation area according to the speed and direction of cursor movement.",
+  "howItWorks": "The user moves the cursor toward a target. When the cursor moves slowly, the activation area behaves more like a directional fan or spotlight. When the cursor moves faster, the activation area becomes more like a circular area cursor, helping acquire targets with less precise pointing.",
+  "advantages": [
+    "Improving target acquisition when cursor movement speed provides useful information about the user's intention, especially during transitions between fast movement and precise selection."
+  ],
+  "limitations": [
+    "The technique depends on interpreting cursor velocity correctly. It may be less predictable when users move irregularly or when the target layout causes several possible objects to fall within the changing activation area."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Area cursor",
+    "Velocity-dependent",
+    "Fan-based",
+    "Mouse",
+    "Small targets",
+    "Dense targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-implicit-fan-cursor",
+      "role": "reference"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "bubble-gaze-cursor",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "bubble-gaze-lens",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "bubble-cursor",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

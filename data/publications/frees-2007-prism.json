@@ -1,0 +1,16 @@
+{
+  "id": "frees-2007-prism",
+  "title": "PRISM interaction for enhancing control in immersive virtual environments",
+  "authors": [
+    "Scott Frees",
+    "G. Drew Kessler",
+    "Edwin Kay"
+  ],
+  "year": 2007,
+  "venue": "ACM Transactions on Computer-Human Interaction",
+  "doi": "10.1145/1229855.1229857",
+  "url": "https://doi.org/10.1145/1229855.1229857",
+  "type": "paper",
+  "citation": null,
+  "bibtex": "@article{frees-2007-prism,\n  title = {PRISM interaction for enhancing control in immersive virtual environments},\n  author = {Scott Frees and G. Drew Kessler and Edwin Kay},\n  year = {2007},\n  journal = {ACM Transactions on Computer-Human Interaction},\n  doi = {10.1145/1229855.1229857},\n  url = {https://doi.org/10.1145/1229855.1229857}\n}"
+}

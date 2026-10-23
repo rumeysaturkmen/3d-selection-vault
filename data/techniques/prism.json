@@ -1,0 +1,52 @@
+{
+  "id": "prism",
+  "name": "PRISM",
+  "aliases": [
+    "Precise and Rapid Interaction through Scaled Manipulation"
+  ],
+  "year": 2005,
+  "summary": "Adjusts control-display gain according to hand movement speed to support precise selection and manipulation in immersive environments.",
+  "howItWorks": "",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "manipulation",
+  "tasks": [
+    "manipulation",
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "frees-2005-prism",
+      "role": "introduced"
+    },
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed",
+      "where": "3.2.2 Control-display ratio; references [37–38]"
+    },
+    {
+      "publication": "frees-2007-prism",
+      "role": "reference"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

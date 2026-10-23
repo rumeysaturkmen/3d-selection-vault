@@ -1,0 +1,58 @@
+{
+  "id": "silk-cursor",
+  "name": "Silk Cursor",
+  "aliases": [],
+  "year": 1994,
+  "summary": "A 3D target acquisition technique that uses a semi-transparent cursor to reduce visual occlusion and help users acquire targets in 3D space.",
+  "howItWorks": "The user controls a semi-transparent 3D cursor and moves it toward the target. Because the cursor is partially transparent, the user can see target geometry through or behind the cursor while aligning the cursor for acquisition.",
+  "advantages": [
+    "Selecting or acquiring 3D targets when cursor visibility and target visibility both matter, especially in dynamic 3D scenes where an opaque cursor could hide the target."
+  ],
+  "limitations": [
+    "Transparency can make the cursor less visually salient, and the technique depends on careful visual design so users can still judge the cursor's position and relation to the target."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "3D cursor",
+    "Transparency-based",
+    "Visual feedback",
+    "Dynamic targets",
+    "Small targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-silk-cursor",
+      "role": "reference"
+    },
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "expand",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

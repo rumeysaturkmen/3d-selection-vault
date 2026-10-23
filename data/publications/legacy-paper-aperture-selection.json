@@ -1,0 +1,16 @@
+{
+  "id": "legacy-paper-aperture-selection",
+  "title": "Aperture based selection for immersive virtual environments",
+  "authors": [
+    "Andrew Forsberg",
+    "Kenneth Herndon",
+    "Robert Zeleznik"
+  ],
+  "year": 1996,
+  "venue": "Proceedings of the 9th annual ACM symposium on User interface software and technology  - UIST '96",
+  "doi": "10.1145/237091.237105",
+  "url": "https://doi.org/10.1145/237091.237105",
+  "type": "paper",
+  "citation": "Forsberg, A., Herndon, K., & Zeleznik, R. (1996, November). Aperture based selection for immersive virtual environments. In Proceedings of the 9th annual ACM symposium on User interface software and technology (pp. 95-96)..",
+  "bibtex": "@inproceedings{legacy-paper-aperture-selection,\n  title = {Aperture based selection for immersive virtual environments},\n  author = {Andrew Forsberg and Kenneth Herndon and Robert Zeleznik},\n  year = {1996},\n  booktitle = {Proceedings of the 9th annual ACM symposium on User interface software and technology  - UIST '96},\n  doi = {10.1145/237091.237105},\n  url = {https://doi.org/10.1145/237091.237105}\n}"
+}

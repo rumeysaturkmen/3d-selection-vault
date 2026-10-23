@@ -1,0 +1,67 @@
+{
+  "id": "expand",
+  "name": "Expand",
+  "aliases": [],
+  "year": 2012,
+  "summary": "A 3D selection technique for dense and dynamic virtual environments that temporarily expands the candidate objects so the user can select one target more easily.",
+  "howItWorks": "The user first indicates a dense group of possible targets. The system then expands or spreads the candidate objects apart, making them easier to distinguish and select. After the user selects the intended target, the environment can return to its normal arrangement.",
+  "advantages": [
+    "Selecting small, dense, or moving objects in game-based virtual environments where targets are close together and difficult to acquire with standard pointing."
+  ],
+  "limitations": [
+    "The technique changes the visual arrangement of candidate objects during selection, which may interrupt the original spatial layout. It is most useful when selection accuracy is more important than preserving the scene exactly during the selection step."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Controller",
+    "Disambiguation",
+    "Expansion-based",
+    "Dense targets",
+    "Small targets",
+    "Dynamic targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-expand",
+      "role": "reference"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "squad",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "bubble-cursor",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "voiceray",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

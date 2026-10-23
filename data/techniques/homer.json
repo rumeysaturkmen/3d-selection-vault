@@ -1,0 +1,76 @@
+{
+  "id": "homer",
+  "name": "HOMER",
+  "aliases": [
+    "Hand-centered Object Manipulation Extending Ray-casting"
+  ],
+  "year": 1997,
+  "summary": "A remote object selection and manipulation technique that combines ray-based selection with hand-centered manipulation after the object is grabbed.",
+  "howItWorks": "Point a ray at a remote object and confirm the grab. Once selected, the object is attached to the user's virtual hand so it can be moved and manipulated through hand or controller motion.",
+  "advantages": [
+    "Grabbing and manipulating remote objects in immersive virtual environments without requiring the user to physically travel to the object."
+  ],
+  "limitations": [
+    "The transition from ray-based selection to hand-centered manipulation can require practice, and remote manipulation may reduce precision compared with direct nearby manipulation."
+  ],
+  "primaryTask": "manipulation",
+  "tasks": [
+    "manipulation",
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Controller",
+    "Ray-based",
+    "Remote manipulation",
+    "Far targets",
+    "Object manipulation"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-homer",
+      "role": "reference"
+    },
+    {
+      "publication": "seed-3dui-2024",
+      "role": "surveyed",
+      "where": "4.2.1 Selection, p. 9"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "cone-casting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "aperture-selection",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

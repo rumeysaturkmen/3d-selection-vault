@@ -1,0 +1,69 @@
+{
+  "id": "bubble-cursor",
+  "name": "Bubble Cursor",
+  "aliases": [],
+  "year": 2007,
+  "summary": "An adaptive cursor expands until it encloses the nearest available target.",
+  "howItWorks": "Move the cursor near a target; the selection region adapts to isolate it.",
+  "advantages": [
+    "Dense scenes with many small selectable objects."
+  ],
+  "limitations": [
+    "Can feel unpredictable when target positions change quickly."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Controller",
+    "Proximity-based",
+    "Dense targets",
+    "Small targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-bubble-cursor",
+      "role": "reference"
+    },
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "bubble-raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "depth-ray",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "squad",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

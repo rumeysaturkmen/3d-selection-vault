@@ -1,0 +1,74 @@
+{
+  "id": "squad",
+  "name": "SQUAD",
+  "aliases": [],
+  "year": 2011,
+  "summary": "A progressive refinement technique for rapid and accurate 3D selection, where the system repeatedly narrows a group of candidate targets until the intended object can be selected.",
+  "howItWorks": "The user first indicates a group of possible targets. The system divides the candidate set into smaller groups, and the user repeatedly chooses the group containing the intended target until the final object is selected.",
+  "advantages": [
+    "Selecting small, dense, or distant targets when many objects are close together and a single pointing action may not be accurate enough."
+  ],
+  "limitations": [
+    "SQUAD may require multiple refinement steps, so it can be less efficient for simple targets that can be selected directly. It is most useful when the initial selection is ambiguous."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Controller",
+    "Disambiguation",
+    "Progressive refinement",
+    "Dense targets",
+    "Small targets",
+    "Far targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-squad",
+      "role": "reference"
+    },
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed",
+      "where": "3 Selection techniques; Table 1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "expand",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "bubble-raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "cone-casting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

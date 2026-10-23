@@ -1,0 +1,47 @@
+{
+  "id": "intenselect",
+  "name": "IntenSelect",
+  "aliases": [],
+  "year": 2005,
+  "summary": "Behavior-rated ray.",
+  "howItWorks": "Behavior-rated ray. See the survey evidence and associated source for operational details.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Selection",
+    "2013 selection survey",
+    "Behavior-rated ray"
+  ],
+  "publications": [
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed",
+      "where": "Table 1, p. 123"
+    },
+    {
+      "publication": "survey2013-ref-30",
+      "role": "reference"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

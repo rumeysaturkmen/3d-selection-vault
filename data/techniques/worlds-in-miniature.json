@@ -1,0 +1,57 @@
+{
+  "id": "worlds-in-miniature",
+  "name": "Worlds in Miniature",
+  "aliases": [
+    "WIM",
+    "World-in-Miniature"
+  ],
+  "year": 1995,
+  "summary": "A hand-held miniature of a virtual environment provides linked proxies for selecting and manipulating objects and changing viewpoint.",
+  "howItWorks": "",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "manipulation",
+  "tasks": [
+    "manipulation",
+    "selection",
+    "navigation"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "hand",
+      "tangible"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "stoakley-1995-wim",
+      "role": "introduced",
+      "where": "Abstract; System Description; Interaction Techniques Using the WIM, p. 1–3 (PDF)"
+    },
+    {
+      "publication": "seed-3dui-2024",
+      "role": "surveyed"
+    },
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

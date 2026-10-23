@@ -1,0 +1,74 @@
+{
+  "id": "aperture-selection",
+  "name": "Aperture Selection",
+  "aliases": [],
+  "year": 1996,
+  "summary": "Targets are acquired through a controllable aperture that balances precision and speed.",
+  "howItWorks": "Adjust an aperture around the intended target, then confirm.",
+  "advantages": [
+    "Precise selection of small or distant objects."
+  ],
+  "limitations": [
+    "Requires learning and can add extra adjustment steps."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "controller",
+      "hand"
+    ],
+    "confirmation": [],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Controller",
+    "Hand tracking",
+    "Ray-based",
+    "Small targets",
+    "Far targets"
+  ],
+  "publications": [
+    {
+      "publication": "legacy-paper-aperture-selection",
+      "role": "reference"
+    },
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed",
+      "where": "3 Selection techniques; Table 1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "bubble-raycasting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    },
+    {
+      "technique": "cone-casting",
+      "type": "related",
+      "note": "Carried over from the old catalogue; no source yet."
+    }
+  ],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}

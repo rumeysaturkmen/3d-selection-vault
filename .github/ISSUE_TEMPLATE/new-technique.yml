@@ -1,0 +1,36 @@
+name: Suggest a technique
+description: Tell us about a 3D selection technique that is missing from the vault.
+title: "New technique: "
+labels: ["new technique"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Technique name
+      placeholder: e.g. Bubble Cursor
+    validations:
+      required: true
+  - type: textarea
+    id: paper
+    attributes:
+      label: Original paper
+      description: The paper that first introduced the technique. A DOI or BibTeX entry is ideal.
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: How it works
+      description: One or two sentences on how the user selects a target.
+    validations:
+      required: true
+  - type: textarea
+    id: attributes
+    attributes:
+      label: Attributes (optional)
+      description: Selection tool, tool origin, input modality, disambiguation and so on, if you know them. See the attribute scheme on the About page.
+  - type: textarea
+    id: related
+    attributes:
+      label: Related techniques (optional)
+      description: Techniques it extends or was compared with, and in which paper.

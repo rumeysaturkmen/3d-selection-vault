@@ -1,0 +1,53 @@
+{
+  "id": "eye-gaze-selection",
+  "name": "Eye-gazed selection",
+  "aliases": [],
+  "year": 2000,
+  "summary": "Gaze-directed ray.",
+  "howItWorks": "Gaze-directed ray. See the survey evidence and associated source for operational details.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [],
+    "toolOrigin": [],
+    "toolDof": [],
+    "cdRatio": [],
+    "motorVisualSpace": [],
+    "disambiguation": [],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [],
+    "targetDistance": [],
+    "handlesOcclusion": []
+  },
+  "tags": [
+    "Selection",
+    "2013 selection survey",
+    "Gaze-directed ray"
+  ],
+  "publications": [
+    {
+      "publication": "seed-argelaguet-2013",
+      "role": "surveyed",
+      "where": "Table 1, p. 123"
+    },
+    {
+      "publication": "survey2013-ref-87",
+      "role": "reference"
+    },
+    {
+      "publication": "survey2013-ref-27",
+      "role": "reference"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "migrated",
+    "notes": "Imported from the old catalogue. Attributes and year not yet checked against the paper."
+  }
+}
