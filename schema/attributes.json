@@ -1,6 +1,6 @@
 {
-  "$comment": "DRAFT attribute scheme for 3D selection techniques (roadmap step 2). The first six attributes follow Argelaguet & Andujar (2013); the rest are additions. Values, names and weights are still to be agreed. This file is the single source of truth: the data validator and the website both read it.",
-  "status": "draft",
+  "$comment": "Attribute scheme 1.0 for 3D selection techniques (roadmap step 2). The first six attributes follow Argelaguet & Andujar (2013); the rest are additions. This file is the single source of truth: the data validator and the website both read it. Changing a value id means updating every technique that uses it.",
+  "status": "1.0",
   "attributes": [
     {
       "id": "selectionTool",
@@ -10,12 +10,30 @@
       "multiple": true,
       "weight": 3,
       "values": [
-        { "id": "ray", "label": "Ray" },
-        { "id": "cone", "label": "Cone" },
-        { "id": "volume", "label": "Volume (sphere, box)" },
-        { "id": "point", "label": "Point cursor" },
-        { "id": "image-plane", "label": "Image plane" },
-        { "id": "other", "label": "Other" }
+        {
+          "id": "ray",
+          "label": "Ray"
+        },
+        {
+          "id": "cone",
+          "label": "Cone"
+        },
+        {
+          "id": "volume",
+          "label": "Volume (sphere, box)"
+        },
+        {
+          "id": "point",
+          "label": "Point cursor"
+        },
+        {
+          "id": "image-plane",
+          "label": "Image plane"
+        },
+        {
+          "id": "other",
+          "label": "Other"
+        }
       ]
     },
     {
@@ -26,11 +44,26 @@
       "multiple": true,
       "weight": 2,
       "values": [
-        { "id": "hand", "label": "Hand" },
-        { "id": "controller", "label": "Controller" },
-        { "id": "eye", "label": "Eye / gaze" },
-        { "id": "head", "label": "Head" },
-        { "id": "both-hands", "label": "Both hands" }
+        {
+          "id": "hand",
+          "label": "Hand"
+        },
+        {
+          "id": "controller",
+          "label": "Controller"
+        },
+        {
+          "id": "eye",
+          "label": "Eye / gaze"
+        },
+        {
+          "id": "head",
+          "label": "Head"
+        },
+        {
+          "id": "both-hands",
+          "label": "Both hands"
+        }
       ]
     },
     {
@@ -41,11 +74,26 @@
       "multiple": false,
       "weight": 1,
       "values": [
-        { "id": "2", "label": "2 DoF" },
-        { "id": "3", "label": "3 DoF" },
-        { "id": "4", "label": "4 DoF" },
-        { "id": "5", "label": "5 DoF" },
-        { "id": "6", "label": "6 DoF" }
+        {
+          "id": "2",
+          "label": "2 DoF"
+        },
+        {
+          "id": "3",
+          "label": "3 DoF"
+        },
+        {
+          "id": "4",
+          "label": "4 DoF"
+        },
+        {
+          "id": "5",
+          "label": "5 DoF"
+        },
+        {
+          "id": "6",
+          "label": "6 DoF"
+        }
       ]
     },
     {
@@ -56,9 +104,18 @@
       "multiple": false,
       "weight": 2,
       "values": [
-        { "id": "isomorphic", "label": "Isomorphic (1:1)" },
-        { "id": "anisomorphic-fixed", "label": "Anisomorphic, fixed" },
-        { "id": "anisomorphic-adaptive", "label": "Anisomorphic, adaptive" }
+        {
+          "id": "isomorphic",
+          "label": "Isomorphic (1:1)"
+        },
+        {
+          "id": "anisomorphic-fixed",
+          "label": "Anisomorphic, fixed"
+        },
+        {
+          "id": "anisomorphic-adaptive",
+          "label": "Anisomorphic, adaptive"
+        }
       ]
     },
     {
@@ -69,9 +126,18 @@
       "multiple": false,
       "weight": 1,
       "values": [
-        { "id": "direct", "label": "Direct (co-located)" },
-        { "id": "offset", "label": "Offset" },
-        { "id": "remote", "label": "Remote" }
+        {
+          "id": "direct",
+          "label": "Direct (co-located)"
+        },
+        {
+          "id": "offset",
+          "label": "Offset"
+        },
+        {
+          "id": "remote",
+          "label": "Remote"
+        }
       ]
     },
     {
@@ -82,11 +148,26 @@
       "multiple": true,
       "weight": 3,
       "values": [
-        { "id": "none", "label": "None" },
-        { "id": "manual", "label": "Manual (user refines)" },
-        { "id": "heuristic", "label": "Heuristic (scoring)" },
-        { "id": "behavioural", "label": "Behavioural (over time)" },
-        { "id": "progressive", "label": "Progressive refinement" }
+        {
+          "id": "none",
+          "label": "None"
+        },
+        {
+          "id": "manual",
+          "label": "Manual (user refines)"
+        },
+        {
+          "id": "heuristic",
+          "label": "Heuristic (scoring)"
+        },
+        {
+          "id": "behavioural",
+          "label": "Behavioural (over time)"
+        },
+        {
+          "id": "progressive",
+          "label": "Progressive refinement"
+        }
       ]
     },
     {
@@ -97,12 +178,30 @@
       "multiple": true,
       "weight": 2,
       "values": [
-        { "id": "controller", "label": "Controller" },
-        { "id": "hand", "label": "Hand tracking" },
-        { "id": "gaze", "label": "Gaze" },
-        { "id": "head", "label": "Head" },
-        { "id": "voice", "label": "Voice" },
-        { "id": "tangible", "label": "Tangible" }
+        {
+          "id": "controller",
+          "label": "Controller"
+        },
+        {
+          "id": "hand",
+          "label": "Hand tracking"
+        },
+        {
+          "id": "gaze",
+          "label": "Gaze"
+        },
+        {
+          "id": "head",
+          "label": "Head"
+        },
+        {
+          "id": "voice",
+          "label": "Voice"
+        },
+        {
+          "id": "tangible",
+          "label": "Tangible"
+        }
       ]
     },
     {
@@ -113,12 +212,30 @@
       "multiple": true,
       "weight": 1,
       "values": [
-        { "id": "button", "label": "Button" },
-        { "id": "pinch", "label": "Pinch" },
-        { "id": "gesture", "label": "Other gesture" },
-        { "id": "dwell", "label": "Dwell" },
-        { "id": "voice", "label": "Voice" },
-        { "id": "release", "label": "Release" }
+        {
+          "id": "button",
+          "label": "Button"
+        },
+        {
+          "id": "pinch",
+          "label": "Pinch"
+        },
+        {
+          "id": "gesture",
+          "label": "Other gesture"
+        },
+        {
+          "id": "dwell",
+          "label": "Dwell"
+        },
+        {
+          "id": "voice",
+          "label": "Voice"
+        },
+        {
+          "id": "release",
+          "label": "Release"
+        }
       ]
     },
     {
@@ -129,8 +246,14 @@
       "multiple": true,
       "weight": 1,
       "values": [
-        { "id": "near", "label": "Near (within reach)" },
-        { "id": "far", "label": "Far" }
+        {
+          "id": "near",
+          "label": "Near (within reach)"
+        },
+        {
+          "id": "far",
+          "label": "Far"
+        }
       ]
     },
     {
@@ -141,9 +264,18 @@
       "multiple": false,
       "weight": 1,
       "values": [
-        { "id": "yes", "label": "Yes" },
-        { "id": "partly", "label": "Partly" },
-        { "id": "no", "label": "No" }
+        {
+          "id": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "partly",
+          "label": "Partly"
+        },
+        {
+          "id": "no",
+          "label": "No"
+        }
       ]
     }
   ]

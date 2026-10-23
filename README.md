@@ -40,7 +40,7 @@ Not comfortable editing JSON? [Open an issue](../../issues/new/choose) with the 
 
 ## Status
 
-The 45 selection techniques here were imported from the earlier 3D Interaction Vault. They are marked `migrated` until each one is checked against its paper. The attribute scheme is a draft.
+The 45 selection techniques here were imported from the earlier 3D Interaction Vault. They are marked `migrated` until each one is checked against its paper. The attribute scheme is version 1.0 (see the About page).
 
 ## Licence
 
