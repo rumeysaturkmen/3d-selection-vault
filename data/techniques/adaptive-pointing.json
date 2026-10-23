@@ -59,6 +59,11 @@
     {
       "publication": "survey2013-ref-48",
       "role": "reference"
+    },
+    {
+      "publication": "weise-2019",
+      "role": "surveyed",
+      "where": "3.6"
     }
   ],
   "relationships": [],

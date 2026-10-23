@@ -71,6 +71,11 @@
       "publication": "huang-2019",
       "role": "surveyed",
       "where": "3.2.2"
+    },
+    {
+      "publication": "weise-2019",
+      "role": "surveyed",
+      "where": "Table 1 (as Flashlight)"
     }
   ],
   "relationships": [

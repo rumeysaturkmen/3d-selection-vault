@@ -81,7 +81,15 @@ export default function About() {
               Every technique is described with the same {attributes.length} attributes, so any two can be
               compared like for like.
             </p>
-            <a href="#attributes">See the attributes</a>
+            <a
+              href="#/about#attributes"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('attributes')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              See the attributes
+            </a>
           </li>
           <li>
             <span className="step-n">3</span>

@@ -63,6 +63,11 @@
     {
       "publication": "survey2013-ref-27",
       "role": "reference"
+    },
+    {
+      "publication": "weise-2019",
+      "role": "surveyed",
+      "where": "Table 1 (as Gaze-Based Selection)"
     }
   ],
   "relationships": [],

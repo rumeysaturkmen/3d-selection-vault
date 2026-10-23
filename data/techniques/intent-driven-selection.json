@@ -1,0 +1,73 @@
+{
+  "id": "intent-driven-selection",
+  "name": "Intent Driven Selection",
+  "aliases": [
+    "IDS",
+    "Intend Driven Selection"
+  ],
+  "year": 2015,
+  "summary": "Finger-based selection that infers which object the user intends to grab from their hand posture as the hand approaches.",
+  "howItWorks": "A tracked hand's posture and position define a volume that shrinks as the fingers close around the intended object; candidates are scored continuously from the hand's behaviour until one remains and is selected.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "progressive",
+      "behavioural"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "periverzov-2015-ids",
+      "role": "introduced"
+    },
+    {
+      "publication": "weise-2019",
+      "role": "surveyed",
+      "where": "Table 1; 3.10, 3.11"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from Weise, Zender & Lucke 2019 (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof",
+      "motorVisualSpace",
+      "confirmation",
+      "handlesOcclusion"
+    ]
+  }
+}

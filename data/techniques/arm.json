@@ -1,0 +1,82 @@
+{
+  "id": "arm",
+  "name": "ARM",
+  "aliases": [
+    "Absolute and Relative Mapping"
+  ],
+  "year": 2010,
+  "summary": "Ray-casting with a button that switches to a precise relative mode, so small, distant targets become easier to hit.",
+  "howItWorks": "Pointing is absolute (1:1) by default. Pressing a button invokes a precision mode with a 10:1 control-display ratio that damps wrist rotations, effectively enlarging nearby targets; pressing again returns to the absolute mapping. It can be combined with zooming into the area under the cursor.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "anisomorphic-adaptive"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "progressive"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "kopper-2010-arm",
+      "role": "introduced"
+    },
+    {
+      "publication": "weise-2019",
+      "role": "surveyed",
+      "where": "Table 1; 3.6"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "extends",
+      "note": "Adds a manually switched precision mode to ray-casting."
+    },
+    {
+      "technique": "adaptive-pointing",
+      "type": "related",
+      "note": "Both change the gain of a pointer to aid precision."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from Weise, Zender & Lucke 2019 (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "cdRatio",
+      "disambiguation",
+      "handlesOcclusion"
+    ]
+  }
+}

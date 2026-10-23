@@ -1,0 +1,78 @@
+{
+  "id": "zoom",
+  "name": "Zoom",
+  "aliases": [],
+  "year": 2013,
+  "summary": "Ray-casting that lets the user magnify the area under the cursor until the target is large enough to select.",
+  "howItWorks": "The user points a ray at a region and zooms in on it continuously; as the view magnifies, nearby objects spread apart until the intended one can be picked with an ordinary ray.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "bacim-2013-progressive",
+      "role": "introduced"
+    },
+    {
+      "publication": "weise-2019",
+      "role": "surveyed",
+      "where": "3.11"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "squad",
+      "type": "compared-with",
+      "source": "bacim-2013-progressive"
+    },
+    {
+      "technique": "arm",
+      "type": "related",
+      "note": "ARM uses zooming as a refinement step."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from Weise, Zender & Lucke 2019 (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "inputModality",
+      "handlesOcclusion"
+    ]
+  }
+}
