@@ -69,7 +69,7 @@
     {
       "id": "toolDof",
       "label": "Tool degrees of freedom",
-      "description": "How many degrees of freedom the user controls on the tool.",
+      "description": "How many degrees of freedom the user controls to aim the selection tool. A tracked controller has 6 (position x, y, z and three rotations), but a straight ray uses only 5, because rolling the controller around the ray's own axis does not change where it points.",
       "basis": "Argelaguet & Andujar 2013",
       "multiple": false,
       "weight": 1,

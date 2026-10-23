@@ -58,7 +58,7 @@
   "publications": [
     {
       "publication": "legacy-paper-voiceray",
-      "role": "reference"
+      "role": "introduced"
     }
   ],
   "relationships": [
@@ -80,9 +80,6 @@
   ],
   "review": {
     "status": "draft",
-    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
-    "uncertain": [
-      "confirmation"
-    ]
+    "notes": "Confirmation (voice, which also does the disambiguation) confirmed by the author. Other attributes drafted by Claude."
   }
 }
