@@ -33,7 +33,7 @@ export default function App() {
             Techniques
           </NavLink>
           <NavLink to="/about">About</NavLink>
-          <a href={REPO_URL} target="_blank" rel="noreferrer">
+          <a href={REPO_URL} target="_blank" rel="noreferrer" className="nav-github">
             GitHub
           </a>
           <a

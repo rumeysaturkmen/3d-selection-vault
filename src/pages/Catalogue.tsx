@@ -150,7 +150,7 @@ export default function Catalogue() {
                         </span>
                       ))}
                       {(t.attributes.targetDistance ?? []).map((v) => (
-                        <span key={v} className="chip chip-quiet">
+                        <span key={v} className={`chip chip-${v}`}>
                           {valueLabel('targetDistance', v).replace(/ \(.*\)/, '')}
                         </span>
                       ))}

@@ -2,6 +2,8 @@ import { Component, StrictMode, type ReactNode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 import App from './App';
+import '@fontsource-variable/fraunces';
+import '@fontsource-variable/source-sans-3';
 import './styles.css';
 
 // Collect any error the browser reports, so a failed page can say what went wrong.
