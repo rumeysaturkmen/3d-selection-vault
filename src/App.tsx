@@ -38,9 +38,6 @@ export default function App() {
           </NavLink>
           <NavLink to="/graph">Graph</NavLink>
           <NavLink to="/about">About</NavLink>
-          <a href={REPO_URL} target="_blank" rel="noreferrer" className="nav-github">
-            GitHub
-          </a>
           <a
             className="nav-cta"
             href={`${REPO_URL}/issues/new/choose`}

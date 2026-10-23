@@ -114,7 +114,7 @@ button, input, select { font: inherit; color: inherit; }
 .nav-cta .short { display: none; }
 .theme-toggle { display: grid; place-items: center; width: 32px; height: 32px; margin-left: 2px; border: 1px solid var(--line); border-radius: 6px; background: transparent; color: var(--muted); cursor: pointer; }
 .theme-toggle:hover { color: var(--text); background: var(--surface-2); }
-@media (max-width: 520px) { .nav-cta .long { display: none; } .nav-cta .short { display: inline; } .site-nav a.nav-github, .site-nav a.nav-home { display: none; } .brand { font-size: 15.5px; } .theme-toggle { width: 30px; height: 30px; } }
+@media (max-width: 520px) { .nav-cta .long { display: none; } .nav-cta .short { display: inline; } .site-nav a.nav-home { display: none; } .brand { font-size: 15.5px; } .theme-toggle { width: 30px; height: 30px; } }
 
 .site-footer { padding: 20px 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; text-align: center; }
 
