@@ -1,0 +1,73 @@
+{
+  "id": "ezcursorvr",
+  "name": "EZCursorVR",
+  "aliases": [],
+  "year": 2018,
+  "summary": "A 2D cursor on a plane in front of the user, moved with head motion or a gamepad, for selecting targets in VR headsets.",
+  "howItWorks": "Instead of aiming a ray, the user moves a cursor across a 2D plane; the object under the cursor from the user's viewpoint is selected.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "head"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "head",
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "ramcharitar-2018-ezcursor",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.3.1"
+    },
+    {
+      "publication": "huang-2019",
+      "role": "surveyed",
+      "where": "3.2.3"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolOrigin",
+      "inputModality"
+    ]
+  }
+}

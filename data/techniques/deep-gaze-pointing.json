@@ -1,0 +1,69 @@
+{
+  "id": "deep-gaze-pointing",
+  "name": "DEEP",
+  "aliases": [],
+  "year": 2022,
+  "summary": "3D gaze pointing in VR that uses eyelid movement (squinting or opening the eyes) to move the pointer in depth.",
+  "howItWorks": "Gaze direction sets where the pointer is, and how wide the user opens or narrows the eyelids shifts it nearer or further, allowing selection at different depths.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [
+      "dwell"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yi-2022-deep",
+      "role": "introduced"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "7.2.3"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "confirmation",
+      "handlesOcclusion"
+    ]
+  }
+}

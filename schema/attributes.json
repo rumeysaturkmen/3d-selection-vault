@@ -207,6 +207,10 @@
           "label": "Mouse"
         },
         {
+          "id": "touchscreen",
+          "label": "Touchscreen"
+        },
+        {
           "id": "tangible",
           "label": "Tangible"
         }
@@ -223,6 +227,10 @@
         {
           "id": "button",
           "label": "Button"
+        },
+        {
+          "id": "touch",
+          "label": "Touch / tap"
         },
         {
           "id": "pinch",

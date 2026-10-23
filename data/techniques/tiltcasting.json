@@ -1,0 +1,70 @@
+{
+  "id": "tiltcasting",
+  "name": "Tiltcasting",
+  "aliases": [],
+  "year": 2015,
+  "summary": "A smartphone tilted in the air controls a virtual plane that slices through a 3D scene on a large display; targets are touched on the phone.",
+  "howItWorks": "The orientation of the phone positions a selection plane in the scene. Objects intersected by the plane appear on the phone's screen, where the user taps the intended one, so occluded objects become reachable.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "anisomorphic-fixed"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller",
+      "touchscreen"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "pietroszek-2015-tiltcasting",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.4.2"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "toolDof",
+      "cdRatio",
+      "confirmation"
+    ]
+  }
+}

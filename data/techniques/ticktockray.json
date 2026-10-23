@@ -1,0 +1,67 @@
+{
+  "id": "ticktockray",
+  "name": "TickTockRay",
+  "aliases": [],
+  "year": 2016,
+  "summary": "Smartwatch-based raycasting for smartphone VR headsets, using the watch's orientation to aim.",
+  "howItWorks": "The ray follows the orientation of the smartwatch worn on the wrist; a touch on the watch confirms the selection.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "kharlamov-2016-ticktockray",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.3.2"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolOrigin",
+      "confirmation"
+    ]
+  }
+}

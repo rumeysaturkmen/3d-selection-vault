@@ -1,0 +1,72 @@
+{
+  "id": "disocclusion-headlight",
+  "name": "Disocclusion Headlight",
+  "aliases": [],
+  "year": 2021,
+  "summary": "Selection assistance in VR that makes objects in front of the target transparent within a 'headlight' cone, revealing hidden targets.",
+  "howItWorks": "A cone of view from the user's head renders occluding objects semi-transparent, so the user can see and point at a target that was hidden behind them.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wang-2021-headlight",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.4.2"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "disambiguation"
+    ]
+  }
+}

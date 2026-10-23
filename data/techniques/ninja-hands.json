@@ -1,0 +1,78 @@
+{
+  "id": "ninja-hands",
+  "name": "Ninja Hands",
+  "aliases": [],
+  "year": 2021,
+  "summary": "One physical hand controls many virtual hands spread across the space, so the nearest copy can touch the target.",
+  "howItWorks": "Several virtual hands move in parallel with the real hand. A target is selected by whichever copy reaches it, reducing the distance the arm must travel.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "schjerlund-2021-ninja",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.4.2"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "virtual-hand",
+      "type": "extends"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "inputModality",
+      "handlesOcclusion"
+    ]
+  }
+}

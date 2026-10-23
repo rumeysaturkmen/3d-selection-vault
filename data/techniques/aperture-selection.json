@@ -64,6 +64,16 @@
       "publication": "seed-argelaguet-2013",
       "role": "surveyed",
       "where": "3 Selection techniques; Table 1"
+    },
+    {
+      "publication": "jung-2014",
+      "role": "surveyed",
+      "where": "Table 1"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
     }
   ],
   "relationships": [

@@ -1,0 +1,74 @@
+{
+  "id": "slicing-volume",
+  "name": "Slicing-Volume",
+  "aliases": [],
+  "year": 2020,
+  "summary": "Multi-target selection for dense VR scenes: a volume is placed in 3D and its slices are refined on a 2D tablet.",
+  "howItWorks": "The user positions a selection volume in the scene, then works on a handheld tablet showing a 2D slice of it to include or exclude individual objects.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "manual",
+      "progressive"
+    ],
+    "inputModality": [
+      "controller",
+      "tangible"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "montano-2020-slicing",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.4.1"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof",
+      "targetDistance"
+    ]
+  }
+}

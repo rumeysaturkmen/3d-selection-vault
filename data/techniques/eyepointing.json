@@ -1,0 +1,72 @@
+{
+  "id": "eyepointing",
+  "name": "EyePointing",
+  "aliases": [],
+  "year": 2019,
+  "summary": "Gaze selects the target and a finger-pointing gesture confirms it, combining the speed of the eyes with an explicit hand trigger.",
+  "howItWorks": "The user looks at the target and points at it with the finger; the system uses gaze for the target and the pointing gesture as the confirmation.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze",
+      "hand"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "schweigert-2019-eyepointing",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.5.1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "gaze-pinch",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation"
+    ]
+  }
+}

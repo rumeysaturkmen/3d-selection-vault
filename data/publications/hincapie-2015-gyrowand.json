@@ -1,0 +1,17 @@
+{
+  "id": "hincapie-2015-gyrowand",
+  "title": "GyroWand: IMU-Based Raycasting for Augmented Reality Head-Mounted Displays",
+  "authors": [
+    "Juan David Hincapié-Ramos",
+    "Kasim Özacar",
+    "Pourang P. Irani",
+    "Yoshifumi Kitamura"
+  ],
+  "year": 2015,
+  "venue": "ACM Symposium on Spatial User Interaction (SUI)",
+  "doi": "10.1145/2788940.2788947",
+  "url": "https://doi.org/10.1145/2788940.2788947",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

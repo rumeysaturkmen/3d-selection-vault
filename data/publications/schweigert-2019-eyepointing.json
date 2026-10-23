@@ -1,0 +1,16 @@
+{
+  "id": "schweigert-2019-eyepointing",
+  "title": "EyePointing: A Gaze-Based Selection Technique",
+  "authors": [
+    "Robin Schweigert",
+    "Valentin Schwind",
+    "Sven Mayer"
+  ],
+  "year": 2019,
+  "venue": "Mensch und Computer (MuC)",
+  "doi": "10.1145/3340764.3344897",
+  "url": "https://doi.org/10.1145/3340764.3344897",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

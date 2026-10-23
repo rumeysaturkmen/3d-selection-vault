@@ -1,0 +1,72 @@
+{
+  "id": "eye-mark-pointer",
+  "name": "Eye mark pointer",
+  "aliases": [],
+  "year": 2000,
+  "summary": "Gaze-controlled pointer for an immersive projection display, an early eye-tracking selection technique.",
+  "howItWorks": "An eye tracker places a mark where the user is looking on the projection screen; the marked object is selected with a separate trigger.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "asai-2000-eyemark",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.4.1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "eye-gaze-selection",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "disambiguation",
+      "confirmation"
+    ]
+  }
+}

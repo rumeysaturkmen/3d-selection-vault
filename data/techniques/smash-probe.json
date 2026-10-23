@@ -1,0 +1,79 @@
+{
+  "id": "smash-probe",
+  "name": "Smash Probe",
+  "aliases": [],
+  "year": 2020,
+  "summary": "A probe pushed into the scene moves occluding objects out of the way so a fully hidden target can be selected.",
+  "howItWorks": "Objects in front of the probe are displaced sideways as it advances in depth, uncluttering the region around the target, which is then selected directly.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yu-2020-fullyoccluded",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.4.2"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "grid-wall",
+      "type": "compared-with",
+      "source": "yu-2020-fullyoccluded",
+      "note": "Both proposed in Yu et al. 2020."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "disambiguation"
+    ]
+  }
+}

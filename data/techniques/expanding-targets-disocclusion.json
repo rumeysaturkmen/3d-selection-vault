@@ -1,0 +1,67 @@
+{
+  "id": "expanding-targets-disocclusion",
+  "name": "Expanding targets and forced disocclusion",
+  "aliases": [],
+  "year": 2008,
+  "summary": "Targets under the pointer grow in size and occluding objects are pushed aside, making small and hidden targets easier to select.",
+  "howItWorks": "The object nearest the pointer is enlarged in screen space, and objects that hide it are moved out of the line of sight until the selection is confirmed.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "argelaguet-2008-expanding",
+      "role": "introduced"
+    },
+    {
+      "publication": "huang-2019",
+      "role": "surveyed",
+      "where": "3.2.4"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "disambiguation",
+      "toolDof"
+    ]
+  }
+}

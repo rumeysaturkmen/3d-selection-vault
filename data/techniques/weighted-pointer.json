@@ -1,0 +1,72 @@
+{
+  "id": "weighted-pointer",
+  "name": "Weighted Pointer",
+  "aliases": [],
+  "year": 2022,
+  "summary": "Error-aware gaze pointing that blends gaze with fallback modalities such as head or controller when eye tracking is unreliable.",
+  "howItWorks": "The pointer combines several inputs, weighting each by its expected error, so selection stays accurate when gaze data degrades.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye",
+      "head"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "anisomorphic-adaptive"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze",
+      "head",
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "sidenmark-2022-weighted",
+      "role": "introduced"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "7.2.3"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolOrigin",
+      "cdRatio",
+      "inputModality",
+      "confirmation"
+    ]
+  }
+}

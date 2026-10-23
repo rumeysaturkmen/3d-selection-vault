@@ -1,0 +1,21 @@
+{
+  "id": "sidenmark-2022-weighted",
+  "title": "Weighted Pointer: Error-aware Gaze-based Interaction through Fallback Modalities",
+  "authors": [
+    "Ludwig Sidenmark",
+    "Mark Parent",
+    "Chi-Hao Wu",
+    "Joannes Chan",
+    "Michael Glueck",
+    "Daniel Wigdor",
+    "Tovi Grossman",
+    "Marcello Giordano"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Visualization and Computer Graphics",
+  "doi": "10.1109/tvcg.2022.3203096",
+  "url": "https://doi.org/10.1109/tvcg.2022.3203096",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

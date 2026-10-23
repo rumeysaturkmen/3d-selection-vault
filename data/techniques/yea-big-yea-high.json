@@ -1,0 +1,70 @@
+{
+  "id": "yea-big-yea-high",
+  "name": "Yea Big, Yea High",
+  "aliases": [],
+  "year": 2018,
+  "summary": "Selecting surfaces and regions in VR by progressive refinement, sketching the extent of the selection with the hands.",
+  "howItWorks": "The user roughly indicates the size and position of the region with both hands, then narrows the selection in further steps until it covers the intended surface.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "jackson-2018-yeabig",
+      "role": "introduced"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof",
+      "motorVisualSpace",
+      "targetDistance",
+      "handlesOcclusion"
+    ]
+  }
+}

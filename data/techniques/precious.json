@@ -1,0 +1,77 @@
+{
+  "id": "precious",
+  "name": "PRECIOUS",
+  "aliases": [],
+  "year": 2017,
+  "summary": "Out-of-reach selection by iterative refinement: a cone selects a group, which is brought closer and refined until one object remains.",
+  "howItWorks": "The user casts a cone at distant objects; the selected group is moved closer and the cone is cast again on the smaller set, repeating until the target is isolated.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "mendes-2017-precious",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.4.1"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "squad",
+      "type": "related",
+      "note": "Both refine a selected group in several steps."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "handlesOcclusion"
+    ]
+  }
+}

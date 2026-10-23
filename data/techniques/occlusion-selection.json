@@ -1,7 +1,9 @@
 {
   "id": "occlusion-selection",
   "name": "Occlusion selection",
-  "aliases": [],
+  "aliases": [
+    "Sticky Finger"
+  ],
   "year": 1997,
   "summary": "Select the object that the fingertip or hand covers from the user's point of view.",
   "howItWorks": "A ray from the eye through the hand or fingertip picks the object hidden behind the hand in the user's view (an image-plane technique).",
@@ -58,6 +60,11 @@
     {
       "publication": "survey2013-ref-73",
       "role": "reference"
+    },
+    {
+      "publication": "huang-2019",
+      "role": "surveyed",
+      "where": "3.2.1"
     }
   ],
   "relationships": [],

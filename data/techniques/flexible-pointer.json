@@ -62,6 +62,16 @@
     {
       "publication": "seed-argelaguet-2013",
       "role": "surveyed"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.4.2"
     }
   ],
   "relationships": [

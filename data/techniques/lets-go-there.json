@@ -1,0 +1,78 @@
+{
+  "id": "lets-go-there",
+  "name": "Let's Go There",
+  "aliases": [],
+  "year": 2020,
+  "summary": "Combines voice and pointing: users point at a region and describe the target in speech, for example 'the furthest one'.",
+  "howItWorks": "A ray or pointing gesture narrows the region, and a spoken description resolves which object is meant, including ones further back in depth.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "hand",
+      "voice"
+    ],
+    "confirmation": [
+      "voice"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "sin-2020-letsgo",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.4.2"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "voiceray",
+      "type": "related",
+      "note": "Both resolve ambiguity with speech."
+    },
+    {
+      "technique": "gaze-voice",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "inputModality",
+      "handlesOcclusion"
+    ]
+  }
+}

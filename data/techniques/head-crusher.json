@@ -1,0 +1,74 @@
+{
+  "id": "head-crusher",
+  "name": "Head Crusher",
+  "aliases": [],
+  "year": 1997,
+  "summary": "Image-plane selection where the user frames a distant object between thumb and forefinger as if crushing it.",
+  "howItWorks": "Seen from the user's eye, the object that appears between the two fingers is selected; one of several image-plane techniques proposed by Pierce et al.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "pierce-1997-imageplane",
+      "role": "introduced"
+    },
+    {
+      "publication": "huang-2019",
+      "role": "surveyed",
+      "where": "3.2.1"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.3.2"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "occlusion-selection",
+      "type": "variant-of",
+      "note": "Same family of image-plane techniques (Pierce et al. 1997)."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}

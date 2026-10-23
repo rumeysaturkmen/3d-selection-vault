@@ -1,0 +1,67 @@
+{
+  "id": "drillsample",
+  "name": "DrillSample",
+  "aliases": [],
+  "year": 2013,
+  "summary": "Two-step selection for dense handheld AR: a ray drills through the scene, then the hit objects are laid out for picking.",
+  "howItWorks": "The user taps to cast a ray from the touch point; all objects along it are collected and shown separately so the intended one, even if hidden, can be chosen.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "screen"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "progressive"
+    ],
+    "inputModality": [
+      "touchscreen"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "mossel-2013-drillsample",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.4.2"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation"
+    ]
+  }
+}

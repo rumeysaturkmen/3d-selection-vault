@@ -1,0 +1,68 @@
+{
+  "id": "redirecting-rays",
+  "name": "Redirecting Rays",
+  "aliases": [],
+  "year": 2023,
+  "summary": "Assistive raycasting that subtly bends the ray towards likely targets to make selection easier.",
+  "howItWorks": "The visible ray is redirected towards a target the system considers intended, compensating for pointing error without the user noticing large changes.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "anisomorphic-adaptive"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "gabel-2023-redirecting",
+      "role": "introduced"
+    },
+    {
+      "publication": "amini-2025",
+      "role": "surveyed",
+      "where": "Table 3"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "cdRatio",
+      "disambiguation",
+      "confirmation"
+    ]
+  }
+}

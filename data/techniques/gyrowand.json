@@ -1,0 +1,67 @@
+{
+  "id": "gyrowand",
+  "name": "GyroWand",
+  "aliases": [],
+  "year": 2015,
+  "summary": "Raycasting for AR headsets driven by the orientation sensor of a handheld device, with the ray starting near the user's chin.",
+  "howItWorks": "Inertial rotation data from a handheld controller steers a ray cast from a point below the head, so pointing works without external tracking of the hand position.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "head"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "hincapie-2015-gyrowand",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.3.2"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolOrigin",
+      "disambiguation"
+    ]
+  }
+}

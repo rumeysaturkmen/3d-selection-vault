@@ -1,0 +1,68 @@
+{
+  "id": "dual-phone-ar",
+  "name": "Dual Phone AR",
+  "aliases": [],
+  "year": 2020,
+  "summary": "Mobile AR in which a second phone acts as a handheld controller that casts a ray into the scene seen through the first phone.",
+  "howItWorks": "One phone shows the AR view, the other is tracked and used to point at virtual objects, freeing the viewing phone from touch input.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller",
+      "touchscreen"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "vanukuru-2020-dualphone",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.2.2"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

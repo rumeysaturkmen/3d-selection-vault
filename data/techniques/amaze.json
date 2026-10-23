@@ -1,0 +1,72 @@
+{
+  "id": "amaze",
+  "name": "AMAZE",
+  "aliases": [
+    "AMAZE-X"
+  ],
+  "year": 2023,
+  "summary": "A multi-finger gesture technique for selecting small and distant objects in dense VR scenes, with an extended variant AMAZE-X.",
+  "howItWorks": "Fingers of the tracked hand are used together to narrow down and pick a target among many small candidates far from the user.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "7+"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "progressive"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "bhowmick-2023-amaze",
+      "role": "introduced"
+    },
+    {
+      "publication": "peres-2024",
+      "role": "surveyed",
+      "where": "Table 4"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "toolDof",
+      "disambiguation",
+      "handlesOcclusion"
+    ]
+  }
+}

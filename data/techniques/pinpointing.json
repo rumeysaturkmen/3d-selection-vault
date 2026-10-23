@@ -1,0 +1,73 @@
+{
+  "id": "pinpointing",
+  "name": "Pinpointing",
+  "aliases": [],
+  "year": 2018,
+  "summary": "Precise head- and eye-based target selection for AR headsets, adding a refinement step after coarse gaze pointing.",
+  "howItWorks": "Gaze or head direction places a cursor near the target; the user then refines it with a secondary input such as head motion or a hand gesture before confirming.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye",
+      "head"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "anisomorphic-fixed"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "progressive"
+    ],
+    "inputModality": [
+      "gaze",
+      "head",
+      "hand"
+    ],
+    "confirmation": [
+      "gesture",
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "kyto-2018-pinpointing",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.4.1"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "cdRatio",
+      "inputModality",
+      "confirmation"
+    ]
+  }
+}

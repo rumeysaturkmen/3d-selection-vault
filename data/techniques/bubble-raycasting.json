@@ -1,7 +1,9 @@
 {
   "id": "bubble-raycasting",
   "name": "Bubble Raycasting",
-  "aliases": [],
+  "aliases": [
+    "BubbleRay"
+  ],
   "year": 2020,
   "summary": "A ray-casting variation that integrates a bubble mechanism to improve 3D target acquisition in virtual reality.",
   "howItWorks": "The user points toward the target with a ray. Instead of selecting only the exact ray intersection, the system applies a bubble-like selection region around the ray to determine the most likely target.",

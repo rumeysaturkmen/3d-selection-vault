@@ -1,0 +1,69 @@
+{
+  "id": "bent-pick-ray",
+  "name": "Bent Pick Ray",
+  "aliases": [],
+  "year": 2006,
+  "summary": "A ray that bends towards the selected object so that several users can point at and move objects in a shared projection display.",
+  "howItWorks": "The ray is drawn as a curve from the hand to the grabbed object, keeping a visible link even when the hand moves away from the straight line, which suits collaborative multi-user setups.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "riege-2006-bentpickray",
+      "role": "introduced"
+    },
+    {
+      "publication": "jung-2014",
+      "role": "surveyed",
+      "where": "Table 1"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "disambiguation",
+      "toolDof",
+      "handlesOcclusion"
+    ]
+  }
+}

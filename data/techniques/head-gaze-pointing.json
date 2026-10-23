@@ -1,0 +1,82 @@
+{
+  "id": "head-gaze-pointing",
+  "name": "Head-gaze pointing",
+  "aliases": [],
+  "year": null,
+  "summary": "A ray cast from the centre of the head-mounted display selects whatever the user faces, confirmed by dwell or a button.",
+  "howItWorks": "The user turns the head to place a reticle on the target, then confirms by dwelling or with a controller or gesture. It is the default selection method on many headsets without controllers.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "head"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "head"
+    ],
+    "confirmation": [
+      "dwell",
+      "button"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "qian-2017-eyesdonthave",
+      "role": "evaluated"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.2.2"
+    },
+    {
+      "publication": "spittle-2023",
+      "role": "surveyed",
+      "where": "Table 4"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.3"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "eye-gaze-selection",
+      "type": "compared-with",
+      "source": "qian-2017-eyesdonthave",
+      "note": "Compared in Qian & Teather 2017."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "outline-pursuits",
+  "name": "Outline Pursuits",
+  "aliases": [],
+  "year": 2020,
+  "summary": "Gaze-assisted selection of occluded objects: outlines of candidate objects move, and the user follows the intended one with the eyes.",
+  "howItWorks": "Each candidate's outline is traced by a moving stimulus; the system selects the object whose motion the user's eyes follow (smooth pursuit), even if it is partly hidden.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "gaze",
+      "controller"
+    ],
+    "confirmation": [
+      "dwell"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "sidenmark-2020-outline",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.4.1"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "inputModality",
+      "confirmation"
+    ]
+  }
+}

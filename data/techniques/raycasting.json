@@ -73,6 +73,21 @@
       "publication": "seed-yu-2024",
       "role": "surveyed",
       "where": "7.3 Comparison framework, p. 98:20"
+    },
+    {
+      "publication": "jung-2014",
+      "role": "surveyed",
+      "where": "Table 1"
+    },
+    {
+      "publication": "huang-2019",
+      "role": "surveyed",
+      "where": "3.1.1"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "2.1"
     }
   ],
   "relationships": [

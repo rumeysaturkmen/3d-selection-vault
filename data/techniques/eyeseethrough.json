@@ -1,0 +1,68 @@
+{
+  "id": "eyeseethrough",
+  "name": "EyeSeeThrough",
+  "aliases": [],
+  "year": 2019,
+  "summary": "Tool selection and application in one step: the user lines up a tool with a target along the line of sight.",
+  "howItWorks": "A tool held in view is aligned with the target behind it from the eye's viewpoint; looking through the tool at the object applies the tool to it.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze",
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "mardanbegi-2019-eyeseethrough",
+      "role": "introduced"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.8"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "inputModality",
+      "confirmation"
+    ]
+  }
+}

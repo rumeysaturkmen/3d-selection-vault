@@ -1,0 +1,80 @@
+{
+  "id": "voodoo-dolls",
+  "name": "Voodoo Dolls",
+  "aliases": [],
+  "year": 1999,
+  "summary": "Two-handed technique that creates small hand-held copies ('dolls') of distant objects to select and manipulate them at multiple scales.",
+  "howItWorks": "The user pinches an object through the image plane to create a doll of it, then holds and moves dolls with both hands; changes to the doll apply to the full-size object.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "anisomorphic-fixed"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "pinch"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "pierce-1999-voodoo",
+      "role": "introduced"
+    },
+    {
+      "publication": "jung-2014",
+      "role": "surveyed",
+      "where": "Table 1"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "worlds-in-miniature",
+      "type": "related",
+      "note": "Both work through hand-held proxies of distant objects."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "cdRatio",
+      "handlesOcclusion"
+    ]
+  }
+}

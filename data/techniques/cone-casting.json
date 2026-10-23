@@ -1,7 +1,10 @@
 {
   "id": "cone-casting",
   "name": "Cone Casting",
-  "aliases": [],
+  "aliases": [
+    "Flashlight",
+    "Spotlight"
+  ],
   "year": 1994,
   "summary": "A cone from the hand (flashlight) selects the object closest to its axis.",
   "howItWorks": "Aim the cone at the target. Among objects inside the cone, the one nearest the central axis, then nearest the user, is selected.",
@@ -63,6 +66,11 @@
       "publication": "seed-argelaguet-2013",
       "role": "surveyed",
       "where": "3 Selection techniques; Table 1"
+    },
+    {
+      "publication": "huang-2019",
+      "role": "surveyed",
+      "where": "3.2.2"
     }
   ],
   "relationships": [

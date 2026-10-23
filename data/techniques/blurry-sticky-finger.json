@@ -1,0 +1,71 @@
+{
+  "id": "blurry-sticky-finger",
+  "name": "Blurry (Sticky) Finger",
+  "aliases": [],
+  "year": 2016,
+  "summary": "Image-plane pointing for optical see-through AR that relies on proprioception: the out-of-focus fingertip covers the distant target.",
+  "howItWorks": "The user holds up a finger so that, from the eye's view, it overlaps the distant object; the finger is blurry because the eyes focus on the target, yet still selects it.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yu-2016-blurry",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.3.2"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "occlusion-selection",
+      "type": "variant-of"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation"
+    ]
+  }
+}

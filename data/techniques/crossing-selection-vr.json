@@ -1,0 +1,76 @@
+{
+  "id": "crossing-selection-vr",
+  "name": "Crossing-based selection",
+  "aliases": [],
+  "year": 2019,
+  "summary": "Targets are selected by sweeping the ray or cursor across their boundary instead of pointing at them and clicking.",
+  "howItWorks": "The user moves a ray or virtual hand so that it crosses the target's edge; the crossing itself confirms the selection, avoiding the hand jitter caused by a button press.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "tu-2019-crossing",
+      "role": "introduced"
+    },
+    {
+      "publication": "huang-2019",
+      "role": "surveyed",
+      "where": "2.4"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.5.1"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation"
+    ]
+  }
+}

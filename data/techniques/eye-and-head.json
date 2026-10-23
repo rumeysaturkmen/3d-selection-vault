@@ -1,0 +1,74 @@
+{
+  "id": "eye-and-head",
+  "name": "Eye&Head",
+  "aliases": [],
+  "year": 2019,
+  "summary": "Gaze pointing that uses eye and head movement together: the eyes point, and head movement refines or confirms the selection.",
+  "howItWorks": "The system separates eye-only gaze shifts from coordinated eye-head movements, letting users look around freely and use head motion to select or adjust the pointer.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "4"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze",
+      "head"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "sidenmark-2019-eyehead",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.2.2"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof",
+      "confirmation"
+    ]
+  }
+}

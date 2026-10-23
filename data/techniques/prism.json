@@ -62,6 +62,16 @@
     {
       "publication": "frees-2007-prism",
       "role": "reference"
+    },
+    {
+      "publication": "huang-2019",
+      "role": "surveyed",
+      "where": "3.1.2"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.2"
     }
   ],
   "relationships": [],

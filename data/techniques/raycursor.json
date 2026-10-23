@@ -1,0 +1,84 @@
+{
+  "id": "raycursor",
+  "name": "RayCursor",
+  "aliases": [],
+  "year": 2019,
+  "summary": "Raycasting with a cursor that the user can move along the ray, plus a semi-automatic mode that snaps to the nearest target.",
+  "howItWorks": "A cursor sits on the ray. The user slides it in depth with a touchpad to reach targets at any distance, including behind others; in the semi-automatic variant the cursor is placed on the target closest to the ray and highlighted before confirmation.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "heuristic"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "baloup-2019-raycursor",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "7.3"
+    },
+    {
+      "publication": "seed-3dui-2024",
+      "role": "surveyed",
+      "where": "4.2.1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "depth-ray",
+      "type": "extends",
+      "note": "Adds a depth cursor on the ray, as Depth Ray does."
+    },
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "baloup-2019-raycursor"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}

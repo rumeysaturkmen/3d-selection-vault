@@ -1,0 +1,71 @@
+{
+  "id": "headcross",
+  "name": "HeadCross",
+  "aliases": [],
+  "year": 2020,
+  "summary": "Hands-free selection on head-mounted displays by moving the head-gaze cursor into a target and back out across its boundary.",
+  "howItWorks": "A head-directed cursor enters the target and then exits across its edge, which confirms the selection without dwell time or a button.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "head"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "head"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yan-2020-headcross",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.5.1"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "crossing-selection-vr",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation"
+    ]
+  }
+}

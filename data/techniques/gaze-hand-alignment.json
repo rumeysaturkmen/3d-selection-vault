@@ -1,0 +1,70 @@
+{
+  "id": "gaze-hand-alignment",
+  "name": "Gaze-Hand Alignment",
+  "aliases": [],
+  "year": 2023,
+  "summary": "Selection by aligning a hand-controlled pointer with the gaze ray; the target is selected when the two line up.",
+  "howItWorks": "The eyes look at the target and the user moves a finger or ray into line with the gaze; alignment of the two triggers the selection without a separate click.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye",
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze",
+      "hand"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wagner-2023-gazehand",
+      "role": "introduced"
+    },
+    {
+      "publication": "amini-2025",
+      "role": "surveyed",
+      "where": "Table 3"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof",
+      "confirmation"
+    ]
+  }
+}

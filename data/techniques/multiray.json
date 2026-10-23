@@ -1,0 +1,70 @@
+{
+  "id": "multiray",
+  "name": "Multiray",
+  "aliases": [],
+  "year": 2018,
+  "summary": "Several rays cast from different fingers of one hand form a shape on a large display, enabling richer pointing than a single ray.",
+  "howItWorks": "Rays from multiple fingers intersect the display; their arrangement (for example a triangle or a line) defines the selection area or command.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray",
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "7+"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "dwell",
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "matulic-2018-multiray",
+      "role": "introduced"
+    },
+    {
+      "publication": "leusmann-2021",
+      "role": "surveyed",
+      "where": "4.3.2"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "toolDof",
+      "confirmation"
+    ]
+  }
+}

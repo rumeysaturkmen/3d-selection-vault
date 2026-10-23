@@ -1,0 +1,19 @@
+{
+  "id": "yi-2022-deep",
+  "title": "DEEP: 3D Gaze Pointing in Virtual Reality Leveraging Eyelid Movement",
+  "authors": [
+    "Xin Yi",
+    "Leping Qiu",
+    "Wenjing Tang",
+    "Yehan Fan",
+    "Hewu Li",
+    "Yuanchun Shi"
+  ],
+  "year": 2022,
+  "venue": "ACM Symposium on User Interface Software and Technology (UIST)",
+  "doi": "10.1145/3526113.3545673",
+  "url": "https://doi.org/10.1145/3526113.3545673",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

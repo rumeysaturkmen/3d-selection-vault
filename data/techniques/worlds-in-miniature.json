@@ -64,6 +64,21 @@
     {
       "publication": "seed-argelaguet-2013",
       "role": "surveyed"
+    },
+    {
+      "publication": "jung-2014",
+      "role": "surveyed",
+      "where": "Table 1"
+    },
+    {
+      "publication": "huang-2019",
+      "role": "surveyed",
+      "where": "3.2.6"
+    },
+    {
+      "publication": "seed-yu-2024",
+      "role": "surveyed",
+      "where": "5.1.1"
     }
   ],
   "relationships": [],
