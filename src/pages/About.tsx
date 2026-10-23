@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { REPO_URL, attributes, schemeStatus } from '../lib/data';
 
 export default function About() {
@@ -19,7 +19,7 @@ export default function About() {
       </p>
       <p>
         Every technique is coded against the same set of attributes, so techniques can be filtered,
-        compared and, in a coming release, placed in a similarity graph.
+        compared and placed in a <Link to="/graph">similarity graph</Link>.
       </p>
 
       <h2>Where the data lives</h2>

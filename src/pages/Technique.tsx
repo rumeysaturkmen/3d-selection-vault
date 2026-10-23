@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { attributes, editUrl, getPublication, getTechnique, valueLabel } from '../lib/data';
+import { attributes, editUrl, getPublication, getTechnique, techniques, valueLabel } from '../lib/data';
+import { nearest } from '../lib/similarity';
 import type { Publication, PublicationLink, Relationship } from '../lib/types';
 
 const ROLE_LABEL: Record<PublicationLink['role'], string> = {
@@ -54,6 +55,7 @@ function CopyBibtex({ bibtex }: { bibtex: string }) {
 export default function TechniquePage() {
   const { id = '' } = useParams();
   const t = getTechnique(id);
+  const similar = useMemo(() => (t ? nearest(attributes, t.attributes, techniques, 5, t.id) : []), [t]);
 
   if (!t)
     return (
@@ -169,6 +171,22 @@ export default function TechniquePage() {
                   );
                 })}
               </ul>
+            </section>
+          )}
+          {similar.length > 0 && (
+            <section>
+              <h2>Most similar by attributes</h2>
+              <ul className="rel-list">
+                {similar.map(({ technique: o, similarity: s }) => (
+                  <li key={o.id}>
+                    <span className="rel-type">{Math.round(s.score * 100)}%</span>{' '}
+                    <Link to={`/technique/${o.id}`}>{o.name}</Link>
+                  </li>
+                ))}
+              </ul>
+              <p className="small">
+                <Link to={`/graph?t=${t.id}`}>See it in the similarity graph</Link>
+              </p>
             </section>
           )}
         </div>

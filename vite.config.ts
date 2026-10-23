@@ -6,4 +6,6 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   base: './',
   plugins: [react()],
+  // The graph page's chunk carries three.js; it is loaded only on that page.
+  build: { chunkSizeWarningLimit: 1600 },
 });

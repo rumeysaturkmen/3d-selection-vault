@@ -1,8 +1,12 @@
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { Link, NavLink, Route, Routes, useLocation } from 'react-router-dom';
 import Catalogue from './pages/Catalogue';
 import TechniquePage from './pages/Technique';
 import About from './pages/About';
+import ThemeToggle from './ThemeToggle';
+
+// The 3D graph pulls in three.js, so it loads only when someone opens it.
+const GraphPage = lazy(() => import('./pages/Graph'));
 import { REPO_URL, techniques } from './lib/data';
 
 function ScrollToTop() {
@@ -29,9 +33,10 @@ export default function App() {
           <span>3D Selection Vault</span>
         </Link>
         <nav className="site-nav">
-          <NavLink to="/" end>
+          <NavLink to="/" end className="nav-home">
             Techniques
           </NavLink>
+          <NavLink to="/graph">Graph</NavLink>
           <NavLink to="/about">About</NavLink>
           <a href={REPO_URL} target="_blank" rel="noreferrer" className="nav-github">
             GitHub
@@ -45,12 +50,21 @@ export default function App() {
             <span className="long">Suggest a technique</span>
             <span className="short">Suggest</span>
           </a>
+          <ThemeToggle />
         </nav>
       </header>
       <main className="site-main">
         <Routes>
           <Route path="/" element={<Catalogue />} />
           <Route path="/technique/:id" element={<TechniquePage />} />
+          <Route
+            path="/graph"
+            element={
+              <Suspense fallback={<p className="muted">Loading the graph…</p>}>
+                <GraphPage />
+              </Suspense>
+            }
+          />
           <Route path="/about" element={<About />} />
           <Route
             path="*"
