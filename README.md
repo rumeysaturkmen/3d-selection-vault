@@ -1,6 +1,6 @@
 # 3D Selection Vault
 
-An open catalogue of techniques for selecting objects in virtual and mixed reality, modelled on the [Locomotion Vault](https://locomotionvault.github.io/).
+An open catalogue of techniques for selecting objects in virtual and mixed reality.
 
 **Site:** https://rumeysaturkmen.github.io/3d-selection-vault/
 
