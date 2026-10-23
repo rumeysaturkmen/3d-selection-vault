@@ -52,12 +52,35 @@ export default function Catalogue() {
 
   return (
     <div className="catalogue">
-      <section className="intro">
-        <h1>3D selection techniques</h1>
-        <p>
-          A catalogue of techniques for selecting objects in virtual and mixed reality, each linked
-          to the papers that introduce and evaluate it.
-        </p>
+      <section className="intro-row">
+        <div className="intro">
+          <h1>3D selection techniques</h1>
+          <p>
+            A catalogue of techniques for selecting objects in virtual and mixed reality, each linked
+            to the papers that introduce and evaluate it.
+          </p>
+        </div>
+        <Link to="/graph" className="graph-teaser">
+          <svg viewBox="0 0 120 80" aria-hidden="true">
+            <g className="t-links">
+              <path d="M18 52 38 30 62 40 86 18 104 34M38 30 50 62 62 40 80 58 104 34M18 52 50 62" />
+            </g>
+            <g className="t-nodes">
+              <circle cx="18" cy="52" r="4" />
+              <circle cx="38" cy="30" r="5" />
+              <circle cx="50" cy="62" r="3.5" />
+              <circle cx="86" cy="18" r="4" />
+              <circle cx="80" cy="58" r="3.5" />
+              <circle cx="104" cy="34" r="4.5" />
+            </g>
+            <circle className="t-focus" cx="62" cy="40" r="7" />
+          </svg>
+          <span className="teaser-text">
+            <strong>Which techniques should you compare against?</strong>
+            <span>Explore the similarity graph, or place your own technique to find its nearest neighbours.</span>
+            <span className="teaser-cta">Open the similarity graph →</span>
+          </span>
+        </Link>
       </section>
 
       <div className="catalogue-body">
