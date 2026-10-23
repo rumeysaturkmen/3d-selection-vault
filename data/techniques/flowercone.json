@@ -1,0 +1,72 @@
+{
+  "id": "flowercone",
+  "name": "FlowerCone",
+  "aliases": [],
+  "year": 2020,
+  "summary": "An adjustable cone collects candidates, which are then spread out in a flower layout for the user to pick.",
+  "howItWorks": "The user points a cone whose aperture can be adjusted. Objects inside it are arranged around the cursor in a flower-like layout, and the target is selected from that layout with the controller.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "progressive"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yu-2020-fullyoccluded",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "flower-ray",
+      "type": "extends",
+      "note": "Applies Flower Ray's layout to a cone."
+    },
+    {
+      "technique": "grid-wall",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added by snowballing from the VoiceRay paper and Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
+  }
+}

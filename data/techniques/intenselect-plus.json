@@ -1,0 +1,66 @@
+{
+  "id": "intenselect-plus",
+  "name": "IntenSelect+",
+  "aliases": [],
+  "year": 2024,
+  "summary": "An improved IntenSelect: score-based selection that handles complex object shapes, per-object scoring and faster, more accurate selection.",
+  "howItWorks": "Like IntenSelect, objects near the pointing ray accumulate a score over time and the highest-scoring one is selected, shown with a bending ray. IntenSelect+ extends the scoring to complex shapes and lets each object have its own scoring parameters.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "kruger-2024-intenselectplus",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "intenselect",
+      "type": "extends"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added by snowballing from the VoiceRay paper and Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "handlesOcclusion"
+    ]
+  }
+}

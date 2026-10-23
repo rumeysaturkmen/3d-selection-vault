@@ -1,0 +1,64 @@
+{
+  "id": "two-phase-mr",
+  "name": "Two-Phase Technique (MR)",
+  "aliases": [],
+  "year": 2023,
+  "summary": "Mixed-reality selection in two phases: a ray picks a group of objects, then the target is chosen from a sublist shown near the hand.",
+  "howItWorks": "In the first phase the user points a ray at the region of the target; the intersected objects are copied into an AR sublist placed within comfortable reach. In the second phase the user selects the target from the sublist by touch or gesture, reducing arm fatigue.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "progressive"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "touch",
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "chaffangeon-2023-twophase",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added by snowballing from the VoiceRay paper and Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof",
+      "handlesOcclusion"
+    ]
+  }
+}

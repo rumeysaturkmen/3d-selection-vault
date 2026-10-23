@@ -1,0 +1,73 @@
+{
+  "id": "flower-ray",
+  "name": "Flower Ray",
+  "aliases": [],
+  "year": 2006,
+  "summary": "For volumetric displays: every object the ray intersects is fanned out in a flower-like menu so the user can choose among them.",
+  "howItWorks": "The ray selects all objects along its path. On a button press, the intersected objects are spread out in a marking-menu style layout around the cursor, and the user picks the intended one.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "legacy-paper-depth-ray",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "depth-ray",
+      "type": "related",
+      "note": "From the same paper."
+    },
+    {
+      "technique": "lock-ray",
+      "type": "related",
+      "note": "From the same paper."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added by snowballing from the VoiceRay paper and Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "motorVisualSpace",
+      "targetDistance"
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "assistvr",
+  "name": "AssistVR",
+  "aliases": [],
+  "year": 2025,
+  "summary": "Speech-and-pointing selection: the user points a ray and describes the target's properties by voice to single it out.",
+  "howItWorks": "The user points at the region of the target and characterises it in speech (for example by colour, shape or name); the system filters the candidates by that description and selects the matching object.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller",
+      "voice"
+    ],
+    "confirmation": [
+      "voice"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "chen-2025-assistvr",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "disocclusion-mini-map",
+      "type": "compared-with",
+      "source": "chen-2025-assistvr"
+    },
+    {
+      "technique": "speech-filtered-bubble-ray",
+      "type": "related",
+      "note": "Both filter candidates by speech."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added by snowballing from the VoiceRay paper and Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "disambiguation",
+      "handlesOcclusion"
+    ]
+  }
+}

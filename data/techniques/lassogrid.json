@@ -1,0 +1,74 @@
+{
+  "id": "lassogrid",
+  "name": "LassoGrid",
+  "aliases": [],
+  "year": 2020,
+  "summary": "The user draws a lasso around a cluster with the ray; every object inside is laid out in a grid and the target is picked from it.",
+  "howItWorks": "Holding the trigger, the user traces a closed path around the area containing the target. All objects inside the trace, including hidden ones, are shown in a grid layout, and the target is then selected with ordinary ray-casting.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "progressive"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yu-2020-fullyoccluded",
+      "role": "introduced"
+    },
+    {
+      "publication": "legacy-paper-voiceray",
+      "role": "evaluated"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "grid-wall",
+      "type": "related",
+      "note": "Both rearrange candidates into a grid; from the same paper."
+    },
+    {
+      "technique": "expand",
+      "type": "related",
+      "note": "Grid-based manual disambiguation, as in Expand."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added by snowballing from the VoiceRay paper and Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}

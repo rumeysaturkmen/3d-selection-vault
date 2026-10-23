@@ -93,6 +93,10 @@
       "publication": "weise-2019",
       "role": "surveyed",
       "where": "Table 1"
+    },
+    {
+      "publication": "legacy-paper-voiceray",
+      "role": "evaluated"
     }
   ],
   "relationships": [

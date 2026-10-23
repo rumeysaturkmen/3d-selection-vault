@@ -1,0 +1,73 @@
+{
+  "id": "alphacursor",
+  "name": "AlphaCursor",
+  "aliases": [],
+  "year": 2020,
+  "summary": "Ray-casting with a cursor pushed into depth by joystick; objects in front of the cursor turn transparent so hidden targets become visible.",
+  "howItWorks": "The user points a ray and moves a cursor along it with the joystick. Objects between the user and the cursor are rendered fully transparent, progressively revealing occluded targets, and the target at the cursor is selected with the trigger.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yu-2020-fullyoccluded",
+      "role": "introduced"
+    },
+    {
+      "publication": "legacy-paper-voiceray",
+      "role": "evaluated"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycursor",
+      "type": "related",
+      "note": "Both move a cursor along the ray in depth."
+    },
+    {
+      "technique": "depth-ray",
+      "type": "extends",
+      "note": "Adds transparency for objects in front of the depth cursor."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added by snowballing from the VoiceRay paper and Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}

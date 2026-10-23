@@ -1,0 +1,71 @@
+{
+  "id": "stretch-go-go",
+  "name": "Stretch Go-Go",
+  "aliases": [],
+  "year": 1997,
+  "summary": "A Go-Go variant where the virtual arm keeps growing while the real hand is held in an outer zone, so reach is unlimited.",
+  "howItWorks": "The space in front of the user is divided into concentric zones. Holding the hand in the outermost zone makes the virtual arm extend at a constant rate, the innermost zone retracts it, and the middle zone holds its length; a gauge shows the current zone.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "anisomorphic-adaptive"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "legacy-paper-homer",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "go-go",
+      "type": "variant-of",
+      "note": "Replaces Go-Go's position mapping with rate control."
+    },
+    {
+      "technique": "homer",
+      "type": "related",
+      "note": "From the same paper."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added by snowballing from the VoiceRay paper and Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}

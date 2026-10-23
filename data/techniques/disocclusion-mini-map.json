@@ -1,0 +1,68 @@
+{
+  "id": "disocclusion-mini-map",
+  "name": "Disocclusion Mini-map",
+  "aliases": [],
+  "year": 2023,
+  "summary": "An interactive mini-map shows the scene from another viewpoint so occluded objects can be seen and selected on the map.",
+  "howItWorks": "A small map of the surrounding objects, seen from above, is displayed near the user. Objects hidden behind others in the main view are visible on the map and are selected by pointing at their proxies.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "maslych-2023-minimap",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "worlds-in-miniature",
+      "type": "related",
+      "note": "Selects through a miniature proxy of the scene."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added by snowballing from the VoiceRay paper and Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "motorVisualSpace"
+    ]
+  }
+}

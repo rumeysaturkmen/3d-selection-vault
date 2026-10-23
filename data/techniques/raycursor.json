@@ -63,6 +63,10 @@
       "publication": "seed-3dui-2024",
       "role": "surveyed",
       "where": "4.2.1"
+    },
+    {
+      "publication": "legacy-paper-voiceray",
+      "role": "evaluated"
     }
   ],
   "relationships": [

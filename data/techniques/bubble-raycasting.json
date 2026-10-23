@@ -68,6 +68,10 @@
       "publication": "seed-yu-2024",
       "role": "surveyed",
       "where": "7.3 Comparison framework, p. 98:20"
+    },
+    {
+      "publication": "legacy-paper-voiceray",
+      "role": "evaluated"
     }
   ],
   "relationships": [

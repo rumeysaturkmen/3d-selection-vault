@@ -63,19 +63,41 @@
   ],
   "relationships": [
     {
+      "technique": "alphacursor",
+      "type": "compared-with",
+      "source": "legacy-paper-voiceray"
+    },
+    {
+      "technique": "lassogrid",
+      "type": "compared-with",
+      "source": "legacy-paper-voiceray"
+    },
+    {
+      "technique": "raycursor",
+      "type": "compared-with",
+      "source": "legacy-paper-voiceray"
+    },
+    {
+      "technique": "bubble-raycasting",
+      "type": "compared-with",
+      "source": "legacy-paper-voiceray"
+    },
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "legacy-paper-voiceray"
+    },
+    {
       "technique": "speech-filtered-bubble-ray",
       "type": "related",
-      "note": "Carried over from the old catalogue; no source yet."
+      "source": "legacy-paper-voiceray",
+      "note": "Voice-based selection discussed in the paper."
     },
     {
-      "technique": "cone-casting",
+      "technique": "assistvr",
       "type": "related",
-      "note": "Carried over from the old catalogue; no source yet."
-    },
-    {
-      "technique": "gaze-voice",
-      "type": "related",
-      "note": "Carried over from the old catalogue; no source yet."
+      "source": "legacy-paper-voiceray",
+      "note": "Voice-based selection discussed in the paper."
     }
   ],
   "review": {
