@@ -421,3 +421,20 @@ a.paper-cites:hover { color: var(--accent-text); }
 @media (max-width: 860px) { .people { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .paper { grid-template-columns: 1fr; gap: 4px; } }
 @media (max-width: 440px) { .brand span:last-child { display: none; } }
+
+/* Selection and BibTeX export */
+.card-wrap { position: relative; }
+.card-wrap .card { height: 100%; }
+.card-select { position: absolute; right: 10px; bottom: 10px; z-index: 1; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 6px; cursor: pointer; }
+.card-select:hover { background: var(--surface-2); }
+.card-select input, .paper-select input { width: 17px; height: 17px; margin: 0; accent-color: var(--accent); cursor: pointer; }
+.card-wrap.picked .card { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.paper { grid-template-columns: auto minmax(0, 1fr) auto !important; }
+.paper-select { padding-top: 3px; cursor: pointer; }
+.paper.picked { background: var(--accent-soft); }
+.selection-bar { position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 20; display: flex; align-items: center; gap: 18px; padding: 10px 12px 10px 18px; max-width: calc(100vw - 32px); background: var(--surface); border: 1px solid var(--line-strong); border-radius: 10px; box-shadow: 0 8px 30px rgb(0 0 0 / .18); }
+.selection-actions { display: flex; gap: 8px; flex: none; }
+.selection-bar .button { cursor: pointer; }
+.selection-bar .button:disabled { opacity: .5; cursor: default; }
+.nb-bib { margin: 0 0 12px; font-size: 13px; padding: 5px 10px; cursor: pointer; }
+@media (max-width: 600px) { .paper { grid-template-columns: auto minmax(0, 1fr) !important; } .paper-side { grid-column: 2; } .selection-bar { left: 16px; right: 16px; transform: none; gap: 10px; flex-wrap: wrap; } }

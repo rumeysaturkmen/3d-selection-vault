@@ -1,5 +1,6 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
+import SelectionBar from '../SelectionBar';
 import { citedByOf, citesOf, isReview, pubHref, shortAuthors, sortedPublications, techniquesOfPub } from '../lib/citations';
 
 type Sort = 'year' | 'cited' | 'title';
@@ -38,6 +39,15 @@ export default function Papers() {
   }, [q, sort, kind]);
 
   const reviews = sortedPublications.filter(isReview).length;
+  const [picked, setPicked] = useState<Set<string>>(new Set());
+  const flip = (id: string) =>
+    setPicked((cur) => {
+      const next = new Set(cur);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  const allShownPicked = rows.length > 0 && rows.every((p) => picked.has(p.id));
 
   return (
     <div className="papers">
@@ -69,7 +79,28 @@ export default function Papers() {
           <option value="title">Title A–Z</option>
         </select>
       </div>
-      <p className="result-count muted small">{rows.length} papers</p>
+      <p className="result-count muted small">
+        {rows.length} papers
+        {rows.length > 0 && (
+          <>
+            {' · '}
+            <button
+              type="button"
+              className="link-button"
+              onClick={() =>
+                setPicked((cur) => {
+                  const next = new Set(cur);
+                  for (const p of rows) allShownPicked ? next.delete(p.id) : next.add(p.id);
+                  return next;
+                })
+              }
+            >
+              {allShownPicked ? 'Unselect shown' : 'Select all shown'}
+            </button>{' '}
+            to download as .bib
+          </>
+        )}
+      </p>
 
       <ol className="paper-list">
         {rows.map((p) => {
@@ -79,7 +110,10 @@ export default function Papers() {
           const nCitedBy = citedByOf(p.id).length;
           const nCites = citesOf(p.id).length;
           return (
-            <li key={p.id} className="paper">
+            <li key={p.id} className={picked.has(p.id) ? 'paper picked' : 'paper'}>
+              <label className="paper-select">
+                <input type="checkbox" checked={picked.has(p.id)} onChange={() => flip(p.id)} aria-label={`Select ${p.title}`} />
+              </label>
               <div className="paper-main">
                 <p className="paper-title">
                   {href ? (
@@ -123,6 +157,12 @@ export default function Papers() {
           );
         })}
       </ol>
+      <SelectionBar
+        count={picked.size}
+        noun="paper"
+        pubs={sortedPublications.filter((p) => picked.has(p.id))}
+        onClear={() => setPicked(new Set())}
+      />
     </div>
   );
 }

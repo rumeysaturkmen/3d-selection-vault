@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { attributes, editUrl, getPublication, getTechnique, techniques, valueLabel } from '../lib/data';
 import { nearest } from '../lib/similarity';
+import { toBibtex } from '../lib/bibtex';
 import type { Publication, PublicationLink, Relationship } from '../lib/types';
 
 const ROLE_LABEL: Record<PublicationLink['role'], string> = {
@@ -148,7 +149,7 @@ export default function TechniquePage() {
                       {p.venue ? ` · ${p.venue}` : ''}
                       {link.where ? ` · ${link.where}` : ''}
                     </span>
-                    {p.bibtex && <CopyBibtex bibtex={p.bibtex} />}
+                    <CopyBibtex bibtex={toBibtex(p)} />
                   </li>
                 );
               })}

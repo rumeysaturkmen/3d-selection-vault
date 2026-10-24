@@ -1,7 +1,9 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { attributes, techniques, valueLabel } from '../lib/data';
 import { countValues, search, type Filters, type SortKey } from '../lib/search';
+import { citePubsOf } from '../lib/citations';
+import SelectionBar from '../SelectionBar';
 
 const OPEN_BY_DEFAULT = new Set(['selectionTool', 'inputModality', 'disambiguation']);
 
@@ -22,6 +24,18 @@ export default function Catalogue() {
   const filters = useMemo(() => readFilters(params), [params]);
 
   const results = useMemo(() => search(techniques, query, filters, sort), [query, filters, sort]);
+  const [picked, setPicked] = useState<Set<string>>(new Set());
+  const flip = (id: string) =>
+    setPicked((cur) => {
+      const next = new Set(cur);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  const pickedTechs = techniques.filter((t) => picked.has(t.id));
+  const pickedPubs = pickedTechs.flatMap(citePubsOf);
+  const noPaper = pickedTechs.filter((t) => citePubsOf(t).length === 0).length;
+  const allShownPicked = results.length > 0 && results.every((t) => picked.has(t.id));
   const active = Object.values(filters).reduce((n, v) => n + v.length, 0);
 
   const update = (key: string, value: string | null) => {
@@ -147,6 +161,25 @@ export default function Catalogue() {
             {results.length === techniques.length
               ? `${results.length} techniques`
               : `${results.length} of ${techniques.length} techniques`}
+            {results.length > 0 && (
+              <>
+                {' · '}
+                <button
+                  type="button"
+                  className="link-button"
+                  onClick={() =>
+                    setPicked((cur) => {
+                      const next = new Set(cur);
+                      for (const t of results) allShownPicked ? next.delete(t.id) : next.add(t.id);
+                      return next;
+                    })
+                  }
+                >
+                  {allShownPicked ? 'Unselect shown' : 'Select all shown'}
+                </button>
+                <span className="muted"> to download their papers as .bib</span>
+              </>
+            )}
           </p>
 
           {results.length === 0 ? (
@@ -159,7 +192,15 @@ export default function Catalogue() {
           ) : (
             <ul className="grid">
               {results.map((t) => (
-                <li key={t.id}>
+                <li key={t.id} className={picked.has(t.id) ? 'card-wrap picked' : 'card-wrap'}>
+                  <label className="card-select" title="Select to download its paper as BibTeX">
+                    <input
+                      type="checkbox"
+                      checked={picked.has(t.id)}
+                      onChange={() => flip(t.id)}
+                      aria-label={`Select ${t.name}`}
+                    />
+                  </label>
                   <Link to={`/technique/${t.id}`} className="card">
                     <div className="card-top">
                       <h3>{t.name}</h3>
@@ -185,6 +226,13 @@ export default function Catalogue() {
           )}
         </section>
       </div>
+      <SelectionBar
+        count={picked.size}
+        noun="technique"
+        pubs={pickedPubs}
+        onClear={() => setPicked(new Set())}
+        note={noPaper ? `${noPaper} without a linked paper` : (() => { const n = new Set(pickedPubs.map((p) => p.id)).size; return `${n} paper${n === 1 ? '' : 's'}`; })()}
+      />
     </div>
   );
 }

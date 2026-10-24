@@ -1,5 +1,5 @@
 import data from '../../data/citations.json';
-import { publications, techniques } from './data';
+import { getPublication, publications, techniques } from './data';
 import type { Publication, PublicationLink, Technique } from './types';
 
 export interface Citation {
@@ -42,3 +42,11 @@ export const isReview = (p: Publication) => p.type === 'survey' || p.type === 't
 export const sortedPublications = [...publications].sort(
   (a, b) => (b.year ?? 0) - (a.year ?? 0) || a.title.localeCompare(b.title),
 );
+
+/** The paper(s) to cite for a technique: the one that introduced it, else any non-survey reference. */
+export function citePubsOf(t: Technique): Publication[] {
+  const pick = (roles: PublicationLink['role'][]) =>
+    t.publications.filter((p) => roles.includes(p.role)).map((p) => getPublication(p.publication)!).filter(Boolean);
+  const intro = pick(['introduced']);
+  return intro.length ? intro : pick(['reference', 'evaluated']).slice(0, 1);
+}

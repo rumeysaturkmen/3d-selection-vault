@@ -3,6 +3,8 @@ import { Link, useSearchParams } from 'react-router-dom';
 import ForceGraph3D, { type ForceGraph3DInstance } from '3d-force-graph';
 import SpriteText from 'three-spritetext';
 import { attributes, getTechnique, techniques, valueLabel } from '../lib/data';
+import { citePubsOf } from '../lib/citations';
+import { downloadBibtex } from '../lib/bibtex';
 import { nearest, similarityLinks, type Coding, type Neighbour } from '../lib/similarity';
 import CitationGraph from './CitationGraph';
 
@@ -36,6 +38,14 @@ const pct = (x: number) => `${Math.round(x * 100)}%`;
 function NeighbourList({ items, onPick }: { items: Neighbour[]; onPick: (id: string) => void }) {
   if (!items.length) return <p className="muted small">Code a few more attributes to find similar techniques.</p>;
   return (
+    <>
+    <button
+      type="button"
+      className="button button-ghost nb-bib"
+      onClick={() => downloadBibtex(items.flatMap((n) => citePubsOf(n.technique)), 'similar-techniques.bib')}
+    >
+      Download these papers as .bib
+    </button>
     <ol className="nb-list">
       {items.map(({ technique: t, similarity: s }) => {
         const shared = s.matches.filter((m) => m.shared.length > 0);
@@ -61,6 +71,7 @@ function NeighbourList({ items, onPick }: { items: Neighbour[]; onPick: (id: str
         );
       })}
     </ol>
+    </>
   );
 }
 
