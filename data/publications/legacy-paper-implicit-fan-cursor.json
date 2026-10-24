@@ -8,8 +8,8 @@
   ],
   "year": 2014,
   "venue": null,
-  "doi": null,
-  "url": null,
+  "doi": "10.1145/2556288.2557095",
+  "url": "https://doi.org/10.1145/2556288.2557095",
   "type": "paper",
   "citation": "Su, X., Au, O. K. C., & Lau, R. W. (2014, April). The Implicit Fan Cursor: A velocity dependent area cursor. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 753–762).",
   "bibtex": null

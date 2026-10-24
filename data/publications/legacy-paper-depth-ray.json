@@ -6,8 +6,8 @@
   ],
   "year": 2006,
   "venue": null,
-  "doi": null,
-  "url": null,
+  "doi": "10.1145/1166253.1166257",
+  "url": "https://doi.org/10.1145/1166253.1166257",
   "type": "paper",
   "citation": "Grossman, T., & Balakrishnan, R. (2006, October). The design and evaluation of selection techniques for 3D volumetric displays. In Proceedings of the 19th Annual ACM Symposium on User Interface Software and Technology (pp. 3–12).",
   "bibtex": null

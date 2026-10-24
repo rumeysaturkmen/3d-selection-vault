@@ -7,8 +7,8 @@
   ],
   "year": 2022,
   "venue": null,
-  "doi": null,
-  "url": null,
+  "doi": "10.1145/3491101.3519692",
+  "url": "https://doi.org/10.1145/3491101.3519692",
   "type": "paper",
   "citation": "Delamare, W., Daniel, M., & Hasan, K. (2022, April). MultiFingerBubble: A 3D bubble cursor variation for dense environments. In CHI Conference on Human Factors in Computing Systems Extended Abstracts (pp. 1–6).",
   "bibtex": null

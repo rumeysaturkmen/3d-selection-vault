@@ -8,8 +8,8 @@
   ],
   "year": 2012,
   "venue": null,
-  "doi": null,
-  "url": null,
+  "doi": "10.1109/TVCG.2012.40",
+  "url": "https://doi.org/10.1109/TVCG.2012.40",
   "type": "paper",
   "citation": "Cashion, J., Wingrave, C., & LaViola Jr, J. J. (2012). Dense and dynamic 3D selection for game-based virtual environments. IEEE Transactions on Visualization and Computer Graphics, 18(4), 634–642.",
   "bibtex": null

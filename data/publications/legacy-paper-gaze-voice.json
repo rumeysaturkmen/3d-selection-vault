@@ -9,8 +9,8 @@
   ],
   "year": 2026,
   "venue": null,
-  "doi": null,
-  "url": null,
+  "doi": "10.1145/3772318.3790513",
+  "url": "https://doi.org/10.1145/3772318.3790513",
   "type": "paper",
   "citation": "Bashar, M. R., Mutasim, A. K., Pfeuffer, K., & Batmaz, A. U. (2026, April). Eyes on Many: Evaluating Gaze, Hand, and Voice for Multi-Object Selection in Extended Reality. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (pp. 1-14).",
   "bibtex": null

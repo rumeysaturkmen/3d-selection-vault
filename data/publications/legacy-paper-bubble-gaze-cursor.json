@@ -7,8 +7,8 @@
   ],
   "year": 2020,
   "venue": null,
-  "doi": null,
-  "url": null,
+  "doi": "10.1145/3379155.3391322",
+  "url": "https://doi.org/10.1145/3379155.3391322",
   "type": "paper",
   "citation": "Choi, M., Sakamoto, D., & Ono, T. (2020, June). Bubble Gaze Cursor + Bubble Gaze Lens: Applying area cursor technique to eye-gaze interface. In ACM Symposium on Eye Tracking Research and Applications (pp. 1–10).",
   "bibtex": null
