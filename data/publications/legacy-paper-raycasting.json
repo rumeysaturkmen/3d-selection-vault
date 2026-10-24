@@ -5,9 +5,9 @@
     "Mine, M"
   ],
   "year": 1995,
-  "venue": null,
+  "venue": "UNC Chapel Hill Computer Science Technical Report TR95-018",
   "doi": null,
-  "url": null,
+  "url": "https://dl.acm.org/doi/10.5555/897820",
   "type": "paper",
   "citation": "Mine, M. (1995). Virtual environment interaction techniques. UNC Chapel Hill CS Dept, 2.",
   "bibtex": null

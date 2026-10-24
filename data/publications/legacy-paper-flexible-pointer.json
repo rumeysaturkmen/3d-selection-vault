@@ -2,12 +2,13 @@
   "id": "legacy-paper-flexible-pointer",
   "title": "The Flexible Pointer: An Interaction Technique for Selection in Augmented and Virtual Reality",
   "authors": [
-    "Olwal, A."
+    "Alex Olwal",
+    "Steven Feiner"
   ],
   "year": 2003,
-  "venue": null,
+  "venue": "ACM UIST 2003 Conference Supplement, pp. 81–82",
   "doi": null,
-  "url": null,
+  "url": "https://uist.hosting.acm.org/uist2005/images/poster_examples/pointer.pdf",
   "type": "paper",
   "citation": "Olwal, A., & Feiner, S. (2003). The Flexible Pointer: An Interaction Technique for Selection in Augmented and Virtual Reality. UIST '03 Conference Supplement, ACM Symposium on User Interface Software and Technology, 81–82.",
   "bibtex": null
