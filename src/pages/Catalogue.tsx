@@ -157,29 +157,32 @@ export default function Catalogue() {
               <option value="year-asc">Oldest first</option>
             </select>
           </div>
+          {results.length > 0 && (
+            <div className="cite-hint">
+              <svg className="cite-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              <p>
+                <strong>Writing a related-work section?</strong> Tick <span className="cite-tag">Cite</span> on the
+                techniques you want and download their papers as a BibTeX (.bib) file.
+              </p>
+              <button
+                type="button"
+                className="button button-ghost"
+                onClick={() =>
+                  setPicked((cur) => {
+                    const next = new Set(cur);
+                    for (const t of results) allShownPicked ? next.delete(t.id) : next.add(t.id);
+                    return next;
+                  })
+                }
+              >
+                {allShownPicked ? 'Unselect all shown' : `Select all ${results.length} shown`}
+              </button>
+            </div>
+          )}
           <p className="result-count">
             {results.length === techniques.length
               ? `${results.length} techniques`
               : `${results.length} of ${techniques.length} techniques`}
-            {results.length > 0 && (
-              <>
-                {' · '}
-                <button
-                  type="button"
-                  className="link-button"
-                  onClick={() =>
-                    setPicked((cur) => {
-                      const next = new Set(cur);
-                      for (const t of results) allShownPicked ? next.delete(t.id) : next.add(t.id);
-                      return next;
-                    })
-                  }
-                >
-                  {allShownPicked ? 'Unselect shown' : 'Select all shown'}
-                </button>
-                <span className="muted"> to download their papers as .bib</span>
-              </>
-            )}
           </p>
 
           {results.length === 0 ? (
@@ -193,7 +196,8 @@ export default function Catalogue() {
             <ul className="grid">
               {results.map((t) => (
                 <li key={t.id} className={picked.has(t.id) ? 'card-wrap picked' : 'card-wrap'}>
-                  <label className="card-select" title="Select to download its paper as BibTeX">
+                  <label className="card-select" title="Add its paper to a BibTeX download">
+                    <span>Cite</span>
                     <input
                       type="checkbox"
                       checked={picked.has(t.id)}

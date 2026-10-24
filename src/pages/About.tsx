@@ -104,7 +104,7 @@ export default function About() {
             <h3>Compare</h3>
             <p>
               Shared attributes give a similarity score. The graph places similar techniques together, and you
-              can drop in your own to find its neighbours.
+              can drop in your own to find its neighbours, then download their papers as BibTeX.
             </p>
             <Link to="/graph">Open the similarity graph</Link>
           </li>
