@@ -29,7 +29,7 @@
       "isomorphic"
     ],
     "motorVisualSpace": [
-      "remote"
+      "offset"
     ],
     "disambiguation": [
       "manual"
@@ -41,7 +41,7 @@
       "button"
     ],
     "targetDistance": [
-      "far"
+      "near"
     ],
     "handlesOcclusion": [
       "yes"
@@ -58,7 +58,7 @@
   "publications": [
     {
       "publication": "legacy-paper-depth-ray",
-      "role": "reference"
+      "role": "introduced"
     },
     {
       "publication": "seed-argelaguet-2013",
@@ -66,7 +66,7 @@
     },
     {
       "publication": "legacy-paper-bubble-cursor",
-      "role": "reference"
+      "role": "evaluated"
     },
     {
       "publication": "leusmann-2021",
@@ -93,6 +93,6 @@
   ],
   "review": {
     "status": "draft",
-    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper."
+    "notes": "Checked against Grossman & Balakrishnan (UIST 2006) in Oct 2026: evaluated on a volumetric display with targets within arm's reach, using a tracked one-button handheld device."
   }
 }

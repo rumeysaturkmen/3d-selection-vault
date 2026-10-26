@@ -25,7 +25,7 @@
       "isomorphic"
     ],
     "motorVisualSpace": [
-      "remote"
+      "offset"
     ],
     "disambiguation": [
       "manual"
@@ -34,10 +34,10 @@
       "controller"
     ],
     "confirmation": [
-      "button"
+      "release"
     ],
     "targetDistance": [
-      "far"
+      "near"
     ],
     "handlesOcclusion": [
       "yes"
@@ -64,10 +64,6 @@
   ],
   "review": {
     "status": "draft",
-    "notes": "Added by snowballing from the VoiceRay paper and Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
-    "uncertain": [
-      "motorVisualSpace",
-      "targetDistance"
-    ]
+    "notes": "Checked against Grossman & Balakrishnan (UIST 2006) in Oct 2026: evaluated on a volumetric display with targets within arm's reach, using a tracked one-button handheld device."
   }
 }

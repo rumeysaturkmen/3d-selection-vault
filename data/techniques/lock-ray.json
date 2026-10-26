@@ -25,7 +25,7 @@
       "isomorphic"
     ],
     "motorVisualSpace": [
-      "remote"
+      "offset"
     ],
     "disambiguation": [
       "manual"
@@ -34,10 +34,10 @@
       "controller"
     ],
     "confirmation": [
-      "button"
+      "release"
     ],
     "targetDistance": [
-      "far"
+      "near"
     ],
     "handlesOcclusion": [
       "yes"
@@ -56,12 +56,12 @@
     },
     {
       "publication": "legacy-paper-depth-ray",
-      "role": "reference"
+      "role": "introduced"
     }
   ],
   "relationships": [],
   "review": {
     "status": "draft",
-    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper."
+    "notes": "Checked against Grossman & Balakrishnan (UIST 2006) in Oct 2026: evaluated on a volumetric display with targets within arm's reach, using a tracked one-button handheld device."
   }
 }

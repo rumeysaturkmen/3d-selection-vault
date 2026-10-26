@@ -1,0 +1,79 @@
+{
+  "id": "balloon-selection",
+  "name": "Balloon Selection",
+  "aliases": [],
+  "year": 2007,
+  "summary": "Fingers on a multi-touch table steer a 3D spherical cursor above it, like a helium balloon on a string, for precise selection with resting hands.",
+  "howItWorks": "Two adjacent fingers on the tabletop create the balloon. One finger (the anchor) moves it in the horizontal plane; the distance to a second finger sets its height, like pulling a string. A third finger changes the balloon's radius, and placing a finger next to the second one triggers selection of everything inside the balloon. The 3D task is split into a 2D and a 1D positioning task, and the hands rest on the surface.",
+  "advantages": [
+    "Hands rest on the table, reducing hand tremor and arm fatigue.",
+    "In the study it was as fast as a tracked 3D wand and about three times less error-prone (5.5% vs 16.1%)."
+  ],
+  "limitations": [
+    "Works only in the volume above an interactive surface.",
+    "The balloon first appears at the surface, often hidden behind the scene."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "touchscreen"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "benko-2007-balloon",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "worlds-in-miniature",
+      "type": "related",
+      "note": "Designed for selecting small objects in tabletop world-in-miniature models."
+    },
+    {
+      "technique": "silk-cursor",
+      "type": "related",
+      "note": "Both select with a 3D volume cursor."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper (Benko & Feiner, 3DUI 2007), coded from the full text in Oct 2026.",
+    "uncertain": [
+      "cdRatio",
+      "handlesOcclusion"
+    ]
+  }
+}
