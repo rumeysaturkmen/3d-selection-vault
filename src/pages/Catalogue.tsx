@@ -161,8 +161,8 @@ export default function Catalogue() {
             <div className="cite-hint">
               <svg className="cite-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
               <p>
-                <strong>Writing a related-work section?</strong> Tick <span className="cite-tag">Cite</span> on the
-                techniques you want and download their papers as a BibTeX (.bib) file.
+                Tick <span className="cite-tag">Cite</span> on the techniques you want and download their papers as a
+                BibTeX (.bib) file.
               </p>
               <button
                 type="button"

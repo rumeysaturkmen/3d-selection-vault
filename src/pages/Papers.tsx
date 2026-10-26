@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import SelectionBar from '../SelectionBar';
-import { citedByOf, citesOf, isReview, pubHref, shortAuthors, sortedPublications, techniquesOfPub } from '../lib/citations';
+import { isReview, pubHref, shortAuthors, sortedPublications, techniquesOfPub } from '../lib/citations';
 
-type Sort = 'year' | 'cited' | 'title';
+type Sort = 'year' | 'title';
 type Kind = 'all' | 'papers' | 'reviews';
 
 const norm = (s: string) =>
@@ -33,7 +33,6 @@ export default function Papers() {
       const hay = norm(`${p.title} ${p.authors.join(' ')} ${p.venue ?? ''} ${p.year ?? ''}`);
       return words.every((w) => hay.includes(w));
     });
-    if (sort === 'cited') list.sort((a, b) => citedByOf(b.id).length - citedByOf(a.id).length || (b.year ?? 0) - (a.year ?? 0));
     if (sort === 'title') list.sort((a, b) => a.title.localeCompare(b.title));
     return list;
   }, [q, sort, kind]);
@@ -55,8 +54,7 @@ export default function Papers() {
         <h1>Papers</h1>
         <p className="muted">
           The {sortedPublications.length} publications behind the vault: the papers that introduce or evaluate each
-          technique, and the {reviews} surveys and theses the catalogue was built from. "Cited by" counts only
-          citations from other papers in the vault.
+          technique, and the {reviews} surveys and theses the catalogue was built from.
         </p>
       </header>
 
@@ -75,7 +73,6 @@ export default function Papers() {
         </select>
         <select value={sort} onChange={(e) => set('sort', e.target.value === 'year' ? null : e.target.value)} aria-label="Sort">
           <option value="year">Newest first</option>
-          <option value="cited">Most cited in the vault</option>
           <option value="title">Title A–Z</option>
         </select>
       </div>
@@ -83,8 +80,7 @@ export default function Papers() {
         <div className="cite-hint">
           <svg className="cite-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
           <p>
-            <strong>Need these for your paper?</strong> Tick the papers you want, or select everything shown, and
-            download them as a BibTeX (.bib) file.
+            Tick the papers you want and download them as a BibTeX (.bib) file.
           </p>
           <button
             type="button"
@@ -108,8 +104,6 @@ export default function Papers() {
           const href = pubHref(p);
           const techs = techniquesOfPub(p.id).filter((x) => x.role !== 'surveyed');
           const surveyed = techniquesOfPub(p.id).filter((x) => x.role === 'surveyed').length;
-          const nCitedBy = citedByOf(p.id).length;
-          const nCites = citesOf(p.id).length;
           return (
             <li key={p.id} className={picked.has(p.id) ? 'paper picked' : 'paper'}>
               <label className="paper-select">
@@ -143,16 +137,6 @@ export default function Papers() {
                   </p>
                 )}
                 {surveyed > 0 && <p className="paper-techs muted">Covers {surveyed} techniques in the vault</p>}
-              </div>
-              <div className="paper-side">
-                {nCitedBy + nCites > 0 ? (
-                  <Link to={`/graph?view=citations&p=${p.id}`} className="paper-cites" title="Show in the citation graph">
-                    Cited by <strong>{nCitedBy}</strong>
-                    <span className="muted"> · cites {nCites}</span>
-                  </Link>
-                ) : (
-                  <span className="paper-cites muted small">No citation data</span>
-                )}
               </div>
             </li>
           );

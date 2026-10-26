@@ -429,7 +429,7 @@ a.paper-cites:hover { color: var(--accent-text); }
 .card-select:hover { background: var(--surface-2); }
 .card-select input, .paper-select input { width: 17px; height: 17px; margin: 0; accent-color: var(--accent); cursor: pointer; }
 .card-wrap.picked .card { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
-.paper { grid-template-columns: auto minmax(0, 1fr) auto !important; }
+.paper { grid-template-columns: auto minmax(0, 1fr) !important; }
 .paper-select { padding-top: 3px; cursor: pointer; }
 .paper.picked { background: var(--accent-soft); }
 .selection-bar { position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 20; display: flex; align-items: center; gap: 18px; padding: 10px 12px 10px 18px; max-width: calc(100vw - 32px); background: var(--surface); border: 1px solid var(--line-strong); border-radius: 10px; box-shadow: 0 8px 30px rgb(0 0 0 / .18); }
