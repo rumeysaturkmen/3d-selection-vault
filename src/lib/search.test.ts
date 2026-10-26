@@ -60,6 +60,6 @@ describe('search over papers', () => {
   it('does not match techniques only covered by a survey', () => {
     // Batmaz co-authored the Fitts' law survey, which covers techniques he did not introduce.
     const names = searchAll(techniques, 'batmaz', {}).map((t) => t.id);
-    expect(names.sort()).toEqual(['cezve', 'gaze-voice', 'voiceray']);
+    expect(names.sort()).toEqual(['cezve', 'depth-based-expansion', 'gaze-voice', 'voiceray']);
   });
 });
