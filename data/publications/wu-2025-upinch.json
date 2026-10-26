@@ -1,0 +1,19 @@
+{
+  "id": "wu-2025-upinch",
+  "title": "UPinch: Enabling Unaligned Gaze-Hand Coordination for Selection in 3D Environments",
+  "authors": [
+    "Yuchen Wu",
+    "Shizhen Zhang",
+    "Shengxin Li",
+    "Yang Ouyang",
+    "Qian Zhu",
+    "Quan Li"
+  ],
+  "year": 2026,
+  "venue": "Proceedings of the 2025 International Conference on Human-Engaged Computing (ICHEC '25), Article 14",
+  "doi": "10.1145/3786995.3787021",
+  "url": "https://doi.org/10.1145/3786995.3787021",
+  "type": "paper",
+  "citation": null,
+  "bibtex": "@inproceedings{wu2026upinch,\n  author = {Wu, Yuchen and Zhang, Shizhen and Li, Shengxin and Ouyang, Yang and Zhu, Qian and Li, Quan},\n  title = {UPinch: Enabling Unaligned Gaze-Hand Coordination for Selection in 3D Environments},\n  year = {2026},\n  isbn = {9798400722349},\n  publisher = {Association for Computing Machinery},\n  address = {New York, NY, USA},\n  url = {https://doi.org/10.1145/3786995.3787021},\n  doi = {10.1145/3786995.3787021},\n  booktitle = {Proceedings of the 2025 International Conference on Human-Engaged Computing},\n  articleno = {14},\n  numpages = {20},\n  location = {Singapore, Singapore},\n  series = {ICHEC '25}\n}"
+}

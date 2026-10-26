@@ -1,0 +1,80 @@
+{
+  "id": "upinch",
+  "name": "UPinch",
+  "aliases": [
+    "Unaligned Gaze + Pinch"
+  ],
+  "year": 2026,
+  "summary": "Gaze registers a target while you open your index finger and thumb; pinching then selects it, so your eyes can already move on before the pinch closes.",
+  "howItWorks": "The hand starts from a relaxed 'close pose'. As the index finger and thumb open past a starting threshold, the last target the user fixates is registered as the candidate, and it is updated until the opening passes an ending threshold. Touching the fingertips together then selects the candidate, whether or not the user is still looking at it. If no target is fixated while the hand opens, a pending mode with timeouts waits for a fixation, which supports reaching before looking (as in visual search). Releasing the pinch drops a dragged object, and opening the fingers again registers the next one. Thresholds are percentages of the user's comfortable pinch distance. Implemented on HoloLens 2 with MRTK 3; compared with Gaze + Pinch, Gaze + Handray and real grasping in three cross-reality experiments (pop-up targets, object translation, selection with prior location knowledge), with targets on a board 0.5 m in front of the user. It matched the aligned techniques in pointing and beat them in object translation, at the cost of more learning effort.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze",
+      "hand"
+    ],
+    "confirmation": [
+      "pinch"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wu-2025-upinch",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "gaze-pinch",
+      "type": "extends",
+      "note": "Registers the gazed target while the fingers open, so gaze need not stay on it at the pinch."
+    },
+    {
+      "technique": "gaze-pinch",
+      "type": "compared-with",
+      "source": "wu-2025-upinch"
+    },
+    {
+      "technique": "gaze-hand-alignment",
+      "type": "compared-with",
+      "source": "wu-2025-upinch"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}
