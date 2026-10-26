@@ -1,0 +1,80 @@
+{
+  "id": "gg-interaction",
+  "name": "GG Interaction",
+  "aliases": [
+    "Gaze–grasp pose interaction"
+  ],
+  "year": 2019,
+  "summary": "Look at the object and shape your hand as if to grasp it; the object whose width best matches your grasp, among those near your gaze line, is selected.",
+  "howItWorks": "Gaze forms a candidate group from all objects within a threshold distance of the gaze line, updated every frame. The hand's grasp pose is measured as the smallest distance between the thumb and the other fingertips and compared with each candidate's width. Each candidate gets a cost combining its gaze error and grasp error, and the lowest-cost object is selected once it falls below a threshold. Because selection is triggered by the grasp itself, it avoids the eye-hand visibility mismatch of ray-casting and can pick partly overlapped objects that differ in size. Evaluated against ray-casting (n=20) in a toy-block manipulation task and a 3D reciprocal tapping task, on a 40-inch stereoscopic monitor viewed from about 70 cm, with a Tobii Rex eye tracker and an RGBD sensor for hand tracking.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "gaze",
+      "hand"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "ryu-2019-gginteraction",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "ryu-2019-gginteraction"
+    },
+    {
+      "technique": "gaze-pinch",
+      "type": "related",
+      "note": "Both pair gaze for pointing with a hand gesture to select."
+    },
+    {
+      "technique": "gaze-gesture",
+      "type": "related",
+      "note": "Gaze picks the region, a hand gesture completes the selection."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof",
+      "targetDistance",
+      "selectionTool"
+    ]
+  }
+}
