@@ -1,0 +1,74 @@
+{
+  "id": "hand-in-middle",
+  "name": "Hand-in-Middle",
+  "aliases": [
+    "HIM"
+  ],
+  "year": 2007,
+  "summary": "Two-handed box selection: the box's centre follows the non-dominant hand, and moving the dominant hand towards or away from it shrinks or grows the box.",
+  "howItWorks": "The centre of a 3D selection box is attached to the non-dominant hand, which sets its position and orientation; no part of the box is attached to the dominant hand, whose distance from the other hand scales the box. All three techniques shape a 3D selection box with two tracked handheld devices; everything inside the box is selected with the SELECT button. Designed for splat-based volumetric data on a desktop monitor.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "toolDof": [
+      "7+"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "ulinski-2007-twohanded",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "hand-on-corner",
+      "type": "compared-with",
+      "source": "ulinski-2007-twohanded"
+    },
+    {
+      "technique": "two-corners",
+      "type": "compared-with",
+      "source": "ulinski-2007-twohanded"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

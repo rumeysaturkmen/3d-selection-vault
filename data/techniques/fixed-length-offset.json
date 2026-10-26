@@ -1,0 +1,80 @@
+{
+  "id": "fixed-length-offset",
+  "name": "Fixed-Length Offset",
+  "aliases": [],
+  "year": 2018,
+  "summary": "A virtual hand cursor pushed a constant distance further out along the head-to-hand direction, so out-of-reach targets can be touched.",
+  "howItWorks": "The cursor sits on the line from the head through the hand, displaced by a fixed length beyond the hand. Compared in an ISO 9241-9 Fitts' law study with No Offset (virtual hand), Linear Offset and a Go-Go offset, with a controller and with Leap Motion hand tracking in an HMD.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller",
+      "hand"
+    ],
+    "confirmation": [
+      "button",
+      "pinch"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "li-2018-cursoroffset",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "virtual-hand",
+      "type": "compared-with",
+      "source": "li-2018-cursoroffset"
+    },
+    {
+      "technique": "go-go",
+      "type": "compared-with",
+      "source": "li-2018-cursoroffset"
+    },
+    {
+      "technique": "linear-offset",
+      "type": "compared-with",
+      "source": "li-2018-cursoroffset"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool"
+    ]
+  }
+}

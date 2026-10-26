@@ -1,0 +1,74 @@
+{
+  "id": "hand-on-corner",
+  "name": "Hand-on-Corner",
+  "aliases": [
+    "HOC"
+  ],
+  "year": 2007,
+  "summary": "Two-handed box selection: the non-dominant hand holds one corner of the box and places it; the dominant hand holds the opposite corner and sizes it.",
+  "howItWorks": "The bottom front corner of a 3D selection box is attached to the non-dominant hand, which sets its position and orientation; the top back corner follows the dominant hand, so the space between the hands is the box's width, height and depth. All three techniques shape a 3D selection box with two tracked handheld devices; everything inside the box is selected with the SELECT button. Designed for splat-based volumetric data on a desktop monitor.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "toolDof": [
+      "7+"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "ulinski-2007-twohanded",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "hand-in-middle",
+      "type": "compared-with",
+      "source": "ulinski-2007-twohanded"
+    },
+    {
+      "technique": "two-corners",
+      "type": "compared-with",
+      "source": "ulinski-2007-twohanded"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

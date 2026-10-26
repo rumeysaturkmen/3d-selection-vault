@@ -93,6 +93,10 @@
       "publication": "bowman-1999-thesis",
       "role": "surveyed",
       "where": "5.3, 5.5"
+    },
+    {
+      "publication": "li-2018-cursoroffset",
+      "role": "evaluated"
     }
   ],
   "relationships": [

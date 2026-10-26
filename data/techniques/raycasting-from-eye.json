@@ -56,15 +56,16 @@
     },
     {
       "publication": "survey2013-ref-8",
-      "role": "reference"
+      "role": "introduced"
+    },
+    {
+      "publication": "argelaguet-2009-efficient",
+      "role": "evaluated"
     }
   ],
   "relationships": [],
   "review": {
     "status": "draft",
-    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
-    "uncertain": [
-      "inputModality"
-    ]
+    "notes": "Checked against Argelaguet & Andujar (IEEE CG&A 2009) in Oct 2026: the ray starts at the eye, its direction follows the hand's orientation (6-DoF Wanda in a CAVE), and a feedback ray is drawn from the hand. Outperformed classic ray casting in sparse and cluttered scenes."
   }
 }

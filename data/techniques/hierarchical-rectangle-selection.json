@@ -1,0 +1,66 @@
+{
+  "id": "hierarchical-rectangle-selection",
+  "name": "Hierarchical Rectangle Selection",
+  "aliases": [],
+  "year": 2006,
+  "summary": "Rectangle (marquee) selection on screen that also takes the gravitational hierarchy into account, so supported objects are grouped with their supports.",
+  "howItWorks": "The user drags a rectangle on the screen as in conventional rectangle selection, and the selection is then refined using the scene's contact graph so that objects resting on selected objects come along, avoiding the need to check the selection from several viewpoints.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "screen"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "mouse"
+    ],
+    "confirmation": [
+      "release"
+    ],
+    "targetDistance": [],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "oh-2006-groupselection",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "gravitational-group-selection",
+      "type": "related",
+      "note": "From the same paper."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "disambiguation"
+    ]
+  }
+}

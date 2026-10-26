@@ -1,0 +1,77 @@
+{
+  "id": "linear-offset",
+  "name": "Linear Offset",
+  "aliases": [],
+  "year": 2018,
+  "summary": "A virtual hand cursor whose offset grows in proportion to the head-to-hand distance, a linear version of Go-Go's arm extension.",
+  "howItWorks": "The cursor is displaced along the head-to-hand direction by an amount proportional to how far the hand is from the head. For targets out of reach it outperformed the fixed-length and Go-Go offsets in the study; for targets within reach no offset was best.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "anisomorphic-fixed"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller",
+      "hand"
+    ],
+    "confirmation": [
+      "button",
+      "pinch"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "li-2018-cursoroffset",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "go-go",
+      "type": "variant-of",
+      "note": "A linear instead of quadratic arm-extension mapping."
+    },
+    {
+      "technique": "virtual-hand",
+      "type": "compared-with",
+      "source": "li-2018-cursoroffset"
+    },
+    {
+      "technique": "fixed-length-offset",
+      "type": "compared-with",
+      "source": "li-2018-cursoroffset"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}
