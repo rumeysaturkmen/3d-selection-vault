@@ -1,0 +1,73 @@
+{
+  "id": "ray-wall",
+  "name": "Ray&Wall",
+  "aliases": [],
+  "year": 2024,
+  "summary": "Hand-only version of Gaze&Wall: a dominant-hand ray points, and a wall moved by the other hand sets the depth.",
+  "howItWorks": "The dominant hand points a ray (X and Y); the non-dominant hand moves a see-through wall in depth with a downward hand ray. Among the targets on the pointing ray, the one closest to the wall is selected; confirmed with a pinch. Built as a baseline for the gaze techniques.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic",
+      "manual"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "pinch"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wagner-2024-gazewallracket",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "gaze-wall",
+      "type": "compared-with",
+      "source": "wagner-2024-gazewallracket"
+    },
+    {
+      "technique": "depth-ray",
+      "type": "related",
+      "note": "Both add a depth control to the ray."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
+  }
+}

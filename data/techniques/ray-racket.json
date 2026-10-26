@@ -1,0 +1,73 @@
+{
+  "id": "ray-racket",
+  "name": "Ray&Racket",
+  "aliases": [],
+  "year": 2024,
+  "summary": "Hand-tracking version of Conductor: one hand points a ray, the other holds a plane, and the target on the ray closest to the plane is selected.",
+  "howItWorks": "The dominant hand's ray picks candidate targets; a plane held in the non-dominant hand acts as a depth indicator, and the candidate closest to it (within a 1 cm margin, or in front of it) is selected with a pinch. Built as a baseline for Gaze&Racket.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "toolDof": [
+      "7+"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic",
+      "manual"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "pinch"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wagner-2024-gazewallracket",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "conductor",
+      "type": "variant-of",
+      "note": "Conductor implemented with hand tracking instead of controllers."
+    },
+    {
+      "technique": "gaze-racket",
+      "type": "compared-with",
+      "source": "wagner-2024-gazewallracket"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
+  }
+}

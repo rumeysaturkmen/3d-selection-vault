@@ -57,6 +57,11 @@
     {
       "publication": "legacy-paper-depth-ray",
       "role": "introduced"
+    },
+    {
+      "publication": "survey2013-ref-83",
+      "role": "reference",
+      "where": "Proposed the idea; implemented by Grossman & Balakrishnan 2006"
     }
   ],
   "relationships": [],

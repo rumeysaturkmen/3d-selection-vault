@@ -51,6 +51,10 @@
     {
       "publication": "li-2018-cursoroffset",
       "role": "introduced"
+    },
+    {
+      "publication": "bruder-2013-visualconflicts",
+      "role": "evaluated"
     }
   ],
   "relationships": [
