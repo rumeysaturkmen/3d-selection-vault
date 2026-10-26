@@ -1,4 +1,5 @@
 import type { Technique } from './types';
+import { getPublication } from './data';
 
 /** Selected values per attribute id. Within one attribute values are OR-ed; across attributes AND-ed. */
 export type Filters = Record<string, string[]>;
@@ -10,10 +11,25 @@ const normalise = (s: string) =>
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '');
 
+// The technique's own papers (not surveys that merely cover it), so authors, titles and venues are searchable.
+function ownPapers(t: Technique): string[] {
+  return t.publications
+    .filter((l) => l.role === 'introduced' || l.role === 'reference')
+    .map((l) => getPublication(l.publication))
+    .filter((p) => p !== undefined)
+    .map((p) => [p.title, p.authors.join(' '), p.venue ?? '', p.year ?? ''].join(' '));
+}
+
+const cache = new Map<string, string>();
 function haystack(t: Technique): string {
-  return normalise(
-    [t.name, ...(t.aliases ?? []), t.summary, t.howItWorks ?? '', ...(t.tags ?? [])].join(' '),
-  );
+  let h = cache.get(t.id);
+  if (h === undefined) {
+    h = normalise(
+      [t.name, ...(t.aliases ?? []), t.summary, t.howItWorks ?? '', ...(t.tags ?? []), ...ownPapers(t)].join(' '),
+    );
+    cache.set(t.id, h);
+  }
+  return h;
 }
 
 export function matchesQuery(t: Technique, query: string): boolean {

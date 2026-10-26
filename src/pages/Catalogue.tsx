@@ -142,7 +142,7 @@ export default function Catalogue() {
             <input
               type="search"
               className="search"
-              placeholder="Search names, descriptions, tags"
+              placeholder="Search names, descriptions, authors, papers"
               value={query}
               onChange={(e) => update('q', e.target.value || null)}
               aria-label="Search techniques"

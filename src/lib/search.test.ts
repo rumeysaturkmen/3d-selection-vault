@@ -48,3 +48,18 @@ describe('search', () => {
     expect(countValues(rows, 'inputModality').get('hand')).toBe(3);
   });
 });
+
+import { techniques } from './data';
+import { search as searchAll } from './search';
+describe('search over papers', () => {
+  it('finds techniques by the authors of their own paper', () => {
+    const names = searchAll(techniques, 'turkmen', {}).map((t) => t.id);
+    expect(names).toContain('voiceray');
+    expect(names).toContain('cezve');
+  });
+  it('does not match techniques only covered by a survey', () => {
+    // Batmaz co-authored the Fitts' law survey, which covers techniques he did not introduce.
+    const names = searchAll(techniques, 'batmaz', {}).map((t) => t.id);
+    expect(names.sort()).toEqual(['cezve', 'gaze-voice', 'voiceray']);
+  });
+});
