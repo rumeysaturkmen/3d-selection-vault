@@ -60,6 +60,11 @@
       "publication": "seed-yu-2024",
       "role": "surveyed",
       "where": "5.1.1"
+    },
+    {
+      "publication": "wu-2026-scivisxr",
+      "role": "surveyed",
+      "where": "V.C Tangible and proxy-based interaction"
     }
   ],
   "relationships": [],

@@ -1,0 +1,87 @@
+{
+  "id": "depth-based-expansion",
+  "name": "Depth-Based Target Expansion",
+  "aliases": [
+    "Depth-Based expansion",
+    "Depth-aware target expansion"
+  ],
+  "year": 2026,
+  "summary": "Dwell-based gaze selection whose invisible activation area around each target grows during the dwell, and grows more for farther targets.",
+  "howItWorks": "While the gaze cursor dwells on a target, the target's effective activation radius grows in motor space (its appearance does not change), so gaze jitter is less likely to reset the dwell timer. The maximum expansion factor (3x) is scaled by a non-linear function of the target's depth, normalised between the nearest and farthest interaction distances in the scene, so distant targets, which are harder to hold with gaze, get more help. The expanded radius is capped by the distance to the nearest neighbour to avoid overlaps. Study 1 (ISO 9241-411, Meta Quest Pro, 500 ms dwell, depths 0.67, 1.33 and 3 m) showed that 2D expansion methods (Instant and Linear) lose effectiveness with depth while Depth-Based stays consistent. Study 2, in a cluttered garage scene with targets 1.33–3 m away, compared it with Gaze + Pinch, GazeLock, BubbleGaze and plain dwell: it was faster than plain dwell, as fast as the others, and had the lowest error rate, with excellent SUS scores.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [
+      "dwell"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "turkmen-2026-depthbased",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "eye-gaze-selection",
+      "type": "extends",
+      "note": "Adds depth-adaptive motor-space target expansion to dwell-based gaze selection."
+    },
+    {
+      "technique": "gaze-pinch",
+      "type": "compared-with",
+      "source": "turkmen-2026-depthbased"
+    },
+    {
+      "technique": "bubble-gaze-cursor",
+      "type": "compared-with",
+      "source": "turkmen-2026-depthbased"
+    },
+    {
+      "technique": "eye-gaze-selection",
+      "type": "compared-with",
+      "source": "turkmen-2026-depthbased"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "cdRatio",
+      "selectionTool"
+    ]
+  }
+}

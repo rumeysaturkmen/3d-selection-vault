@@ -106,6 +106,10 @@
     {
       "publication": "han-2026-beyondarmsreach",
       "role": "evaluated"
+    },
+    {
+      "publication": "chen-2026-lowvision",
+      "role": "evaluated"
     }
   ],
   "relationships": [

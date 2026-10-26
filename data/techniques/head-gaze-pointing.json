@@ -65,6 +65,10 @@
       "publication": "seed-yu-2024",
       "role": "surveyed",
       "where": "5.3"
+    },
+    {
+      "publication": "chen-2026-lowvision",
+      "role": "evaluated"
     }
   ],
   "relationships": [

@@ -68,6 +68,10 @@
       "publication": "weise-2019",
       "role": "surveyed",
       "where": "Table 1 (as Gaze-Based Selection)"
+    },
+    {
+      "publication": "chen-2026-lowvision",
+      "role": "evaluated"
     }
   ],
   "relationships": [],
