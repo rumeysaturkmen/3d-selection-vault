@@ -257,7 +257,7 @@
     {
       "id": "targetDistance",
       "label": "Target distance",
-      "description": "Where the targets are relative to the user in an immersive setup. Leave empty for desktop techniques.",
+      "description": "Where the targets are relative to the user in an immersive setup: within arm's reach, just beyond it (near-distant), or far away. Leave empty for desktop techniques.",
       "basis": "Addition",
       "multiple": true,
       "weight": 1,
@@ -265,6 +265,10 @@
         {
           "id": "near",
           "label": "Near (within reach)"
+        },
+        {
+          "id": "near-distant",
+          "label": "Near-distant (just beyond reach)"
         },
         {
           "id": "far",

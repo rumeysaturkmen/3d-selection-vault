@@ -1,0 +1,90 @@
+{
+  "id": "cezve",
+  "name": "Cezve",
+  "aliases": [
+    "Turkish coffee pot"
+  ],
+  "year": 2026,
+  "summary": "A virtual Turkish coffee pot held in the hand: it pulls targets just beyond reach into the pot, where they are picked with the virtual hand.",
+  "howItWorks": "The user holds a virtual cezve whose long handle extends their reach. A 30-degree cone reaching 50 cm out of the pot's opening pulls candidate objects towards the pot (at 0.75 m/s); up to eight captured objects are shrunk and arranged inside it. Bringing the pot closer moves them into arm's reach, where the target is selected directly with the virtual hand. There is no ray and no mode switch.",
+  "advantages": [
+    "Selects targets just beyond arm's reach without a ray or mode switch.",
+    "Gathers occluded candidates into the pot, then uses precise near-field selection.",
+    "In the study it was faster, more accurate and preferred over raycasting and virtual hand, with lower workload."
+  ],
+  "limitations": [
+    "Pull distance (50 cm), cone angle (30°) and capacity (8 objects) were fixed; other densities may need tuning.",
+    "Evaluated with 12 participants against raycasting and virtual hand only."
+  ],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "cone",
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "progressive",
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "turkmen-2026-cezve",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "turkmen-2026-cezve"
+    },
+    {
+      "technique": "virtual-hand",
+      "type": "compared-with",
+      "source": "turkmen-2026-cezve"
+    },
+    {
+      "technique": "go-go",
+      "type": "related",
+      "note": "Also extends reach into the near-distant space, by remapping arm length instead of a tool."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the authors' paper (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "inputModality",
+      "confirmation"
+    ]
+  }
+}

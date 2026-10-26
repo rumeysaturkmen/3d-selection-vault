@@ -11,6 +11,8 @@
   --accent-text: #7a1629;
   --on-accent: #ffffff;
   --near-soft: #e2ecdf;
+  --mid-soft: #f3e6cc;
+  --mid-text: #7a5410;
   --near-text: #35623a;
   --far-soft: #dfe6f0;
   --far-text: #2f4f78;
@@ -40,6 +42,8 @@
     --accent-text: #f0a0ad;
     --on-accent: #1a1714;
     --near-soft: #23331f;
+    --mid-soft: #3a2f17;
+    --mid-text: #e8c37a;
     --near-text: #9fcf98;
     --far-soft: #1f2a3a;
     --far-text: #9dbbe6;
@@ -64,6 +68,8 @@
     --accent-text: #f0a0ad;
     --on-accent: #1a1714;
     --near-soft: #23331f;
+    --mid-soft: #3a2f17;
+    --mid-text: #e8c37a;
     --near-text: #9fcf98;
     --far-soft: #1f2a3a;
     --far-text: #9dbbe6;
@@ -176,6 +182,7 @@ button, input, select { font: inherit; color: inherit; }
 .chip-quiet { background: var(--surface-2); color: var(--muted); }
 .chip-near { background: var(--near-soft); color: var(--near-text); }
 .chip-far { background: var(--far-soft); color: var(--far-text); }
+.chip-near-distant { background: var(--mid-soft); color: var(--mid-text); }
 
 .empty { text-align: center; padding: 48px 16px; color: var(--muted); }
 .empty h1 { color: var(--text); margin-bottom: 8px; }
