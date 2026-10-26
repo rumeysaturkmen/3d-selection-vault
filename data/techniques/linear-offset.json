@@ -1,7 +1,9 @@
 {
   "id": "linear-offset",
   "name": "Linear Offset",
-  "aliases": [],
+  "aliases": [
+    "Arm Extension (linear)"
+  ],
   "year": 2018,
   "summary": "A virtual hand cursor whose offset grows in proportion to the head-to-hand distance, a linear version of Go-Go's arm extension.",
   "howItWorks": "The cursor is displaced along the head-to-hand direction by an amount proportional to how far the hand is from the head. For targets out of reach it outperformed the fixed-length and Go-Go offsets in the study; for targets within reach no offset was best.",
@@ -51,6 +53,10 @@
     {
       "publication": "li-2018-cursoroffset",
       "role": "introduced"
+    },
+    {
+      "publication": "han-2026-beyondarmsreach",
+      "role": "evaluated"
     }
   ],
   "relationships": [

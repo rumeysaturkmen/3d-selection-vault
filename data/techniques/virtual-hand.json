@@ -1,7 +1,9 @@
 {
   "id": "virtual-hand",
   "name": "Virtual Hand",
-  "aliases": [],
+  "aliases": [
+    "Simple Hand"
+  ],
   "year": 1997,
   "summary": "A direct 3D selection technique where the user controls a virtual hand to touch, grab, and manipulate nearby objects in the virtual environment.",
   "howItWorks": "Move the tracked hand or controller so that the virtual hand overlaps with the target object, then confirm the selection by grabbing, pressing a button, or performing a pinch gesture.",
@@ -92,6 +94,10 @@
     },
     {
       "publication": "bruder-2013-visualconflicts",
+      "role": "evaluated"
+    },
+    {
+      "publication": "han-2026-beyondarmsreach",
       "role": "evaluated"
     }
   ],
