@@ -19,12 +19,6 @@
     "toolOrigin": [
       "both-hands"
     ],
-    "toolDof": [
-      "6"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "offset"
     ],
@@ -42,6 +36,9 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "desktop"
     ]
   },
   "tags": [],
@@ -69,7 +66,8 @@
     "uncertain": [
       "selectionTool",
       "motorVisualSpace",
-      "confirmation"
+      "confirmation",
+      "environment"
     ]
   }
 }

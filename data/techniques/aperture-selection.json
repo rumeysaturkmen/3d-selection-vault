@@ -22,12 +22,6 @@
     "toolOrigin": [
       "eye"
     ],
-    "toolDof": [
-      "3"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -46,6 +40,9 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "vr"
     ]
   },
   "tags": [
@@ -97,7 +94,7 @@
     "status": "draft",
     "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
     "uncertain": [
-      "toolDof"
+      "environment"
     ]
   }
 }

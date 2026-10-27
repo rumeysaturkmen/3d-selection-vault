@@ -22,12 +22,6 @@
     "toolOrigin": [
       "both-hands"
     ],
-    "toolDof": [
-      "6"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -45,6 +39,10 @@
     ],
     "handlesOcclusion": [
       "yes"
+    ],
+    "environment": [
+      "vr",
+      "ar"
     ]
   },
   "tags": [
@@ -94,8 +92,6 @@
   "review": {
     "status": "draft",
     "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
-    "uncertain": [
-      "toolDof"
-    ]
+    "uncertain": []
   }
 }

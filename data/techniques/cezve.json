@@ -28,12 +28,6 @@
     "toolOrigin": [
       "hand"
     ],
-    "toolDof": [
-      "6"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "offset"
     ],
@@ -52,6 +46,9 @@
     ],
     "handlesOcclusion": [
       "yes"
+    ],
+    "environment": [
+      "vr"
     ]
   },
   "tags": [],

@@ -21,12 +21,6 @@
     "toolOrigin": [
       "hand"
     ],
-    "toolDof": [
-      "3"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "direct"
     ],
@@ -44,6 +38,9 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "projection"
     ]
   },
   "tags": [],

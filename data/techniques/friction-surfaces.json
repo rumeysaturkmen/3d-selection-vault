@@ -18,12 +18,6 @@
     "toolOrigin": [
       "screen"
     ],
-    "toolDof": [
-      "2"
-    ],
-    "cdRatio": [
-      "anisomorphic-adaptive"
-    ],
     "motorVisualSpace": [
       "offset"
     ],
@@ -39,6 +33,9 @@
     "targetDistance": [],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "vr"
     ]
   },
   "tags": [

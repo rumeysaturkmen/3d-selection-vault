@@ -19,12 +19,6 @@
     "toolOrigin": [
       "screen"
     ],
-    "toolDof": [
-      "2"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "offset"
     ],
@@ -40,6 +34,9 @@
     "targetDistance": [],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "desktop"
     ]
   },
   "tags": [],

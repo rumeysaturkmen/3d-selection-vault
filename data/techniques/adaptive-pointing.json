@@ -20,12 +20,6 @@
     "toolOrigin": [
       "hand"
     ],
-    "toolDof": [
-      "5"
-    ],
-    "cdRatio": [
-      "anisomorphic-adaptive"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -43,6 +37,9 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "projection"
     ]
   },
   "tags": [
@@ -71,7 +68,7 @@
     "status": "draft",
     "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
     "uncertain": [
-      "toolDof"
+      "environment"
     ]
   }
 }

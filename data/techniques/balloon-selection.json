@@ -24,12 +24,6 @@
     "toolOrigin": [
       "both-hands"
     ],
-    "toolDof": [
-      "3"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "offset"
     ],
@@ -47,6 +41,10 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "ar",
+      "projection"
     ]
   },
   "tags": [],
@@ -72,8 +70,8 @@
     "status": "draft",
     "notes": "Added from the paper (Benko & Feiner, 3DUI 2007), coded from the full text in Oct 2026.",
     "uncertain": [
-      "cdRatio",
-      "handlesOcclusion"
+      "handlesOcclusion",
+      "environment"
     ]
   }
 }

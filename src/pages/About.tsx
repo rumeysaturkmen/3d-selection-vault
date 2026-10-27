@@ -121,7 +121,7 @@ export default function About() {
         </div>
         {schemeStatus === 'draft' && (
           <p className="notice">
-            This scheme is a draft and may still change. The first six attributes follow the classification in
+            This scheme is a draft and may still change. Selection tool, tool origin, motor and visual space, and disambiguation follow the classification in
             Argelaguet and Andujar's 2013 survey of 3D selection techniques.
           </p>
         )}

@@ -1,7 +1,10 @@
 {
   "id": "sense-shapes",
   "name": "Sense shapes",
-  "aliases": [],
+  "aliases": [
+    "Mutual disambiguation",
+    "Statistical geometry selection"
+  ],
   "year": 2003,
   "summary": "Selection volumes attached to the user collect statistics (time inside, distance, visibility) to rank candidate objects.",
   "howItWorks": "Invisible volumes such as cones track which objects pass through them and for how long; these statistics rank the candidates for selection.",
@@ -17,12 +20,6 @@
     ],
     "toolOrigin": [
       "hand"
-    ],
-    "toolDof": [
-      "5"
-    ],
-    "cdRatio": [
-      "isomorphic"
     ],
     "motorVisualSpace": [
       "remote"
@@ -41,6 +38,10 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "ar",
+      "vr"
     ]
   },
   "tags": [
@@ -57,9 +58,19 @@
     {
       "publication": "survey2013-ref-68",
       "role": "reference"
+    },
+    {
+      "publication": "kaiser-2003-mutualdisambiguation",
+      "role": "reference"
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "technique": "cone-casting",
+      "type": "related",
+      "note": "Uses pointing cones, ranked over time rather than at one instant."
+    }
+  ],
   "review": {
     "status": "draft",
     "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",

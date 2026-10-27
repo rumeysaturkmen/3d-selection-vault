@@ -19,12 +19,6 @@
     "toolOrigin": [
       "hand"
     ],
-    "toolDof": [
-      "6"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -42,6 +36,9 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "projection"
     ]
   },
   "tags": [],
@@ -62,7 +59,6 @@
     "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
     "uncertain": [
       "disambiguation",
-      "toolDof",
       "handlesOcclusion"
     ]
   }

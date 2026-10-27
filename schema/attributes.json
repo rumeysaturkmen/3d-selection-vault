@@ -1,7 +1,37 @@
 {
-  "$comment": "Attribute scheme 1.0 for 3D selection techniques (roadmap step 2). The first six attributes follow Argelaguet & Andujar (2013); the rest are additions. This file is the single source of truth: the data validator and the website both read it. Changing a value id means updating every technique that uses it.",
+  "$comment": "Attribute scheme 1.0 for 3D selection techniques (roadmap step 2). Selection tool, tool origin, motor and visual space and disambiguation follow Argelaguet & Andujar (2013); the rest are additions. This file is the single source of truth: the data validator and the website both read it. Changing a value id means updating every technique that uses it.",
   "status": "1.0",
   "attributes": [
+    {
+      "id": "environment",
+      "label": "Environment",
+      "description": "Where the technique was built and tested: a VR headset, AR or mixed reality (head-worn or handheld), a desktop or fish-tank monitor, a projection-based or large display (CAVE, workbench, wall), or a volumetric display.",
+      "basis": "Vault addition",
+      "multiple": true,
+      "weight": 1,
+      "values": [
+        {
+          "id": "vr",
+          "label": "VR (head-mounted display)"
+        },
+        {
+          "id": "ar",
+          "label": "AR / mixed reality"
+        },
+        {
+          "id": "desktop",
+          "label": "Desktop / fish tank"
+        },
+        {
+          "id": "projection",
+          "label": "CAVE, projection or large display"
+        },
+        {
+          "id": "volumetric",
+          "label": "Volumetric display"
+        }
+      ]
+    },
     {
       "id": "selectionTool",
       "label": "Selection tool",
@@ -63,62 +93,6 @@
         {
           "id": "screen",
           "label": "Screen cursor (desktop)"
-        }
-      ]
-    },
-    {
-      "id": "toolDof",
-      "label": "Tool degrees of freedom",
-      "description": "How many degrees of freedom the user controls to aim the selection tool. A tracked controller has 6 (position x, y, z and three rotations), but a straight ray uses only 5, because rolling the controller around the ray's own axis does not change where it points.",
-      "basis": "Argelaguet & Andujar 2013",
-      "multiple": false,
-      "weight": 1,
-      "values": [
-        {
-          "id": "2",
-          "label": "2 DoF"
-        },
-        {
-          "id": "3",
-          "label": "3 DoF"
-        },
-        {
-          "id": "4",
-          "label": "4 DoF"
-        },
-        {
-          "id": "5",
-          "label": "5 DoF"
-        },
-        {
-          "id": "6",
-          "label": "6 DoF"
-        },
-        {
-          "id": "7+",
-          "label": "More than 6 DoF"
-        }
-      ]
-    },
-    {
-      "id": "cdRatio",
-      "label": "Control-display ratio",
-      "description": "How physical motion maps to tool motion.",
-      "basis": "Argelaguet & Andujar 2013",
-      "multiple": false,
-      "weight": 2,
-      "values": [
-        {
-          "id": "isomorphic",
-          "label": "Isomorphic (1:1)"
-        },
-        {
-          "id": "anisomorphic-fixed",
-          "label": "Anisomorphic, fixed"
-        },
-        {
-          "id": "anisomorphic-adaptive",
-          "label": "Anisomorphic, adaptive"
         }
       ]
     },

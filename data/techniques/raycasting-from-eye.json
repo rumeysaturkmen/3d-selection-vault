@@ -18,12 +18,6 @@
     "toolOrigin": [
       "eye"
     ],
-    "toolDof": [
-      "2"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -41,6 +35,9 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "vr"
     ]
   },
   "tags": [
@@ -66,6 +63,9 @@
   "relationships": [],
   "review": {
     "status": "draft",
-    "notes": "Checked against Argelaguet & Andujar (IEEE CG&A 2009) in Oct 2026: the ray starts at the eye, its direction follows the hand's orientation (6-DoF Wanda in a CAVE), and a feedback ray is drawn from the hand. Outperformed classic ray casting in sparse and cluttered scenes."
+    "notes": "Checked against Argelaguet & Andujar (IEEE CG&A 2009) in Oct 2026: the ray starts at the eye, its direction follows the hand's orientation (6-DoF Wanda in a CAVE), and a feedback ray is drawn from the hand. Outperformed classic ray casting in sparse and cluttered scenes.",
+    "uncertain": [
+      "environment"
+    ]
   }
 }

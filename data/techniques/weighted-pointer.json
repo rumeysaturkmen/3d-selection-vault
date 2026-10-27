@@ -19,12 +19,6 @@
       "eye",
       "head"
     ],
-    "toolDof": [
-      "2"
-    ],
-    "cdRatio": [
-      "anisomorphic-adaptive"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -44,6 +38,9 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "vr"
     ]
   },
   "tags": [],
@@ -64,9 +61,9 @@
     "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
     "uncertain": [
       "toolOrigin",
-      "cdRatio",
       "inputModality",
-      "confirmation"
+      "confirmation",
+      "environment"
     ]
   }
 }

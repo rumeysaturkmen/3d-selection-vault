@@ -18,10 +18,10 @@ describe('similarity', () => {
     expect(similarity(attributes, a, b).score).toBe(1);
   });
 
-  it('treats tool DoF as ordered', () => {
-    const s5 = similarity(attributes, { toolDof: ['5'] }, { toolDof: ['6'] }).score;
-    const s2 = similarity(attributes, { toolDof: ['2'] }, { toolDof: ['6'] }).score;
-    expect(s5).toBeGreaterThan(s2);
+  it('treats target distance as ordered', () => {
+    const mid = similarity(attributes, { targetDistance: ['near-distant'] }, { targetDistance: ['far'] }).score;
+    const near = similarity(attributes, { targetDistance: ['near'] }, { targetDistance: ['far'] }).score;
+    expect(mid).toBeGreaterThan(near);
   });
 
   it('ranks ray techniques near raycasting', () => {

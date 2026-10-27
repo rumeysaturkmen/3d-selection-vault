@@ -22,12 +22,6 @@
       "eye",
       "head"
     ],
-    "toolDof": [
-      "3"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -47,6 +41,9 @@
     ],
     "handlesOcclusion": [
       "yes"
+    ],
+    "environment": [
+      "vr"
     ]
   },
   "tags": [],
@@ -71,8 +68,6 @@
   "review": {
     "status": "draft",
     "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
-    "uncertain": [
-      "toolDof"
-    ]
+    "uncertain": []
   }
 }

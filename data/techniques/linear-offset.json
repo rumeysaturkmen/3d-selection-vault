@@ -20,12 +20,6 @@
     "toolOrigin": [
       "hand"
     ],
-    "toolDof": [
-      "3"
-    ],
-    "cdRatio": [
-      "anisomorphic-fixed"
-    ],
     "motorVisualSpace": [
       "offset"
     ],
@@ -46,6 +40,9 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "vr"
     ]
   },
   "tags": [],
@@ -78,6 +75,7 @@
   ],
   "review": {
     "status": "draft",
-    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": []
   }
 }

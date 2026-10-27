@@ -22,12 +22,6 @@
     "toolOrigin": [
       "hand"
     ],
-    "toolDof": [
-      "5"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -45,6 +39,9 @@
     ],
     "handlesOcclusion": [
       "yes"
+    ],
+    "environment": [
+      "desktop"
     ]
   },
   "tags": [
@@ -88,7 +85,7 @@
     "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
     "uncertain": [
       "selectionTool",
-      "toolDof"
+      "environment"
     ]
   }
 }

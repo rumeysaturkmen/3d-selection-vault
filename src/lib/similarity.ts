@@ -17,8 +17,8 @@ export interface Similarity {
   matches: AttributeMatch[];
 }
 
-// Ordered attributes: 5 DoF is closer to 6 than to 2, and near-distant sits between near and far.
-const ORDINAL = new Set(['toolDof', 'targetDistance']);
+// Ordered attributes: near-distant sits between near and far.
+const ORDINAL = new Set(['targetDistance']);
 
 function agreement(attr: AttributeDef, a: string[], b: string[]): AttributeMatch {
   const shared = a.filter((v) => b.includes(v));

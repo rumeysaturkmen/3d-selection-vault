@@ -20,12 +20,6 @@
     "toolOrigin": [
       "eye"
     ],
-    "toolDof": [
-      "2"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -43,6 +37,9 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "vr"
     ]
   },
   "tags": [],

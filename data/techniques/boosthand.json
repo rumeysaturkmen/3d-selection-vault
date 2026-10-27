@@ -19,12 +19,6 @@
     "toolOrigin": [
       "hand"
     ],
-    "toolDof": [
-      "3"
-    ],
-    "cdRatio": [
-      "anisomorphic-adaptive"
-    ],
     "motorVisualSpace": [
       "offset"
     ],
@@ -43,6 +37,9 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "ar"
     ]
   },
   "tags": [],
@@ -68,7 +65,6 @@
     "status": "draft",
     "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
     "uncertain": [
-      "cdRatio",
       "confirmation"
     ]
   }

@@ -22,12 +22,6 @@
     "toolOrigin": [
       "hand"
     ],
-    "toolDof": [
-      "6"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "offset"
     ],
@@ -45,6 +39,9 @@
     ],
     "handlesOcclusion": [
       "yes"
+    ],
+    "environment": [
+      "volumetric"
     ]
   },
   "tags": [
@@ -93,6 +90,7 @@
   ],
   "review": {
     "status": "draft",
-    "notes": "Checked against Grossman & Balakrishnan (UIST 2006) in Oct 2026: evaluated on a volumetric display with targets within arm's reach, using a tracked one-button handheld device."
+    "notes": "Checked against Grossman & Balakrishnan (UIST 2006) in Oct 2026: evaluated on a volumetric display with targets within arm's reach, using a tracked one-button handheld device.",
+    "uncertain": []
   }
 }

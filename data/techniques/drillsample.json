@@ -18,12 +18,6 @@
     "toolOrigin": [
       "screen"
     ],
-    "toolDof": [
-      "2"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -42,6 +36,9 @@
     ],
     "handlesOcclusion": [
       "yes"
+    ],
+    "environment": [
+      "ar"
     ]
   },
   "tags": [],

@@ -22,12 +22,6 @@
     "toolOrigin": [
       "hand"
     ],
-    "toolDof": [
-      "5"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -46,6 +40,9 @@
     ],
     "handlesOcclusion": [
       "yes"
+    ],
+    "environment": [
+      "vr"
     ]
   },
   "tags": [
@@ -102,6 +99,7 @@
   ],
   "review": {
     "status": "draft",
-    "notes": "Confirmation (voice, which also does the disambiguation) confirmed by the author. Other attributes drafted by Claude."
+    "notes": "Confirmation (voice, which also does the disambiguation) confirmed by the author. Other attributes drafted by Claude.",
+    "uncertain": []
   }
 }

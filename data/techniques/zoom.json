@@ -18,12 +18,6 @@
     "toolOrigin": [
       "hand"
     ],
-    "toolDof": [
-      "5"
-    ],
-    "cdRatio": [
-      "isomorphic"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -41,6 +35,9 @@
     ],
     "handlesOcclusion": [
       "partly"
+    ],
+    "environment": [
+      "vr"
     ]
   },
   "tags": [],
@@ -72,7 +69,8 @@
     "notes": "Added from Weise, Zender & Lucke 2019 (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
     "uncertain": [
       "inputModality",
-      "handlesOcclusion"
+      "handlesOcclusion",
+      "environment"
     ]
   }
 }

@@ -21,12 +21,6 @@
     "toolOrigin": [
       "hand"
     ],
-    "toolDof": [
-      "5"
-    ],
-    "cdRatio": [
-      "anisomorphic-adaptive"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -46,6 +40,9 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "vr"
     ]
   },
   "tags": [],

@@ -19,12 +19,6 @@
       "eye",
       "head"
     ],
-    "toolDof": [
-      "2"
-    ],
-    "cdRatio": [
-      "anisomorphic-fixed"
-    ],
     "motorVisualSpace": [
       "remote"
     ],
@@ -46,6 +40,9 @@
     ],
     "handlesOcclusion": [
       "no"
+    ],
+    "environment": [
+      "ar"
     ]
   },
   "tags": [],
@@ -70,7 +67,6 @@
     "status": "draft",
     "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
     "uncertain": [
-      "cdRatio",
       "inputModality",
       "confirmation"
     ]
