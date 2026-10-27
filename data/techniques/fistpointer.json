@@ -1,0 +1,64 @@
+{
+  "id": "fistpointer",
+  "name": "FistPointer",
+  "aliases": [
+    "Thumbs-up pointer"
+  ],
+  "year": 2017,
+  "summary": "In smartphone-based mobile VR, a hand held up in a thumbs-up pose behind the phone moves an on-screen pointer, and folding the thumb down selects, like pressing a joystick button.",
+  "howItWorks": "The phone's rear camera, facing out of a cardboard viewer, detects the hand behind the phone. The hand's position in the camera image drives a pointer on the VR view, so the user points by moving the thumbs-up fist; folding the thumb is recognised as a click. Needs no extra hardware beyond the phone. Presented as a proof-of-concept with a shooting-style game and informal user impressions; no controlled performance study.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "anisomorphic-fixed"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "ishii-2017-fistpointer",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "cdRatio",
+      "targetDistance"
+    ]
+  }
+}

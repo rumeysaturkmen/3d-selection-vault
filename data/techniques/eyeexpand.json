@@ -1,0 +1,82 @@
+{
+  "id": "eyeexpand",
+  "name": "EyeExpand",
+  "aliases": [
+    "Gaze-based progressive refinement"
+  ],
+  "year": 2025,
+  "summary": "While holding the trigger the user looks at a region of a dense scene; on release the objects inside a gaze cone are laid out on a disc in front of them, keeping their relative positions, and the target is picked with a controller ray.",
+  "howItWorks": "Two-step progressive refinement. Pressing the controller trigger activates an invisible cone from between the eyes along the combined gaze direction, and objects inside it are outlined as the eyes move. Releasing the trigger moves all objects in the cone onto a flat circular area in front of the user, preserving their relative layout and encoding depth by scaling, so previously occluded objects become visible. The user then selects the target with ordinary controller raycasting. Compared in VR with ConeExpand, DiscPIM and CylinderPIM at three densities: EyeExpand was fastest at low and medium density and when the target location was known, and at high density matched DiscPIM's speed with less physical effort.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "cone",
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye",
+      "hand"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "gaze",
+      "controller"
+    ],
+    "confirmation": [
+      "release",
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "xu-2025-eyeexpand",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "disocclusion-mini-map",
+      "type": "compared-with",
+      "source": "xu-2025-eyeexpand",
+      "note": "Compared with ConeExpand from the same line of work."
+    },
+    {
+      "technique": "squad",
+      "type": "related"
+    },
+    {
+      "technique": "expand",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
+  }
+}
