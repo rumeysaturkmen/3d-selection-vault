@@ -1,0 +1,80 @@
+{
+  "id": "gaze-probe-disambiguation",
+  "name": "Gaze Cone + Gaze Probe Disambiguation",
+  "aliases": [
+    "Gaze+Gesture+Disambiguation (GGD)",
+    "Gaze Probe"
+  ],
+  "year": 2017,
+  "summary": "An invisible 5° cone around the gaze collects nearby or hidden objects, which then spread out in a circle so the user can look at the intended one and close the hand to select it.",
+  "howItWorks": "The user fixates for 200 ms and swipes a hand toward the gaze point (Leap Motion). An invisible 5° gaze cone gathers every object whose centroid lies inside it. If only one object is caught it is highlighted; if several are, the rest of the scene is blurred and the candidates animate onto a circle on a single depth plane, centred on their average centroid, so none overlap. The user then looks at the intended candidate and closes the palm to confirm; swiping away cancels and opening the palm deselects. In a desktop study (N=12, Tobii EyeX + Leap Motion) against plain Gaze+Gesture and a mouse, it nearly eliminated errors under partial and full occlusion but was slower when nothing was occluded.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "gaze",
+      "hand"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "deng-2017-gazeprobe",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "gaze-gesture",
+      "type": "extends",
+      "note": "Adds a gaze cone and circular decluttering step to Gaze+Gesture."
+    },
+    {
+      "technique": "gaze-gesture",
+      "type": "compared-with",
+      "source": "deng-2017-gazeprobe"
+    },
+    {
+      "technique": "radial-pursuit",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

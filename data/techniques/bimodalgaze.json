@@ -1,0 +1,77 @@
+{
+  "id": "bimodalgaze",
+  "name": "BimodalGaze",
+  "aliases": [
+    "Gaze with head refinement"
+  ],
+  "year": 2020,
+  "summary": "Point with your eyes and, only if the gaze cursor is off, nudge it with a deliberate head movement; the switch to head control happens automatically.",
+  "howItWorks": "The cursor follows gaze (Gaze Mode). Head movements that start within 150 ms of an eye movement and go in roughly the same direction (within 20°) are treated as natural support for the gaze shift and ignored; other head movements above 15°/s are treated as gestural and switch the cursor to head control (Head Mode) for refinement. A fast saccade (over 160°/s), or the cursor drifting more than 10° from gaze, returns it to Gaze Mode. Compared with Eye+Head Pinpointing (manual button switch) in VR (N=12, HTC Vive with Tobii, 3° targets at 10–40°, artificial gaze error added): all targets were reached and refinement was faster, but premature clicks in Gaze Mode made it about 140 ms slower overall; it beat Pinpointing on errors when eye tracking was least accurate. Selection was confirmed with a controller trackpad press in the study.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye",
+      "head"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "gaze",
+      "head"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "sidenmark-2020-bimodalgaze",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "pinpointing",
+      "type": "compared-with",
+      "source": "sidenmark-2020-bimodalgaze"
+    },
+    {
+      "technique": "pinpointing",
+      "type": "related",
+      "note": "Automates Pinpointing's manual switch from gaze to head refinement."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "targetDistance",
+      "confirmation"
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "3d-gaze-pcd",
+  "name": "3D Gaze Point Selection",
+  "aliases": [
+    "Pupil-centre-distance gaze depth",
+    "Vergence-based 3D gaze selection"
+  ],
+  "year": 2008,
+  "summary": "Select objects at different depths on a stereo display by gaze alone: the eye tracker estimates both where you look and how far, from the distance between your two pupils.",
+  "howItWorks": "Gaze direction is estimated from the pupil and two corneal glints of one eye; gaze depth from the pupil-centre distance (PCD) between both eyes, which grows as the eyes converge less on farther points, after a short per-user calibration. The intersection of the gaze direction with the estimated depth plane gives a 3D gaze point; looking at an object for about 1 s selects it. An ultrasonic sensor compensates small head movements. Built with a single camera and IR LEDs for a parallax-barrier autostereoscopic display, distinguishing four depth levels (0.63–2.6 m); in a dart-and-arrow demo, gaze picked the arrow and then a point on the dart. Selection accuracy within 1 s was at least 93% over 9 regions x 4 depths (3 users).",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [
+      "dwell"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "ki-2008-3dgaze",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "eye-gaze-selection",
+      "type": "extends",
+      "note": "Adds gaze depth from binocular vergence to gaze selection."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "handlesOcclusion",
+      "targetDistance"
+    ]
+  }
+}

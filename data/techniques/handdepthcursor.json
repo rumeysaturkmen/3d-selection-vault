@@ -1,0 +1,84 @@
+{
+  "id": "handdepthcursor",
+  "name": "HandDepthCursor",
+  "aliases": [
+    "HDC"
+  ],
+  "year": 2023,
+  "summary": "Bare-hand RayCursor: point with one hand and pinch to select, while the other hand moves a depth cursor along the ray with simple point-forward / thumb-back gestures.",
+  "howItWorks": "A ray is cast from the dominant hand and a pinch confirms. The non-dominant hand moves a cursor along the ray: pointing the index finger forward pushes it deeper, pointing the thumb backward brings it closer. Objects behind the cursor become transparent, as in Alpha Cursor, to help with occluded targets. It was fast and accurate, especially at lower density, but some users found the cursor too slow and it does not disambiguate sideways. Evaluated (N=18, Meta Quest 2 hand tracking) against MultiFingerBubble with 10 cm spheres in a 1 m cube 0.8 m in front of the user, at two densities.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "pinch"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "shi-2023-barehanddense",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycursor",
+      "type": "variant-of",
+      "note": "RayCursor with bare-hand gestures instead of a touchpad."
+    },
+    {
+      "technique": "alphacursor",
+      "type": "related",
+      "note": "Makes objects behind the cursor transparent."
+    },
+    {
+      "technique": "multifingerbubble",
+      "type": "compared-with",
+      "source": "shi-2023-barehanddense"
+    },
+    {
+      "technique": "handconegrid",
+      "type": "compared-with",
+      "source": "shi-2023-barehanddense"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
+  }
+}

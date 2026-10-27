@@ -1,0 +1,82 @@
+{
+  "id": "ar-region-selection",
+  "name": "Gaze and Hand Region Selection",
+  "aliases": [
+    "Pinch-Only",
+    "Eye-Only",
+    "Gaze-Finger",
+    "Gaze-Pinch region selection",
+    "Rectangle region selection in AR"
+  ],
+  "year": 2023,
+  "summary": "Four ways to draw a rectangular selection region in AR without a mouse: pinch-and-drag, blink-to-blink with the eyes, or gaze drawing the rectangle while the hand starts and ends it.",
+  "howItWorks": "The region is drawn from one corner to the opposite one in three steps: start, form, end. Pinch-Only: pinch, drag the hand (thumb position) and release. Eye-Only: blink (0.2 s) to pin the first corner, move the gaze, blink again. Gaze-Pinch: pinch while looking at the first corner, hold, look at the last corner and release. Gaze-Finger: dwell 0.8 s on the raised fingertip to start, draw with the gaze while keeping the finger at the region's depth, then withdraw the finger to end. Evaluated on HoloLens 2 (N=20) with regions 0.5 m away, some larger than the field of view: the unimodal Pinch-Only and Eye-Only were faster and preferred; Gaze-Finger gave the most accurate start point. Eye-Only was the most socially acceptable.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "eye",
+      "hand"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze",
+      "hand"
+    ],
+    "confirmation": [
+      "pinch",
+      "gesture",
+      "dwell"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "shi-2023-regionselection",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "gaze-hand-alignment",
+      "type": "related",
+      "note": "Gaze-Finger builds on the gaze-hand alignment principle."
+    },
+    {
+      "technique": "gaze-pinch",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "toolDof"
+    ]
+  }
+}

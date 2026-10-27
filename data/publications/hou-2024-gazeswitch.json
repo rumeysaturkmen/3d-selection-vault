@@ -1,0 +1,18 @@
+{
+  "id": "hou-2024-gazeswitch",
+  "title": "GazeSwitch: Automatic Eye-Head Mode Switching for Optimised Hands-Free Pointing",
+  "authors": [
+    "Baosheng James Hou",
+    "Joshua Newn",
+    "Ludwig Sidenmark",
+    "Anam Ahmad Khan",
+    "Hans Gellersen"
+  ],
+  "year": 2024,
+  "venue": "Proceedings of the ACM on Human-Computer Interaction 8 (ETRA)",
+  "doi": "10.1145/3655601",
+  "url": "https://doi.org/10.1145/3655601",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

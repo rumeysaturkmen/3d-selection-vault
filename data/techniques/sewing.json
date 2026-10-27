@@ -1,0 +1,75 @@
+{
+  "id": "sewing",
+  "name": "Sewing",
+  "aliases": [
+    "SewTyping",
+    "Penetrating selection"
+  ],
+  "year": 2022,
+  "summary": "A virtual mallet on the controller selects a target as soon as it passes through it from either side, so several targets can be picked in one continuous up-and-down weaving motion, like a needle through fabric.",
+  "howItWorks": "A virtual mallet (a stick with a small sphere at its tip, about 32 cm long in the typing study) extends from a handheld controller. Targets are thin 3D objects that react on both their top and bottom faces; a selection is confirmed the moment the tip penetrates either face, so after going down through one target the user moves straight on and comes up through the next instead of pulling back out. In a Fitts' task study (N=12, HTC Vive) Sewing was faster (751 vs 978 ms), more accurate and needed less movement than top-only 'bouncing'. Applied to text entry (SewTyping, N=27 between subjects) it reached 26.6 WPM, faster than controller pointing and a drum-like keyboard.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "li-2022-sewing",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "crossing-selection-vr",
+      "type": "related",
+      "note": "Both confirm by passing through a target boundary; Sewing uses two-sided 3D targets to chain selections."
+    },
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "li-2022-sewing"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "motorVisualSpace"
+    ]
+  }
+}

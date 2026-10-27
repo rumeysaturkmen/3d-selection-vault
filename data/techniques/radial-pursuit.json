@@ -1,0 +1,80 @@
+{
+  "id": "radial-pursuit",
+  "name": "Radial Pursuit",
+  "aliases": [
+    "RP"
+  ],
+  "year": 2017,
+  "summary": "Looking at a cluttered area makes the objects there spread out in a circle, and the object whose movement the eyes follow is selected.",
+  "howItWorks": "When the gaze lands on a region, a bounding sphere of fixed radius gathers the objects inside it. These objects then move outward to evenly spaced positions on a circle. During the expansion the system accumulates the distance between the gaze point and each moving object; the object with the smallest total is selected if it is below a confidence threshold (smooth-pursuit matching). In a small study (N=8) on a cluttered scene it performed like gaze dwell on the same expanded layout, with higher satisfaction and lower fatigue.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive",
+      "behavioural"
+    ],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [
+      "dwell"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "piumsomboon-2017-naturalgaze",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "duo-reticles",
+      "type": "related"
+    },
+    {
+      "technique": "eye-gaze-selection",
+      "type": "compared-with",
+      "source": "piumsomboon-2017-naturalgaze"
+    },
+    {
+      "technique": "outline-pursuits",
+      "type": "related",
+      "note": "Both select by matching smooth-pursuit eye movement to object motion."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "handlesOcclusion",
+      "confirmation"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "senseshapes",
+  "name": "SenseShapes",
+  "aliases": [
+    "Mutual disambiguation",
+    "Statistical geometry selection"
+  ],
+  "year": 2003,
+  "summary": "Invisible or visible volumes (cones, spheres) attached to the head and hand record which objects pass through them over time; these rankings are fused with speech and gesture to work out which object the user means.",
+  "howItWorks": "SenseShapes are regions of interest (cuboids, cylinders, cones, spheres) attached to tracked body parts: e.g. an invisible cone from the head approximating gaze, and a visible pointing cone from the hand. Every frame the system logs which objects intersect each shape, and for a time window it ranks candidates by time inside the region, stability (how often they enter and leave), visibility (share of an off-screen object buffer rendered from the cone apex) and closeness to the cone centre. A multimodal integrator fuses these n-best object lists with n-best speech and 3D gesture (point, push, twist, rotate) hypotheses, so each modality can correct the others (mutual disambiguation); e.g. 'make that blue' while pointing, or 'make the table red' while just looking. In a pilot (6 users, VR interior-design room with 50 objects, magnetic trackers), mutual disambiguation accounted for 46% of correct interpretations, though object identification from gesture alone was right only 52% of the time.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "cone",
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand",
+      "head"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural",
+      "heuristic"
+    ],
+    "inputModality": [
+      "hand",
+      "head",
+      "voice"
+    ],
+    "confirmation": [
+      "voice",
+      "gesture"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "kaiser-2003-mutualdisambiguation",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "cone-casting",
+      "type": "related",
+      "note": "Uses pointing cones, ranked over time rather than at one instant."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolOrigin",
+      "targetDistance"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "nod-and-roll",
+  "name": "Nod and Roll",
+  "aliases": [
+    "NR"
+  ],
+  "year": 2017,
+  "summary": "The user looks at an object and nods to select it, while tilting the head left or right gives commands such as next and previous.",
+  "howItWorks": "Eye gaze indicates the object of interest; because the vestibulo-ocular reflex keeps the eyes on it, the head is free to gesture. A nod (downward then upward head acceleration beyond an angular threshold within a time window) selects or activates the gazed object. Head rolls are recognised as roll-and-return, roll-and-stay, or left-then-right sequences, giving seven discrete commands in total (e.g. browsing a gallery of paintings). It was only tried informally (N=8): rated fun, though heavy HMDs made nodding awkward.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze",
+      "head"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "piumsomboon-2017-naturalgaze",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "duo-reticles",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}

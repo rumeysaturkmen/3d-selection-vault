@@ -1,0 +1,73 @@
+{
+  "id": "pinchlens",
+  "name": "PinchLens",
+  "aliases": [
+    "Semi-pinch magnification"
+  ],
+  "year": 2023,
+  "summary": "Bare-hand pinch selection for tiny, packed objects: starting a pinch opens a magnifying bubble around the fingertips and slows the virtual hand, and closing the pinch picks the target.",
+  "howItWorks": "When the thumb and index tips come within 3.5 cm (semi-pinch) near a target, a spherical lens centred on the pinch point magnifies nearby targets in visual and motor space (sizes 4x, distances 3x, from a 1.67 cm area to a 5 cm sphere) and hides targets outside it. At the same time the virtual hand is slowed to half speed (adaptive control-display gain), a small cursor shows the pinch point, and a 1€-style filter steadies the hand. Completing the pinch selects the nearest target; afterwards the magnification ends and the virtual hand drifts back to the real one. In a pick-and-place study (N=12, Meta Quest 2 hand tracking, 0.75–1.5 mm targets, 500–1000 in an 8 cm cube 30 cm away), errors fell from 18.9% with plain pinching to 1.9%, with magnification as the main factor.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point",
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "anisomorphic-adaptive"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "heuristic",
+      "progressive"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "pinch"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "zhu-2023-pinchlens",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "bubble-cursor",
+      "type": "related",
+      "note": "Inspired by the Bubble Cursor and Bubble Lens."
+    },
+    {
+      "technique": "virtual-hand",
+      "type": "extends",
+      "note": "Adds magnification and slowed hand motion to direct pinch selection."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}

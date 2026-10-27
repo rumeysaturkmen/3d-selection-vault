@@ -1,0 +1,18 @@
+{
+  "id": "wang-2025-headshift",
+  "title": "HeadShift: Head Pointing with Dynamic Control-Display Gain",
+  "authors": [
+    "Haopeng Wang",
+    "Ludwig Sidenmark",
+    "Florian Weidner",
+    "Joshua Newn",
+    "Hans Gellersen"
+  ],
+  "year": 2025,
+  "venue": "ACM Transactions on Computer-Human Interaction 32(1), Article 2",
+  "doi": "10.1145/3689434",
+  "url": "https://doi.org/10.1145/3689434",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

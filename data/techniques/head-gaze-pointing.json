@@ -69,6 +69,10 @@
     {
       "publication": "chen-2026-lowvision",
       "role": "evaluated"
+    },
+    {
+      "publication": "deng-2024-dualgain",
+      "role": "evaluated"
     }
   ],
   "relationships": [

@@ -1,0 +1,80 @@
+{
+  "id": "headshift",
+  "name": "HeadShift",
+  "aliases": [
+    "Head pointing with dynamic gain"
+  ],
+  "year": 2025,
+  "summary": "Head pointing with pointer acceleration: the head cursor runs ahead of the head during fast turns and slows down for fine positioning, so you turn your head less and select more precisely.",
+  "howItWorks": "Instead of a cursor fixed in the display centre and moved 1:1 with the head, a transfer function sets the cursor gain from head movement: an acceleration-driven fast mode (gain up to 1.5, 3.85 or 6.05 in the Low, Medium and High variants) for ballistic turns, and a speed-driven moderate mode (gain 0.5–1.2) for corrections. The cursor may lead the head vector by at most 15°, keeping it within a comfortable eye-in-head range; upward gain is reduced so offsets settle slightly below centre. No target information or mode switch is needed. In a Fitts' law study (N=28, HTC Vive Pro Eye, controller click to confirm) all variants had lower error rates than plain head pointing at similar movement time, and Medium/High needed less head movement; in three VR applications (N=16, Quest Pro) High cut head movement and effort and was preferred by 10 of 16 users.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "head"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "anisomorphic-adaptive"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "head"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wang-2025-headshift",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "head-gaze-pointing",
+      "type": "extends",
+      "note": "Adds dynamic control-display gain to head pointing."
+    },
+    {
+      "technique": "head-gaze-pointing",
+      "type": "compared-with",
+      "source": "wang-2025-headshift"
+    },
+    {
+      "technique": "headdepth",
+      "type": "related",
+      "note": "Same group; both use head movement to extend gaze or head pointing."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

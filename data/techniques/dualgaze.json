@@ -1,0 +1,75 @@
+{
+  "id": "dualgaze",
+  "name": "DualGaze",
+  "aliases": [
+    "Gaze confirmation flag"
+  ],
+  "year": 2018,
+  "summary": "Gaze-only selection with a confirmation flag: looking at a button makes a small flag pop up where your gaze entered it, and glancing back at the flag confirms.",
+  "howItWorks": "When the gaze enters a selectable element and stays for 0.3 s, a small confirmation flag (about a quarter of the button) appears at the point where the gaze entered, i.e. behind the gaze path. Confirming therefore needs a deliberate look back, which a scanning gaze rarely does, avoiding the Midas Touch problem; looking elsewhere cancels. A pilot showed this trajectory-adaptive flag placement beat a fixed flag position. In a gaze-typing study (N=27, FOVE VR headset), DualGaze was significantly more accurate than 1 s dwell (Fixed Gaze) at similar overall speed, and became faster with practice.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "mohan-2018-dualgaze",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "eye-gaze-selection",
+      "type": "compared-with",
+      "source": "mohan-2018-dualgaze"
+    },
+    {
+      "technique": "eye-gaze-selection",
+      "type": "related",
+      "note": "Replaces dwell with a look-back confirmation."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "targetDistance",
+      "confirmation"
+    ]
+  }
+}

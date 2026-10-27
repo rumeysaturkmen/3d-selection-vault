@@ -1,0 +1,18 @@
+{
+  "id": "sidenmark-2020-bimodalgaze",
+  "title": "BimodalGaze: Seamlessly Refined Pointing with Gaze and Filtered Gestural Head Movement",
+  "authors": [
+    "Ludwig Sidenmark",
+    "Diako Mardanbegi",
+    "Argenis Ramirez Gomez",
+    "Christopher Clarke",
+    "Hans Gellersen"
+  ],
+  "year": 2020,
+  "venue": "ACM Symposium on Eye Tracking Research and Applications (ETRA '20 Full Papers), Article 8",
+  "doi": "10.1145/3379155.3391312",
+  "url": "https://doi.org/10.1145/3379155.3391312",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

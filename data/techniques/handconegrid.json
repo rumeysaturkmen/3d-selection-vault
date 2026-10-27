@@ -1,0 +1,82 @@
+{
+  "id": "handconegrid",
+  "name": "HandConeGrid",
+  "aliases": [
+    "HCG"
+  ],
+  "year": 2023,
+  "summary": "Bare-hand Flower Cone: the non-dominant hand casts a cone whose size you set by spreading your fingers; pinch to lay its contents out on a grid, then point and pinch to pick the target.",
+  "howItWorks": "Area selection: the non-dominant hand casts a cone, widened or narrowed by spreading the fingers or bringing the fingertips together, and a dominant-hand pinch confirms the area. All objects inside are laid out on a grid; the user points at the target with the dominant hand and pinches again. Pinching on blank space beside the grid redoes the area selection. It was slightly slower but the most accurate, especially in high density, and the most preferred. Evaluated (N=18, Meta Quest 2 hand tracking) against MultiFingerBubble with 10 cm spheres in a 1 m cube 0.8 m in front of the user, at two densities.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "cone",
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand",
+      "both-hands"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive",
+      "manual"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "pinch"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "shi-2023-barehanddense",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "flowercone",
+      "type": "variant-of",
+      "note": "Flower Cone's cone-then-grid selection with bare-hand gestures."
+    },
+    {
+      "technique": "multifingerbubble",
+      "type": "compared-with",
+      "source": "shi-2023-barehanddense"
+    },
+    {
+      "technique": "handdepthcursor",
+      "type": "compared-with",
+      "source": "shi-2023-barehanddense"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "fiberclay-brushing",
+  "name": "FiberClay bimanual brushing",
+  "aliases": [
+    "Bi-manual intersection brushing",
+    "FiberClay",
+    "Union brushing"
+  ],
+  "year": 2019,
+  "summary": "Select 3D trajectories with controller beams: one hand's beam adds what it touches, the other's removes it, and an intersection mode keeps only trajectories crossed by both beams at once.",
+  "howItWorks": "In FiberClay, an immersive tool for millions of 3D trajectories (flight paths, brain fibre tracts), pressing the trigger turns each controller ray into a brush beam with a 2 cm tolerance; any trajectory a beam crosses is selected as a whole. Add/remove brush: sweeping the right beam adds trajectories, the left beam subtracts them. Intersection brush: only trajectories touched by both beams at the same time are kept, e.g. flights that pass two places. Selections are refined progressively while grabbing, rotating and scaling the data and switching between data mappings. Built for a Samsung Odyssey headset with two controllers; assessed qualitatively with 36 domain experts rather than a controlled study. Users noted that hand jitter makes brushing distant items hard, so they pulled data closer first.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "progressive"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "hurter-2019-fiberclay",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "extends",
+      "note": "Rays used as brushes that select every trajectory they sweep."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "targetDistance",
+      "handlesOcclusion"
+    ]
+  }
+}

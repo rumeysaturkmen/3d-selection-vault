@@ -1,0 +1,82 @@
+{
+  "id": "freehand-multi-object-selection",
+  "name": "Freehand Multi-object Selection (Crossing / Cone-casting)",
+  "aliases": [
+    "Crossing Selection (CR)",
+    "Cone-casting Selection (CC)",
+    "Multi-Finger mode switching"
+  ],
+  "year": 2024,
+  "summary": "A hand ray selects single objects with a normal pinch, and a slightly different pinch switches to group selection, where the user either sweeps the ray across objects (crossing) or captures all objects inside a resizable cone.",
+  "howItWorks": "Default selection is a hand ray confirmed by a thumb-index pinch. Group selection is triggered by a mode-switching gesture: tapping the thumb on the index PIP joint (Finger Segment), a thumb-middle pinch (Multi-Finger), or rotating the wrist over 90° while pinching (Wrist Orientation). In Crossing Selection the user holds the gesture and every object the ray (resizable into a cylinder) touches is toggled until release; in Cone-casting Selection one gesture toggles every object inside a cone whose size is set by dragging the other index finger along a slider on the hand. Re-selecting a selected object deselects it. In a study (N=18, Meta Quest Pro) on clustered targets 2.5 m away, crossing was faster and needed fewer actions than cone-casting; mode gestures performed alike, Multi-Finger was preferred and Wrist Orientation disliked.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray",
+      "cone"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "pinch",
+      "gesture",
+      "release"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "shi-2024-freehandmultiobject",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "crossing-selection-vr",
+      "type": "extends",
+      "note": "Uses ray crossing for freehand group selection alongside pointing."
+    },
+    {
+      "technique": "cone-casting",
+      "type": "related"
+    },
+    {
+      "technique": "ar-region-selection",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
+  }
+}

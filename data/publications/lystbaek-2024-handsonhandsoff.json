@@ -1,0 +1,20 @@
+{
+  "id": "lystbaek-2024-handsonhandsoff",
+  "title": "Hands-on, Hands-off: Gaze-Assisted Bimanual 3D Interaction",
+  "authors": [
+    "Mathias N. Lystbæk",
+    "Thorbjørn Mikkelsen",
+    "Roland Krisztandl",
+    "Eric J. Gonzalez",
+    "Mar Gonzalez-Franco",
+    "Hans Gellersen",
+    "Ken Pfeuffer"
+  ],
+  "year": 2024,
+  "venue": "Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology (UIST '24)",
+  "doi": "10.1145/3654777.3676331",
+  "url": "https://doi.org/10.1145/3654777.3676331",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

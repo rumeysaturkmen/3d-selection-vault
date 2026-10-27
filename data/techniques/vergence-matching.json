@@ -1,0 +1,80 @@
+{
+  "id": "vergence-matching",
+  "name": "Vergence Matching",
+  "aliases": [
+    "Threshold-based Vergence Matching",
+    "Trigger-assisted Vergence Matching"
+  ],
+  "year": 2023,
+  "summary": "Candidate objects near a head ray move slowly back and forth in depth, and the system selects the one whose motion matches the user's vergence eye movements.",
+  "howItWorks": "A cone cast from the head (or hand/gaze) pre-selects the 2 or 4 nearest candidates within 10°. Each candidate oscillates in depth with a unique phase (harmonic motion, 2° vergence amplitude, 1 s cycle) and is scaled to keep a constant visual angle. Pearson correlation between the object's depth motion and the relative pupil positions (no gaze calibration needed) identifies the attended object. Threshold-based variant selects hands-free when correlation stays above 0.8; trigger-assisted variant highlights the best match and the user confirms with a controller button. In a study (N=12, HTC Vive Pro Eye) targets as small as 0.25° were selectable at 0.2–30 m, with completion times of about 3.2–3.9 s; trigger-assisted with 2 candidates was fastest, most accurate and preferred.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "head",
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "anisomorphic-fixed"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "head",
+      "gaze",
+      "controller"
+    ],
+    "confirmation": [
+      "dwell",
+      "button"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "sidenmark-2023-vergencematching",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "outline-pursuits",
+      "type": "related",
+      "note": "Same cone pre-selection followed by motion-correlation disambiguation, but using depth (vergence) instead of smooth pursuit."
+    },
+    {
+      "technique": "vor-depth",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "cdRatio",
+      "toolDof"
+    ]
+  }
+}

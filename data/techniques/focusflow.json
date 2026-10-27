@@ -1,0 +1,79 @@
+{
+  "id": "focusflow",
+  "name": "FocusFlow",
+  "aliases": [
+    "Virtual Window",
+    "Gaze-depth interaction"
+  ],
+  "year": 2024,
+  "summary": "The user looks at an object and then deliberately refocuses the eyes on a nearer, invisible plane; the change in focus depth confirms the selection and opens a virtual window for that object.",
+  "howItWorks": "Binocular gaze rays are projected onto a horizontal plane to estimate focus depth, smoothed with a 0.2 s moving average. Gaze direction picks the target object by ray intersection; when the estimated depth then falls into an activation zone around a hidden Virtual Window placed within 2 m of the user (where no scene objects are), the window activates (e.g. a preview, toolbar or zoom lens) and looking back out to the scene closes it. Visual cues teach the depth shift: strong (central circle), weak (corner frame) or adaptive (a circle whose opacity grows as focus moves closer, with a shrinking range during training). In a study (N=24, HTC Vive Pro Eye) with paintings 8 m away, adaptive learning let all participants activate without cues; activation took about 1.3 s, with fewer false triggers than 0.5 s dwell.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "zhang-2024-focusflow",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "eye-gaze-selection",
+      "type": "compared-with",
+      "source": "zhang-2024-focusflow"
+    },
+    {
+      "technique": "vergence-matching",
+      "type": "related"
+    },
+    {
+      "technique": "deep-gaze-pointing",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation",
+      "toolDof"
+    ]
+  }
+}

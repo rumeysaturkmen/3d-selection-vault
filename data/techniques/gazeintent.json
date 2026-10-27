@@ -1,0 +1,77 @@
+{
+  "id": "gazeintent",
+  "name": "GazeIntent",
+  "aliases": [
+    "GazeIntent-General",
+    "GazeIntent-Personal",
+    "Intent-adaptive dwell"
+  ],
+  "year": 2024,
+  "summary": "Gaze-only dwell selection whose dwell time shrinks when a machine-learning model, reading your eye movements, predicts that you are about to select.",
+  "howItWorks": "An LSTM intent model reads 17-sample windows of gaze velocity, displacement and acceleration (plus fixation and saccade flags) and predicts whether the user intends to select. The last four predictions are combined into a scaling factor that cuts the static dwell threshold, down to instant selection when the model is confident, so false positives from single predictions are damped. The model (F1 = 0.94) was trained on controller selections in an arithmetic task on a Meta Quest Pro, then deployed for gaze-only selection in a Fitts-style task, arithmetic grids and a sliding puzzle. Compared with static dwell and a dwell-then-intent method (after Isomoto et al.), GazeIntent allowed many more selections in the faster tasks, felt fastest, and personalised models were preferred by most returning users.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [
+      "dwell"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "narkar-2024-gazeintent",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "eye-gaze-selection",
+      "type": "extends",
+      "note": "Adapts the dwell threshold with a real-time intent model."
+    },
+    {
+      "technique": "eye-gaze-selection",
+      "type": "compared-with",
+      "source": "narkar-2024-gazeintent"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

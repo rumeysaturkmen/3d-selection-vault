@@ -1,0 +1,19 @@
+{
+  "id": "sidenmark-2023-vergencematching",
+  "title": "Vergence Matching: Inferring Attention to Objects in 3D Environments for Gaze-Assisted Selection",
+  "authors": [
+    "Ludwig Sidenmark",
+    "Christopher Clarke",
+    "Joshua Newn",
+    "Mathias N. Lystbæk",
+    "Ken Pfeuffer",
+    "Hans Gellersen"
+  ],
+  "year": 2023,
+  "venue": "Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23)",
+  "doi": "10.1145/3544548.3580685",
+  "url": "https://doi.org/10.1145/3544548.3580685",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

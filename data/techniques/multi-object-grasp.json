@@ -1,0 +1,73 @@
+{
+  "id": "multi-object-grasp",
+  "name": "Multi-Object Grasp",
+  "aliases": [
+    "Multi-object grasping",
+    "Serial grasp"
+  ],
+  "year": 2022,
+  "summary": "Grab several objects in one virtual hand, one after another, and release them one at a time or all together, like picking up a handful of tokens.",
+  "howItWorks": "Holding the controller's middle (grip) trigger grasps the object the virtual hand touches; while it is held, the thumb button adds each further touched object to the hand, the index trigger releases the most recent one, and letting go of the grip releases all. Grasped objects can be laid out around the hand in several arrangements (stacked, in a line, along the forearm, as a fan). Compared with single-object grasping and real hands in a token-sorting task at a desk, at shelves and across a 7 x 4 m room (N=12, Oculus Quest): single-object grasping was faster at the desk and shelves, but in the room the multi-object grasp cut the hands' travel and the reported physical effort.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "fernandez-2022-multiobjectgrasp",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "virtual-hand",
+      "type": "extends",
+      "note": "Lets the virtual hand hold several objects and release them in a controlled order."
+    },
+    {
+      "technique": "virtual-hand",
+      "type": "compared-with",
+      "source": "fernandez-2022-multiobjectgrasp"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}

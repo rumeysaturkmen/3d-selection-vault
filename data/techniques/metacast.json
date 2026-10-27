@@ -1,0 +1,77 @@
+{
+  "id": "metacast",
+  "name": "MeTACAST (MeTAPoint, MeTABrush, MeTAPaint)",
+  "aliases": [
+    "MeTAPoint",
+    "MeTABrush",
+    "MeTAPaint",
+    "Target- and context-aware spatial selection"
+  ],
+  "year": 2023,
+  "summary": "For point-cloud data, the user roughly points at, brushes along, or paints over a structure with a controller, and the system uses the local density of the data to select the whole cluster or filament the user meant, with the density threshold adjustable afterwards.",
+  "howItWorks": "All three techniques compute a density field on the GPU and move the user's input points uphill along the density gradient to local maxima, so imprecise 3D input snaps to real features. MeTAPoint selects the dense cluster nearest the pointed location and updates it as the user keeps pointing; MeTABrush follows a brushed stroke and selects the filament whose ridge of maxima lies closest to the path; MeTAPaint selects the cluster that receives most of the painted stroke's points. The selection volume is an iso-surface (Marching Cubes) at an initial density threshold, which the user can then scale between 1/16 and 16 times with the controller. In a controlled VR study on five astronomy-style datasets, the techniques were more accurate than a region-painting baseline in most tasks; point and paint were fastest for whole compact clusters, brush for filaments.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point",
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "zhao-2023-metacast",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "fiberclay-brushing",
+      "type": "related"
+    },
+    {
+      "technique": "slicing-volume",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation",
+      "handlesOcclusion"
+    ]
+  }
+}

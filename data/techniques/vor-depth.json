@@ -1,0 +1,78 @@
+{
+  "id": "vor-depth",
+  "name": "VOR Depth Selection",
+  "aliases": [
+    "Gaze & head-shake",
+    "VOR depth estimation"
+  ],
+  "year": 2019,
+  "summary": "Look at the target and shake your head: the ratio of eye to head rotation during the shake reveals how far away you are looking, which tells apart objects that overlap along the gaze line.",
+  "howItWorks": "While the user keeps gaze on a target and deliberately shakes the head, the vestibulo-ocular reflex counter-rotates the eyes; the eye-to-head angular velocity ratio (VOR gain) is larger for nearer fixation points, so it gives the gaze depth after a per-user depth calibration. It works with one eye and without accurate gaze calibration (pupil movement in the eye image suffices). The head-shake doubles as the selection trigger, and the candidate whose depth matches the estimate is selected. In a VR study (N=11, HTC Vive with Tobii eye tracking) with pairs of partly overlapping targets at 0.3–7 m, selections took 0.56 s on average; accuracy matched vergence-based depth up to 1 m and was 18% better at larger distances. Natural head shifts without a deliberate shake did not work.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye",
+      "head"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "gaze",
+      "head"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "mardanbegi-2019-vordepth",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "3d-gaze-pcd",
+      "type": "compared-with",
+      "source": "mardanbegi-2019-vordepth"
+    },
+    {
+      "technique": "eye-gaze-selection",
+      "type": "extends",
+      "note": "Adds gaze-depth estimation from head-shake VOR to resolve depth ambiguity."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
+  }
+}

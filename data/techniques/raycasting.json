@@ -110,6 +110,14 @@
     {
       "publication": "chen-2026-lowvision",
       "role": "evaluated"
+    },
+    {
+      "publication": "velloso-2015-gazemidair",
+      "role": "evaluated"
+    },
+    {
+      "publication": "henrikson-2020-hcktm",
+      "role": "evaluated"
     }
   ],
   "relationships": [

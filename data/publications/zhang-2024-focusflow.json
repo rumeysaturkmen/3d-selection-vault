@@ -1,0 +1,17 @@
+{
+  "id": "zhang-2024-focusflow",
+  "title": "FocusFlow: 3D Gaze-Depth Interaction in Virtual Reality Leveraging Active Visual Depth Manipulation",
+  "authors": [
+    "Chenyang Zhang",
+    "Tiansu Chen",
+    "Eric Shaffer",
+    "Elahe Soltanaghai"
+  ],
+  "year": 2024,
+  "venue": "Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI '24)",
+  "doi": "10.1145/3613904.3642589",
+  "url": "https://doi.org/10.1145/3613904.3642589",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

@@ -49,6 +49,10 @@
     {
       "publication": "ryu-2019-gginteraction",
       "role": "introduced"
+    },
+    {
+      "publication": "ryu-2015-gazegrasp",
+      "role": "reference"
     }
   ],
   "relationships": [

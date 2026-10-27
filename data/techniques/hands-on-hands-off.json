@@ -1,0 +1,82 @@
+{
+  "id": "hands-on-hands-off",
+  "name": "Hands-on, Hands-off",
+  "aliases": [
+    "Gaze-assisted bimanual interaction",
+    "D+I",
+    "I+D",
+    "I+I"
+  ],
+  "year": 2024,
+  "summary": "Each hand can grab objects either directly or, when it is away from the object, indirectly by looking and pinching (Gaze + Pinch), so the two hands can mix direct and gaze-assisted input.",
+  "howItWorks": "When a hand is within 5 cm of an object it interacts directly; otherwise a pinch acts on the object the user looks at (Gaze + Pinch), with a funnel drawn from the thumb to the object. This gives four bimanual modes: D+D, D+I (non-dominant hand holds the object directly, dominant hand picks and drags parts by gaze), I+D (non-dominant hand orients the object indirectly so it is not occluded while the dominant hand draws on it), and I+I (both indirect). Demonstrated in 3D modelling (voxel colouring, extruding a star mesh, disassembly, drawing on a cube, moving small parts between models). In a study (N=16, Meta Quest Pro) on an orient-then-drag cube task 50 cm away, gaze acquisition was faster but indirect rotation slower (no hand preshaping); I+I needed least movement and was preferred by 9 of 16, followed by D+I.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray",
+      "point"
+    ],
+    "toolOrigin": [
+      "eye",
+      "both-hands"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze",
+      "hand"
+    ],
+    "confirmation": [
+      "pinch"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "lystbaek-2024-handsonhandsoff",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "gaze-pinch",
+      "type": "extends",
+      "note": "Applies Gaze + Pinch per hand and switches to direct grasp when a hand reaches the object."
+    },
+    {
+      "technique": "virtual-hand",
+      "type": "compared-with",
+      "source": "lystbaek-2024-handsonhandsoff"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "motorVisualSpace",
+      "handlesOcclusion"
+    ]
+  }
+}

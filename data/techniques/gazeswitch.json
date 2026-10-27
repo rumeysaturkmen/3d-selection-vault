@@ -1,0 +1,81 @@
+{
+  "id": "gazeswitch",
+  "name": "GazeSwitch",
+  "aliases": [
+    "Automatic eye-head mode switching"
+  ],
+  "year": 2024,
+  "summary": "A hands-free cursor follows the eyes for coarse pointing and switches automatically to head control for fine adjustment, using a machine-learning classifier to tell gestural head movement from head movement that just follows gaze.",
+  "howItWorks": "The cursor starts in gaze mode (filtered gaze point). An XGBoost classifier on 28 eye and head movement features (from the HeadBoost work) runs above 120 Hz and switches to head mode when it detects a gestural head movement; the cursor then moves with the head for refinement. It returns to gaze mode only when the classifier predicts gaze mode and eye-in-head dispersion over 50 ms exceeds 3.6°. Selection is confirmed with a controller button release. In a study (N=12, HTC Vive Pro Eye) with 0.8° and 1.5° targets, GazeSwitch needed less head movement than BimodalGaze but was slower and less accurate than manual Eye+Head Pinpointing; a second study on tracing and colouring tasks found it less effortful but less stable than manual switching.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye",
+      "head"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "gaze",
+      "head"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "hou-2024-gazeswitch",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "bimodalgaze",
+      "type": "extends",
+      "note": "Replaces BimodalGaze's fixed thresholds with an ML classifier for switching between gaze and head modes."
+    },
+    {
+      "technique": "pinpointing",
+      "type": "compared-with",
+      "source": "hou-2024-gazeswitch"
+    },
+    {
+      "technique": "bimodalgaze",
+      "type": "compared-with",
+      "source": "hou-2024-gazeswitch"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "cdRatio"
+    ]
+  }
+}
