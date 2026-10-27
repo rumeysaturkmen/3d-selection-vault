@@ -1,0 +1,72 @@
+{
+  "id": "adaptique",
+  "name": "Adaptique",
+  "aliases": [
+    "Adaptive technique switching"
+  ],
+  "year": 2025,
+  "summary": "Instead of one fixed technique, the system keeps scoring plain raycasting, StickyRay and RayCursor for the objects around where the user points and switches automatically to the one predicted to be fastest, most accurate, most comfortable and most familiar.",
+  "howItWorks": "Every frame Adaptique collects the objects inside a 20° cone around the controller's pointing direction, projects them (with occlusion) into the controller's view, and for each candidate technique computes the effective target width and distance. These feed four objectives: speed (Fitts' index of difficulty), accuracy (an endpoint-distribution model), comfort (shoulder torque from Consumed Endurance) and a fixed familiarity score. A weighted sum picks the best technique, and it switches only after the advantage holds for 15 of 20 frames, with haptic, audio and colour feedback. On a Vive Pro Eye with 18 participants, against StickyRay and RayCursor in sparse, dense, flat and deep scenes, Adaptique was among the best on time, movement and error rate, and 10 participants preferred it.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "lai-2025-adaptique",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycursor",
+      "type": "compared-with",
+      "source": "lai-2025-adaptique"
+    },
+    {
+      "technique": "sticky-ray",
+      "type": "compared-with",
+      "source": "lai-2025-adaptique"
+    },
+    {
+      "technique": "raycasting",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

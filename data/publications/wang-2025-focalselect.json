@@ -1,0 +1,21 @@
+{
+  "id": "wang-2025-focalselect",
+  "title": "FocalSelect: Improving Occluded Objects Acquisition with Heuristic Selection and Disambiguation in Virtual Reality",
+  "authors": [
+    "Wang",
+    "Qiu",
+    "Li",
+    "Liu",
+    "Wei",
+    "Chen",
+    "Wang",
+    "Fan"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Visualization and Computer Graphics 31(5), 3285-3295",
+  "doi": "10.1109/TVCG.2025.3549554",
+  "url": "https://doi.org/10.1109/TVCG.2025.3549554",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

@@ -1,0 +1,67 @@
+{
+  "id": "spacecast",
+  "name": "SpaceCast",
+  "aliases": [
+    "CAST"
+  ],
+  "year": 2016,
+  "summary": "In a 3D particle cloud on a 2D screen, the user draws a lasso; of the dense clusters inside it, the one whose outline best matches the lasso is selected, preferring nearer clusters.",
+  "howItWorks": "The particles are turned into a smooth density field. Inside the frustum of the lasso, regions above a density threshold are split into separate clusters, each is projected to the screen, and the one with the largest overlap with the lasso is chosen; a cluster in front wins if its overlap is at least 80% of the best. A slider then adjusts the density threshold. Works for partly occluded clusters as long as the user traces the target's border. Compared on a pen tablet (20 participants) with cylinder selection and CloudLasso: the CAST techniques took 16 to 23 s against 43 s for CloudLasso and 88 s for cylinders, with the same accuracy.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "desktop"
+    ],
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "screen"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "touchscreen"
+    ],
+    "confirmation": [
+      "release"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yu-2016-cast",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "metacast",
+      "type": "related",
+      "note": "MeTACAST brings context-aware selection of this kind to VR."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "inputModality",
+      "targetDistance"
+    ]
+  }
+}

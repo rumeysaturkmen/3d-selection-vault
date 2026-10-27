@@ -54,6 +54,10 @@
     {
       "publication": "survey2013-ref-85",
       "role": "reference"
+    },
+    {
+      "publication": "lai-2025-adaptique",
+      "role": "evaluated"
     }
   ],
   "relationships": [],

@@ -64,6 +64,10 @@
     {
       "publication": "legacy-paper-voiceray",
       "role": "evaluated"
+    },
+    {
+      "publication": "lai-2025-adaptique",
+      "role": "evaluated"
     }
   ],
   "relationships": [

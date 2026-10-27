@@ -1,0 +1,68 @@
+{
+  "id": "tracecast",
+  "name": "TraceCast",
+  "aliases": [],
+  "year": 2016,
+  "summary": "In a 3D particle cloud on a 2D screen, the user draws a rough stroke shaped like the cluster they want; the cluster whose projection best matches the stroke's shape is selected, even if it is completely hidden behind others.",
+  "howItWorks": "Uses the same density field as SpaceCast but does not restrict the search to the lasso. Every cluster that overlaps the stroke is scored by its shared area minus its non-shared area with the stroke, and the best match is selected. Because only the shape matters, a loose swirl is enough, and a fully occluded cluster can be selected if its shape fits better than the one in front. The density threshold can be adjusted afterwards. Compared on a pen tablet (20 participants) with cylinder selection and CloudLasso: the CAST techniques took 16 to 23 s against 43 s for CloudLasso and 88 s for cylinders, with the same accuracy.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "desktop"
+    ],
+    "selectionTool": [
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "screen"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "touchscreen"
+    ],
+    "confirmation": [
+      "release"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yu-2016-cast",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "spacecast",
+      "type": "variant-of"
+    },
+    {
+      "technique": "metacast",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "inputModality",
+      "targetDistance"
+    ]
+  }
+}

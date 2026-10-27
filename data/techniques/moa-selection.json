@@ -1,0 +1,76 @@
+{
+  "id": "moa-selection",
+  "name": "MOA Importance-Driven Selection",
+  "aliases": [
+    "MOAs",
+    "Gaze-importance candidate panel"
+  ],
+  "year": 2026,
+  "summary": "While the user looks around a cluttered scene, gaze builds up an importance score for each object; a hand gesture then opens a 3 × 5 panel of the 15 most-looked-at objects, picked by tilting the palm to a row and tapping a finger for the column.",
+  "howItWorks": "The selection half of MOA (multi-object arrangement). Each object's importance grows with how close it is to the gaze point within a 20° foveal cone, discounted when many objects compete, accumulated over time and blended with earlier rounds. Lifting the right hand opens a panel with the 15 highest-scoring objects, normalised in size, in three columns and five rows. Palm pitch selects a row, and tapping the thumb, index or middle finger takes that column's object; tapping several fingers takes several at once. Objects shown but not taken lose their score so new candidates appear next round, and a left thumbs-up ends selection. In a six-session study on a PICO 4 Pro (24 participants, up to 512 objects), the full MOA (selection plus guided placement) was faster with lower workload than a bubble cursor with object proxy and than VVIR.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "cone",
+      "other"
+    ],
+    "toolOrigin": [
+      "eye",
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural",
+      "progressive"
+    ],
+    "inputModality": [
+      "gaze",
+      "hand"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "shi-2026-moa",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "bubble-cursor",
+      "type": "compared-with",
+      "source": "shi-2026-moa",
+      "note": "Compared with a bubble cursor combined with an object proxy."
+    },
+    {
+      "technique": "worlds-in-miniature",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "selectionTool"
+    ]
+  }
+}

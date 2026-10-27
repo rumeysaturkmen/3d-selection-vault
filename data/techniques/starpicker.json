@@ -1,0 +1,73 @@
+{
+  "id": "starpicker",
+  "name": "StarPicker",
+  "aliases": [
+    "Spotlight + clock metaphor"
+  ],
+  "year": 2026,
+  "summary": "A bare-hand cone from the palm frames a group of small targets in a dense AR visualization; after a pinch locks it, wrist bending picks a group of eight candidates and wrist rotation picks one, shown on a clock-face dial.",
+  "howItWorks": "On a HoloLens 2, a semi-transparent cone starts at the palm along the fingers; touching both fists together along the depth or the horizontal axis and pulling them apart sets its length or base radius. A thumb–index pinch locks the cone. Candidates inside are sorted by depth along the axis, then distance from the axis, then angle, and split into groups of eight. Wrist flexion and extension in 15° steps (the 'hour hand') chooses a group, confirmed by a thumb–middle pinch; pronation and supination in 11.25° steps (the 'minute hand') moves through the group on a clock dial with a depth cursor, and a thumb–ring pinch selects. With 36 participants, 240 or 360 spheres and 1 or 2 cm targets, accuracy was 0.79 against 0.48 for FlowerCone and 0.40 for GridWall, and it was faster than GridWall.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "hand",
+      "both-hands"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "progressive"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "pinch"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wu-2026-starpicker",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "flowercone",
+      "type": "compared-with",
+      "source": "wu-2026-starpicker"
+    },
+    {
+      "technique": "grid-wall",
+      "type": "compared-with",
+      "source": "wu-2026-starpicker"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

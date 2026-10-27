@@ -1,0 +1,69 @@
+{
+  "id": "pointcast",
+  "name": "PointCast",
+  "aliases": [],
+  "year": 2016,
+  "summary": "In a 3D particle cloud on a 2D screen, a single click sends a ray into the data; the system reads the density along the ray and selects the first real cluster it passes through, skipping faint ones.",
+  "howItWorks": "The density field is sampled along the ray through the clicked point, and stretches above 10% of the maximum are treated as clusters. The nearest one is selected unless its accumulated density is under 10% of the strongest, in which case the strongest is taken. The selection is grown from that point with a threshold of 20% of its peak density, and lowering the threshold afterwards reveals how the cluster connects to others. Participants preferred it most, especially for partly occluded clusters, since only a small visible part is needed. Compared on a pen tablet (20 participants) with cylinder selection and CloudLasso: the CAST techniques took 16 to 23 s against 43 s for CloudLasso and 88 s for cylinders, with the same accuracy.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "desktop"
+    ],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "screen"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "touchscreen",
+      "mouse"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yu-2016-cast",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "spacecast",
+      "type": "variant-of"
+    },
+    {
+      "technique": "tracecast",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "inputModality",
+      "targetDistance"
+    ]
+  }
+}

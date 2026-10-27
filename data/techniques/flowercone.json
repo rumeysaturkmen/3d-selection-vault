@@ -46,6 +46,10 @@
     {
       "publication": "yu-2020-fullyoccluded",
       "role": "introduced"
+    },
+    {
+      "publication": "wu-2026-starpicker",
+      "role": "evaluated"
     }
   ],
   "relationships": [

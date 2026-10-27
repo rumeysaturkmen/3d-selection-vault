@@ -45,6 +45,10 @@
     {
       "publication": "maslych-2023-minimap",
       "role": "introduced"
+    },
+    {
+      "publication": "wang-2025-focalselect",
+      "role": "evaluated"
     }
   ],
   "relationships": [

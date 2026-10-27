@@ -1,0 +1,72 @@
+{
+  "id": "situated-lasso",
+  "name": "Situated Lasso Selection",
+  "aliases": [
+    "Embedded lasso",
+    "Front-facing canvas lasso"
+  ],
+  "year": 2026,
+  "summary": "In passthrough AR in a supermarket, the user draws a lasso with a controller ray to select many physical products at once, either directly on the shelf fronts (embedded) or on a canvas in front of their face.",
+  "howItWorks": "Invisible digital twins are aligned with the real shelves and products. In the Embedded variant, the ray draws on canvases pre-placed over each shelf front and products are tested against the polygon along the canvas normal. In the Front Facing Canvas variant, a canvas appears 1 m in front of the head when the trigger is pressed and products are tested from the eye position, so the user must stand still. Products count as selected when at least half of nine sample points on their front face fall inside the polygon, and selected ones get a green outline. Controller-anchored, hybrid and head-following variants were built but not studied. In a small study (8 participants, Quest 3S) the Embedded variant scored higher on usability (SUS 94 vs 89) and lower on workload.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "image-plane",
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button",
+      "release"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "segedi-2026-situatedmultiselection",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "lassogrid",
+      "type": "related"
+    },
+    {
+      "technique": "freehand-multi-object-selection",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

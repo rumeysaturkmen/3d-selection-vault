@@ -1,0 +1,75 @@
+{
+  "id": "onbody-bezier-selection",
+  "name": "On-Body Bézier Selection",
+  "aliases": [
+    "Bend It, Aim It, Tap It",
+    "Forearm disambiguation"
+  ],
+  "year": 2025,
+  "summary": "Bending the index finger curves the selection ray as a Bézier curve, and the four objects closest to the curve are shown on the other forearm, where the user taps the right one.",
+  "howItWorks": "With Quest 2 hand tracking, the left index finger's flexion (fingertip-to-wrist distance) sets the curvature of a quadratic Bézier curve from the wrist, and wrist rotation changes its bending direction. Bending the right middle finger activates the curve and straightening it locks the result. The four objects nearest the curve (or a straight ray) are projected onto the left forearm and the user touches one with the right hand. A 2 × 2 study (24 participants, 64 objects) crossed Bézier vs straight ray with forearm vs mid-air selection: the forearm step reduced errors and physical demand and was preferred; the Bézier curve helped reach occluded targets but was slower.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray",
+      "other"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "progressive"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "touch",
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "li-2025-bendaimtap",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "flexible-pointer",
+      "type": "related",
+      "note": "Also bends the ray as a Bézier curve, but with two hands."
+    },
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "li-2025-bendaimtap"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "selectionTool"
+    ]
+  }
+}

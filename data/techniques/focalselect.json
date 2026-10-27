@@ -1,0 +1,86 @@
+{
+  "id": "focalselect",
+  "name": "FocalSelect",
+  "aliases": [],
+  "year": 2025,
+  "summary": "The head defines a focal region in a dense scene; the other hand pushes an occlusion plane through it so objects in front fade out, and the pointing input is remapped onto that plane where a scored indicator highlights the likely target.",
+  "howItWorks": "The focal region is a 0.4 × 0.4 m sector of the head's viewing frustum. With the non-dominant hand (a virtual slider or thumbstick) the user moves an occlusion plane in depth; it starts 5 cm before the nearest object, its speed adapts to object density, and objects in front of it turn semi-transparent. The dominant input (controller ray, bare hand or a hybrid) is remapped onto the plane, and the indicator is a blend of that remapped input and the focal centre. Objects near the indicator are scored by distance and angle with temporal stickiness, in the style of IntenSelect, and the top candidate is outlined; pinch or trigger confirms. On Quest 3: study 1 (24 participants) against Go-Go, IntenSelect and AlphaCursor gave the best accuracy, especially for far targets; study 2 (24) against AlphaCursor, GravityZone+ and CylinderPIM at 128 to 512 objects was on par with GravityZone+ and more accurate than CylinderPIM.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "volume",
+      "ray"
+    ],
+    "toolOrigin": [
+      "head",
+      "both-hands"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "heuristic"
+    ],
+    "inputModality": [
+      "controller",
+      "hand",
+      "head"
+    ],
+    "confirmation": [
+      "pinch",
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wang-2025-focalselect",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "go-go",
+      "type": "compared-with",
+      "source": "wang-2025-focalselect"
+    },
+    {
+      "technique": "intenselect",
+      "type": "compared-with",
+      "source": "wang-2025-focalselect"
+    },
+    {
+      "technique": "alphacursor",
+      "type": "compared-with",
+      "source": "wang-2025-focalselect"
+    },
+    {
+      "technique": "disocclusion-mini-map",
+      "type": "compared-with",
+      "source": "wang-2025-focalselect",
+      "note": "Compared with CylinderPIM from the same paper as the mini-map."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "selectionTool"
+    ]
+  }
+}

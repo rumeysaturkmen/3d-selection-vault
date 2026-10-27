@@ -1,0 +1,71 @@
+{
+  "id": "extended-fishing-reel",
+  "name": "Extended Fishing Reel",
+  "aliases": [
+    "Resizable pointer with transparency"
+  ],
+  "year": 2026,
+  "summary": "A controller ray carries a resizable box that the thumbstick slides along the ray and grows or shrinks; holding the trigger brushes everything the box touches into the selection, and objects between the user and the box can be made see-through.",
+  "howItWorks": "Extends Raycasting with Reeling for multiple objects. On a Quest 2 controller, thumbstick forward and back moves a cube along the ray, and left and right changes its edge length between 0.1 and 1.5 m. Holding the trigger adds every object the box touches (brushing), and the grip button removes them. Two transparency aids were tested: a Transparency Layer that makes all objects between the user and the box semi-transparent, and a Transparency Flashlight that does so only within an area twice the box size. In a study with 30 participants selecting 25 of 100 spheres in dense and sparse layouts, both transparency aids reduced walking distance and physical demand, with no differences in time or errors.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray",
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wieland-2026-fishingreel",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting-with-reeling",
+      "type": "extends"
+    },
+    {
+      "technique": "alphacursor",
+      "type": "related"
+    },
+    {
+      "technique": "depth-ray",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

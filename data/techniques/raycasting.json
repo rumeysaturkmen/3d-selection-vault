@@ -119,6 +119,14 @@
     {
       "publication": "wolf-2020-heisenberg",
       "role": "evaluated"
+    },
+    {
+      "publication": "kim-2022-viewfindervr",
+      "role": "evaluated"
+    },
+    {
+      "publication": "li-2025-bendaimtap",
+      "role": "evaluated"
     }
   ],
   "relationships": [

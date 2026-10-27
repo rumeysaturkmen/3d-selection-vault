@@ -1,0 +1,80 @@
+{
+  "id": "phone-slice-selection",
+  "name": "Smartphone Slice-Plane Selection",
+  "aliases": [
+    "Intersection-based hybrid selection"
+  ],
+  "year": 2026,
+  "summary": "In mixed reality, a tracked phone moves a vertical slice plane through a point cloud and casts a peephole onto it; the points in the peephole are mirrored on the phone screen and selected by tapping.",
+  "howItWorks": "Built for a Varjo XR-4 with a tracked Pixel phone. A vertical 2D plane cuts through the data, and the user moves it in depth in one of three ways: moving the phone (Move), tilting it (Tilt) or swiping on the screen (Touch), each with a clutch while the screen is touched. The phone raycasts a 75 × 34 cm peephole onto the plane, and its contents are shown on the phone so points can be tapped directly. A feasibility study (18 participants, 75 or 150 points, Borg exertion) found Touch the least tiring and Tilt the most; accidental selections caused by overlap between clutching and tapping meant no performance comparison was reported.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "image-plane",
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "touchscreen",
+      "tangible"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "hubenschmid-2026-intersection",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "ray-wall",
+      "type": "related"
+    },
+    {
+      "technique": "conductor",
+      "type": "related"
+    },
+    {
+      "technique": "phonecursor",
+      "type": "related"
+    },
+    {
+      "technique": "tiltcasting",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance",
+      "handlesOcclusion"
+    ]
+  }
+}

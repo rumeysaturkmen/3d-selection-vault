@@ -1,0 +1,76 @@
+{
+  "id": "balloonprobe-ar",
+  "name": "BalloonProbeAR",
+  "aliases": [
+    "BalloonProbe AR"
+  ],
+  "year": 2025,
+  "summary": "For selecting physical objects in AR, a hemisphere placed where the hand ray meets the floor lifts virtual copies of nearby physical objects onto its surface, where the hidden ones can then be picked with the ray.",
+  "howItWorks": "Adapted from Elmqvist's BalloonProbe for physical referents. On a HoloLens 2, the user points a hand ray at the floor of a physical scale model (a LEGO city) and switches mode with a Nintendo Switch controller button. A hemisphere appears at the hit point and virtual clones of the physical objects inside it are pushed out onto its surface, so objects hidden behind others become reachable. The user then selects a clone with the ray and confirms with the button. Compared with AR adaptations of AlphaCursor and vMirror (12 participants): BalloonProbeAR had the fewest errors (7%); vMirrorAR was fastest for targets near the front wall but worst near the back; AlphaCursorAR caused arm fatigue and was ranked last.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "ray",
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "progressive"
+    ],
+    "inputModality": [
+      "hand",
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "truillet-2025-occlusionar",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "alphacursor",
+      "type": "compared-with",
+      "source": "truillet-2025-occlusionar",
+      "note": "Compared with AlphaCursorAR, an AR adaptation of AlphaCursor."
+    },
+    {
+      "technique": "vmirror",
+      "type": "compared-with",
+      "source": "truillet-2025-occlusionar",
+      "note": "Compared with vMirrorAR, an AR adaptation of vMirror."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

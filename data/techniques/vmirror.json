@@ -51,6 +51,10 @@
       "publication": "leusmann-2021",
       "role": "surveyed",
       "where": "4.4.2"
+    },
+    {
+      "publication": "truillet-2025-occlusionar",
+      "role": "evaluated"
     }
   ],
   "relationships": [],

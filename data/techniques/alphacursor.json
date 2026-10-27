@@ -49,6 +49,14 @@
     {
       "publication": "legacy-paper-voiceray",
       "role": "evaluated"
+    },
+    {
+      "publication": "wang-2025-focalselect",
+      "role": "evaluated"
+    },
+    {
+      "publication": "truillet-2025-occlusionar",
+      "role": "evaluated"
     }
   ],
   "relationships": [

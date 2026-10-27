@@ -1,0 +1,67 @@
+{
+  "id": "predictive-contour-pursuit",
+  "name": "Predictive Contour Pursuit",
+  "aliases": [
+    "Predictive smooth pursuit"
+  ],
+  "year": 2026,
+  "summary": "An AR version of Outline Pursuits: each object, including hidden ones, gets a contour drawn from the current viewpoint with a ball moving along it, and the user picks an object by following its ball with their eyes, even while the ball passes behind other objects.",
+  "howItWorks": "On a HoloLens 2, every selectable object gets a view-dependent contour, and a small ball travels around each contour at 8°/s. The system correlates the eye movement with each ball's path (Pearson r above 0.9 for 500 ms within a 350 ms window) and selects the matching object. For occluded targets the authors predict the ball's path through the hidden part so the pursuit can continue. Experiment 1 compared three contour styles (Original, Cut, Shared) at 20, 50 and 80% occlusion and found the full original contour best. Experiment 2 varied pre-tracking time and the length of the hidden stretch and recommends at least 400 ms of pre-tracking and no more than 600 ms of hidden path. 20 participants.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [
+      "dwell"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "he-2026-predictivepursuit",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "outline-pursuits",
+      "type": "variant-of",
+      "note": "Brings Outline Pursuits to AR and predicts the pursuit path behind occluders."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "selectionTool",
+      "targetDistance"
+    ]
+  }
+}

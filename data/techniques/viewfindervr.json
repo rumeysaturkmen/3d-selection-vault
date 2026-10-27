@@ -1,0 +1,76 @@
+{
+  "id": "viewfindervr",
+  "name": "ViewfinderVR",
+  "aliases": [
+    "Through-the-lens viewfinder"
+  ],
+  "year": 2022,
+  "summary": "A head-following panel shows the user's view like a camera viewfinder; they freeze it, place and zoom it within reach, and then select distant objects by pointing at or touching their images on the panel.",
+  "howItWorks": "With Quest hand tracking, the panel mirrors the view until the non-dominant hand pinches it, which freezes the image; the panel can then be moved and rotated, and middle- or ring-finger pinches with vertical hand motion zoom the view or resize the panel. Looking at the open palm resets it. Objects are selected through the panel either with a ray from the dominant hand plus a pinch (ViewfinderVR-Ray) or by pushing the index fingertip through the panel (ViewfinderVR-Touch). In an ISO 9241-9 Fitts task with 20 participants, Touch took 1.29 s at 3.16 bit/s and Ray 1.69 s, against 2.38 s and 1.64 bit/s for raycasting, with lower workload; setting up the panel took about 21 s. It does not help with occluded targets.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "image-plane",
+      "ray"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "pinch",
+      "touch"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "kim-2022-viewfindervr",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "kim-2022-viewfindervr"
+    },
+    {
+      "technique": "vmirror",
+      "type": "related"
+    },
+    {
+      "technique": "worlds-in-miniature",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "motorVisualSpace"
+    ]
+  }
+}
