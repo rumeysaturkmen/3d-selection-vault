@@ -1,10 +1,13 @@
 {
   "id": "gaze-hand-alignment",
   "name": "Gaze-Hand Alignment",
-  "aliases": [],
-  "year": 2023,
+  "aliases": [
+    "Gaze&Finger",
+    "Gaze&Hand"
+  ],
+  "year": 2022,
   "summary": "Selection by aligning a hand-controlled pointer with the gaze ray; the target is selected when the two line up.",
-  "howItWorks": "The eyes look at the target and the user moves a finger or ray into line with the gaze; alignment of the two triggers the selection without a separate click.",
+  "howItWorks": "Gaze pre-selects the object being looked at, and the selection is triggered when a hand-controlled pointer is brought into alignment with it, so no separate click is needed. Gaze&Finger casts a ray from between the eyes over the raised index fingertip (image-plane pointing), and selection happens when that ray crosses the gaze-pre-selected target. Gaze&Hand opens the menu by gaze dwell and then moves a cursor with relative hand movement onto the gazed item. In an AR menu study (HoloLens 2) both gaze-assisted techniques and Gaze&Pinch beat a hands-only Point&Pinch baseline; Gaze&Pinch was fastest to open menus, Gaze&Finger most efficient for item selection, and Gaze&Hand least physically demanding but most error-prone.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -49,8 +52,12 @@
   "tags": [],
   "publications": [
     {
-      "publication": "wagner-2023-gazehand",
+      "publication": "lystbaek-2022-gazehandalignment",
       "role": "introduced"
+    },
+    {
+      "publication": "wagner-2023-gazehand",
+      "role": "evaluated"
     },
     {
       "publication": "amini-2025",
@@ -58,10 +65,15 @@
       "where": "Table 3"
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "type": "compared-with",
+      "technique": "gaze-pinch"
+    }
+  ],
   "review": {
     "status": "draft",
-    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "notes": "Added from the user's survey batch (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper. Updated Oct 2026 from the 2022 paper that introduced it (Lystbæk et al.).",
     "uncertain": [
       "toolDof",
       "confirmation"

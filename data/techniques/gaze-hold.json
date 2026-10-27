@@ -1,0 +1,70 @@
+{
+  "id": "gaze-hold",
+  "name": "Gaze+Hold",
+  "aliases": [
+    "Wink-to-hold",
+    "Eyes-only drag and drop"
+  ],
+  "year": 2021,
+  "summary": "With eyes only, the user closes one eye to grab what they are looking at, moves it by looking with the other eye, and opens the eye to let go.",
+  "howItWorks": "The two eyes are used as separate inputs: closing one eye acts like holding down a mouse button on the gazed object, the open eye's gaze then provides continuous input (dragging, scrolling, panning, zooming, drawing a selection), and opening the closed eye ends the action. Because pointing alone never triggers anything, it avoids the Midas touch problem without dwell. Evaluated on a desktop (N=12, Tobii EyeX under a 27\" monitor) with a drag-and-drop task; users were effective, and using the dominant or non-dominant eye made no difference to performance, usability or workload.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "ramirezgomez-2021-gazehold",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "eye-gaze-selection",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

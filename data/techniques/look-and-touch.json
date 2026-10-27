@@ -1,0 +1,77 @@
+{
+  "id": "look-and-touch",
+  "name": "Look & Touch (MAGIC touch / MAGIC tab)",
+  "aliases": [
+    "MAGIC touch",
+    "MAGIC tab",
+    "Gaze-supported selection with touch"
+  ],
+  "year": 2012,
+  "summary": "Gaze roughly places a cursor on a distant display, and the thumb on a handheld touchscreen fine-tunes it or steps through nearby targets before confirming with a touch.",
+  "howItWorks": "Follows the principle 'gaze suggests, touch confirms'. Gaze positions a selection mask on the distant display; a touch on the handheld device freezes it. In MAGIC touch the thumb then moves the cursor absolutely or relatively within the mask; in MAGIC tab sliding the thumb cycles through the targets inside the mask, like a tab key. Further variants add a gaze-directed cursor with touch confirmation and local zoom lenses. In a study (N=24) with a Tobii eye tracker and a handheld touchscreen, all variants beat a plain gaze-directed cursor; MAGIC touch and MAGIC tab gave the best overall performance and usability, especially for small targets.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "eye",
+      "screen"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "anisomorphic-fixed"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "gaze",
+      "touchscreen"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "stellmach-2012-looktouch",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "eye-gaze-selection",
+      "type": "compared-with",
+      "source": "stellmach-2012-looktouch"
+    },
+    {
+      "technique": "gaze-pinch",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "cdRatio"
+    ]
+  }
+}

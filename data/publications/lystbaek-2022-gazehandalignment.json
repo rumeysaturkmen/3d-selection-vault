@@ -1,0 +1,18 @@
+{
+  "id": "lystbaek-2022-gazehandalignment",
+  "title": "Gaze-Hand Alignment: Combining Eye Gaze and Mid-Air Pointing for Interacting with Menus in Augmented Reality",
+  "authors": [
+    "Mathias N. Lystbæk",
+    "Peter Rosenberg",
+    "Ken Pfeuffer",
+    "Jens Emil Grønbæk",
+    "Hans Gellersen"
+  ],
+  "year": 2022,
+  "venue": "Proceedings of the ACM on Human-Computer Interaction 6 (ETRA), Article 145",
+  "doi": "10.1145/3530886",
+  "url": "https://doi.org/10.1145/3530886",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

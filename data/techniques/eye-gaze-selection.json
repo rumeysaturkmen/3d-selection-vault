@@ -72,6 +72,18 @@
     {
       "publication": "chen-2026-lowvision",
       "role": "evaluated"
+    },
+    {
+      "publication": "jacob-1990-wylaiwyg",
+      "role": "reference"
+    },
+    {
+      "publication": "minakata-2019-gazeheadfoot",
+      "role": "evaluated"
+    },
+    {
+      "publication": "blattgerste-2018-eyevshead",
+      "role": "evaluated"
     }
   ],
   "relationships": [],

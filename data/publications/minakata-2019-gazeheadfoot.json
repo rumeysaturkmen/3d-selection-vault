@@ -1,0 +1,18 @@
+{
+  "id": "minakata-2019-gazeheadfoot",
+  "title": "Pointing by Gaze, Head, and Foot in a Head-Mounted Display",
+  "authors": [
+    "Katsumi Minakata",
+    "John Paulin Hansen",
+    "I. Scott MacKenzie",
+    "Per Bækgaard",
+    "Vijay Rajanna"
+  ],
+  "year": 2019,
+  "venue": "Proceedings of the 11th ACM Symposium on Eye Tracking Research & Applications (COGAIN @ ETRA '19)",
+  "doi": "10.1145/3317956.3318150",
+  "url": "https://doi.org/10.1145/3317956.3318150",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

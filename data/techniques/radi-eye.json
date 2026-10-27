@@ -1,0 +1,74 @@
+{
+  "id": "radi-eye",
+  "name": "Radi-Eye (Look & Cross)",
+  "aliases": [
+    "Look & Cross",
+    "Gaze-activated head-crossing"
+  ],
+  "year": 2021,
+  "summary": "Looking at an object pops up a radial menu; the user looks at a menu item and then moves the head cursor across it to select, all without hands.",
+  "howItWorks": "Gaze dwelling on an object or invoking gesture opens a pop-up radial interface around it. The user pre-selects a widget by looking at it, which reveals a head-controlled cursor; moving the head across the gazed widget completes the selection (Look & Cross). Because the eyes and head normally move at an offset, simply looking does not trigger anything. Crossing can continue into head-controlled manipulation (e.g. a slider), and gaze can open nested levels. Demonstrated in a VR media player, an AR smart home controller and a city-building game; a study (N=12, HTC Vive Pro Eye) varying radial size and orientation found fast, accurate selection with low error.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye",
+      "head"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze",
+      "head"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "sidenmark-2021-radieye",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "headcross",
+      "type": "related",
+      "note": "Both select by head-crossing; Radi-Eye uses gaze to arm the target first."
+    },
+    {
+      "technique": "bimodalgaze",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}

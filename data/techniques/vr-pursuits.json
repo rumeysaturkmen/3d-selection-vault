@@ -1,0 +1,80 @@
+{
+  "id": "vr-pursuits",
+  "name": "VRPursuits",
+  "aliases": [
+    "Pursuits in VR",
+    "Smooth pursuit selection"
+  ],
+  "year": 2018,
+  "summary": "Targets in VR move along their own paths, and the one the user follows with their eyes is selected by matching gaze movement to target movement.",
+  "howItWorks": "Each selectable 3D object moves along a distinct trajectory (e.g. circular). Gaze positions are correlated with each target's trajectory using Pearson correlation over 300 ms windows; every 900 ms the mean of the last three coefficients is checked and the best-matching target above a 0.4 threshold is selected, so no calibration accuracy or dwell is needed. In a study (N=26, HTC Vive with Pupil Labs eye tracker) performance was robust to target size and distance but improved with larger trajectories, especially while walking; selection while walking worked but was less accurate. Demonstrated with a PIN-entry ATM and an asteroid-shooting game.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "other"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "gaze"
+    ],
+    "confirmation": [
+      "dwell"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "khamis-2018-vrpursuits",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "outline-pursuits",
+      "type": "related",
+      "note": "Both select by correlating smooth-pursuit eye movement with object motion."
+    },
+    {
+      "technique": "radial-pursuit",
+      "type": "related"
+    },
+    {
+      "technique": "vergence-matching",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "selectionTool",
+      "confirmation"
+    ]
+  }
+}

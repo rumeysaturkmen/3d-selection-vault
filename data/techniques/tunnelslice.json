@@ -1,0 +1,75 @@
+{
+  "id": "tunnelslice",
+  "name": "TunnelSlice",
+  "aliases": [
+    "Egocentric tunnel",
+    "Procedural slicing"
+  ],
+  "year": 2017,
+  "summary": "In wearable AR the user frames a region with a two-handed pinch to cast a tunnel into the scene, then slices off the near and far ends to leave a box around the objects they want.",
+  "howItWorks": "Selects a 3D subspace (a cuboid) rather than single objects. In the targeting step the user drags a rectangle on the view with pinch-tip pointers of both hands; the 2D frame is projected along the view direction into a tunnel, and the tunnel is automatically trimmed to the depth range of the objects it collides with. In the refinement step further two-handed pinches move the near and far planes to cut away unwanted objects in front of or behind the region. Tested with 15 participants on a video see-through RGB-D head-worn display across six scenarios varying occlusion and whether an object sat in the centre; compared with CubeSelect and an encapsulating bounding box, it was preferred, more stable across scenarios, and best when occlusion was strong without a central object.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "volume",
+      "image-plane"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "pinch"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "lee-2017-tunnelslice",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "ar-region-selection",
+      "type": "related"
+    },
+    {
+      "technique": "aperture-selection",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof",
+      "handlesOcclusion"
+    ]
+  }
+}
