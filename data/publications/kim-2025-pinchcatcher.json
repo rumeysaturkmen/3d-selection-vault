@@ -1,0 +1,19 @@
+{
+  "id": "kim-2025-pinchcatcher",
+  "title": "PinchCatcher: Enabling Multi-selection for Gaze+Pinch",
+  "authors": [
+    "Jinwook Kim",
+    "Sangmin Park",
+    "Qiushi Zhou",
+    "Mar Gonzalez-Franco",
+    "Jeongmi Lee",
+    "Ken Pfeuffer"
+  ],
+  "year": 2025,
+  "venue": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25)",
+  "doi": "10.1145/3706598.3713530",
+  "url": "https://doi.org/10.1145/3706598.3713530",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

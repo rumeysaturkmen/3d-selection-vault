@@ -1,0 +1,72 @@
+{
+  "id": "pinchcatcher",
+  "name": "PinchCatcher",
+  "aliases": [
+    "SemiDwell",
+    "SemiSwipe",
+    "SemiTilt",
+    "SemiNDH"
+  ],
+  "year": 2025,
+  "summary": "Multi-selection for Gaze + Pinch: hold a half-closed pinch and gaze at objects to add them to a group, then close the pinch to act on all of them.",
+  "howItWorks": "Holding the index finger and thumb 2–7 cm apart (a semi-pinch) enters a quasi-mode for multi-selection; completing the pinch ends grouping and starts the action (e.g. drag and drop) on the whole group. While in the semi-pinch, gaze points and each gazed object is added by one of four confirmations: SemiDwell (dwell), SemiSwipe (thumb swipe), SemiTilt (hand tilt) or SemiNDH (a pinch of the non-dominant hand). Compared with a CTRL-key-like baseline (FullDH: hold a non-dominant pinch, add with dominant pinches) on a Meta Quest Pro with 40 targets on a grid 13.5 m away; SemiSwipe and SemiDwell were preferred. Demonstrated for file management and RTS games.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "toolDof": [
+      "2"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "gaze",
+      "hand"
+    ],
+    "confirmation": [
+      "pinch",
+      "dwell",
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "kim-2025-pinchcatcher",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "gaze-pinch",
+      "type": "extends",
+      "note": "Adds a semi-pinch quasi-mode for selecting several objects."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper."
+  }
+}

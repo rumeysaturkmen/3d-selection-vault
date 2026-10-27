@@ -1,0 +1,16 @@
+{
+  "id": "han-2022-portal",
+  "title": "PORTAL: Portal Widget for Remote Target Acquisition and Control in Immersive Virtual Environments",
+  "authors": [
+    "Dongyun Han",
+    "Donghoon Kim",
+    "Isaac Cho"
+  ],
+  "year": 2022,
+  "venue": "Proceedings of the 28th ACM Symposium on Virtual Reality Software and Technology (VRST '22)",
+  "doi": "10.1145/3562939.3565639",
+  "url": "https://doi.org/10.1145/3562939.3565639",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

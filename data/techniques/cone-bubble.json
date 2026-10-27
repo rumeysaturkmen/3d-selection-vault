@@ -1,0 +1,81 @@
+{
+  "id": "cone-bubble",
+  "name": "Cone&Bubble",
+  "aliases": [
+    "Cone and Bubble",
+    "GazeHand (Cone&Bubble)"
+  ],
+  "year": 2024,
+  "summary": "Two pointers at once: one modality casts a cone that pre-selects the few nearest candidates, and a second casts a bubble ray that picks the final target among them.",
+  "howItWorks": "A cone pointer (from gaze, head or controller) adapts its width so that a preset number of candidates (four in the study) fall inside it; these are highlighted. A second modality casts a bubble ray that selects the candidate closest to it, so even tightly packed candidates can be told apart by aiming toward the cone's edge. Both pointers move in parallel without a mode switch, and a button confirms. All six permutations of gaze, head and controller were compared (N=12, HTC Vive Pro Eye, targets 5–25 m away in a dense scene): gaze worked best for the cone and the hand controller for the bubble ray (GazeHand was fastest).",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "cone",
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye",
+      "head",
+      "hand"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic",
+      "manual"
+    ],
+    "inputModality": [
+      "gaze",
+      "head",
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "sidenmark-2024-conebubble",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "cone-casting",
+      "type": "extends",
+      "note": "Uses an adaptive cone to pre-select candidates."
+    },
+    {
+      "technique": "bubble-raycasting",
+      "type": "extends",
+      "note": "Refines among the cone's candidates with a bubble ray."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
+  }
+}

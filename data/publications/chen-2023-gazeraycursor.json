@@ -1,0 +1,18 @@
+{
+  "id": "chen-2023-gazeraycursor",
+  "title": "GazeRayCursor: Facilitating Virtual Reality Target Selection by Blending Gaze and Controller Raycasting",
+  "authors": [
+    "Di Laura Chen",
+    "Marcello Giordano",
+    "Hrvoje Benko",
+    "Tovi Grossman",
+    "Stephanie Santosa"
+  ],
+  "year": 2023,
+  "venue": "Proceedings of the 29th ACM Symposium on Virtual Reality Software and Technology (VRST '23)",
+  "doi": "10.1145/3611659.3615693",
+  "url": "https://doi.org/10.1145/3611659.3615693",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

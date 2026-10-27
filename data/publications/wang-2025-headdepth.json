@@ -1,0 +1,18 @@
+{
+  "id": "wang-2025-headdepth",
+  "title": "HeadDepth: Gaze Raycasting with Head Pitch for Depth Control",
+  "authors": [
+    "Haopeng Wang",
+    "Florian Weidner",
+    "Yasmeen Abdrabou",
+    "Ken Pfeuffer",
+    "Hans Gellersen"
+  ],
+  "year": 2025,
+  "venue": "IEEE International Symposium on Mixed and Augmented Reality (ISMAR), pp. 370–380",
+  "doi": "10.1109/ISMAR67309.2025.00048",
+  "url": "https://doi.org/10.1109/ISMAR67309.2025.00048",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

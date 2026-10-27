@@ -1,0 +1,79 @@
+{
+  "id": "gazeraycursor",
+  "name": "GazeRayCursor",
+  "aliases": [
+    "GazeRayCursorAuto",
+    "GazeRayCursorSemi"
+  ],
+  "year": 2023,
+  "summary": "Controller raycasting where the eyes resolve depth: among the objects the ray passes through, the one nearest to where the gaze ray meets the controller ray is selected.",
+  "howItWorks": "When the controller ray intersects several objects at different depths, the closest point between the gaze ray and the controller ray is projected onto the controller ray to estimate the depth the user is looking at, and the object whose hit point is nearest to it is highlighted. Because the two rays come from different places, this angle is much larger than between the two eyes, so it estimates depth better than eye convergence. Small flashing circles at the hit points help the user fixate. GazeRayCursorAuto is fully automatic; GazeRayCursorSemi also lets the user slide the cursor along the ray with the touchpad, as in RayCursor. Compared with semi-automatic RayCursor (HTC Vive Pro Eye, trigger to confirm): both variants were faster, and the semi-automatic one needed fewer manual adjustments.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand",
+      "eye"
+    ],
+    "toolDof": [
+      "5"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural",
+      "manual"
+    ],
+    "inputModality": [
+      "controller",
+      "gaze"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "chen-2023-gazeraycursor",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycursor",
+      "type": "extends",
+      "note": "Uses gaze to place RayCursor's depth cursor automatically."
+    },
+    {
+      "technique": "raycursor",
+      "type": "compared-with",
+      "source": "chen-2023-gazeraycursor"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "toolDof"
+    ]
+  }
+}

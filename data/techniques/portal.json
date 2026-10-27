@@ -1,0 +1,86 @@
+{
+  "id": "portal",
+  "name": "PORTAL",
+  "aliases": [
+    "Portal widget for remote target acquisition and control"
+  ],
+  "year": 2022,
+  "summary": "Point a ray at a distant object to open a portal within arm's reach that shows it up close; reach into the portal with a virtual hand to grab it.",
+  "howItWorks": "The user casts a ray from the controller and pulls the trigger on a remote target. A primary portal (0.6 m radius) appears half an arm's length in front of the user and renders, in stereo, the view from a camera placed just in front of the target, following the user's head. The user puts their virtual hands into the portal (shown in red) and grabs the object as if it were within reach, which gives precise depth perception for far objects; objects can be brought back or sent to the remote side. Evaluated (HTC Vive Pro Eye with controllers) for selection and docking at 3, 6 and 9 m against HOMER and Linear Offset, and against teleporting followed by direct interaction.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray",
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "toolDof": [
+      "6"
+    ],
+    "cdRatio": [
+      "isomorphic"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "han-2022-portal",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "homer",
+      "type": "compared-with",
+      "source": "han-2022-portal"
+    },
+    {
+      "technique": "linear-offset",
+      "type": "compared-with",
+      "source": "han-2022-portal"
+    },
+    {
+      "technique": "vmirror",
+      "type": "related",
+      "note": "Both show a secondary view of the scene to interact with remote objects."
+    },
+    {
+      "technique": "worlds-in-miniature",
+      "type": "related",
+      "note": "Remote objects are handled through a within-reach proxy view."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "handlesOcclusion"
+    ]
+  }
+}

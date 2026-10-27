@@ -1,0 +1,91 @@
+{
+  "id": "headdepth",
+  "name": "HeadDepth",
+  "aliases": [
+    "Gaze raycasting with head pitch",
+    "Relative",
+    "EdgeGain",
+    "PingPong"
+  ],
+  "year": 2025,
+  "summary": "Hands-free 3D pointing: gaze sets the direction of a ray and tilting the head up or down (pitch) moves a cursor in depth along it.",
+  "howItWorks": "The cursor sits on the gaze ray; vertical head rotation moves it nearer or farther along the line of sight, so gaze picks direction and head pitch picks depth without using the hands. Because pitching the head also shifts the eye-in-head angle, three pitch-to-depth mappings were designed: Relative (pitch velocity maps to depth change with speed-dependent gain, like RayCursor), EdgeGain (gain also rises when the eyes are near the edge of their comfortable range) and PingPong (an absolute back-and-forth mapping that repeats across pitch angles). Evaluated in a 3D docking task (1–5 m depth range, HTC Vive Pro Eye) against controller-based RayCursor: slower than RayCursor but hands-free; PingPong needed least effort and EdgeGain was least affected by task. Positions were confirmed with a controller trigger in the study.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye",
+      "head"
+    ],
+    "toolDof": [
+      "3"
+    ],
+    "cdRatio": [
+      "anisomorphic-adaptive"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "gaze",
+      "head"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wang-2025-headdepth",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycursor",
+      "type": "compared-with",
+      "source": "wang-2025-headdepth"
+    },
+    {
+      "technique": "raycursor",
+      "type": "related",
+      "note": "Same idea of a cursor moved along a ray, with head pitch instead of a touchpad."
+    },
+    {
+      "technique": "eye-gaze-selection",
+      "type": "extends",
+      "note": "Adds depth control to gaze raycasting."
+    },
+    {
+      "technique": "head-gaze-pointing",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
+    "uncertain": [
+      "confirmation",
+      "handlesOcclusion",
+      "targetDistance"
+    ]
+  }
+}
