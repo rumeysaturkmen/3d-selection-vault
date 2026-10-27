@@ -189,6 +189,8 @@ button, input, select { font: inherit; color: inherit; }
 .button { height: 36px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--line-strong); background: var(--surface); cursor: pointer; }
 .link-button { background: none; border: 0; padding: 0; color: var(--accent-text); cursor: pointer; font-size: 13px; }
 .link-button:hover { text-decoration: underline; }
+.pub-actions { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; }
+.pub-actions .small { font-size: 13px; }
 
 /* Technique page */
 .back { display: inline-block; font-size: 14px; color: var(--muted); text-decoration: none; margin-bottom: 20px; }

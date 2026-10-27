@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { attributes, editUrl, getPublication, getTechnique, techniques, valueLabel } from '../lib/data';
 import { nearest } from '../lib/similarity';
 import { toBibtex } from '../lib/bibtex';
+import { citationGraphHref, citePubsOf, inCitationGraph } from '../lib/citations';
 import type { Publication, PublicationLink, Relationship } from '../lib/types';
 
 const ROLE_LABEL: Record<PublicationLink['role'], string> = {
@@ -56,6 +57,7 @@ function CopyBibtex({ bibtex }: { bibtex: string }) {
 export default function TechniquePage() {
   const { id = '' } = useParams();
   const t = getTechnique(id);
+  const mainPub = t ? citePubsOf(t).find((p) => inCitationGraph(p.id)) : undefined;
   const similar = useMemo(() => (t ? nearest(attributes, t.attributes, techniques, 5, t.id) : []), [t]);
 
   if (!t)
@@ -149,7 +151,14 @@ export default function TechniquePage() {
                       {p.venue ? ` · ${p.venue}` : ''}
                       {link.where ? ` · ${link.where}` : ''}
                     </span>
-                    <CopyBibtex bibtex={toBibtex(p)} />
+                    <span className="pub-actions">
+                      <CopyBibtex bibtex={toBibtex(p)} />
+                      {inCitationGraph(p.id) && (
+                        <Link className="small" to={citationGraphHref(p.id)}>
+                          See it in the citation graph
+                        </Link>
+                      )}
+                    </span>
                   </li>
                 );
               })}
@@ -187,6 +196,12 @@ export default function TechniquePage() {
               </ul>
               <p className="small">
                 <Link to={`/graph?t=${t.id}`}>See it in the similarity graph</Link>
+                {mainPub && (
+                  <>
+                    {' · '}
+                    <Link to={citationGraphHref(mainPub.id)}>See its paper in the citation graph</Link>
+                  </>
+                )}
               </p>
             </section>
           )}

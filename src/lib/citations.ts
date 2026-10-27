@@ -19,6 +19,9 @@ for (const c of citations) {
 }
 export const citesOf = (id: string) => cites.get(id) ?? [];
 export const citedByOf = (id: string) => citedBy.get(id) ?? [];
+/** Whether a paper appears as a node in the citation graph (it cites or is cited by another vault paper). */
+export const inCitationGraph = (id: string) => cites.has(id) || citedBy.has(id);
+export const citationGraphHref = (id: string) => `/graph?view=citations&p=${encodeURIComponent(id)}`;
 
 /** Techniques that link to a publication, with the role the publication plays for each. */
 const techByPub = new Map<string, { technique: Technique; role: PublicationLink['role'] }[]>();

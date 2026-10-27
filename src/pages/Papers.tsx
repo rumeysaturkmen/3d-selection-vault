@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import SelectionBar from '../SelectionBar';
-import { isReview, pubHref, shortAuthors, sortedPublications, techniquesOfPub } from '../lib/citations';
+import { citationGraphHref, inCitationGraph, isReview, pubHref, shortAuthors, sortedPublications, techniquesOfPub } from '../lib/citations';
 
 type Sort = 'year' | 'title';
 type Kind = 'all' | 'papers' | 'reviews';
@@ -137,6 +137,11 @@ export default function Papers() {
                   </p>
                 )}
                 {surveyed > 0 && <p className="paper-techs muted">Covers {surveyed} techniques in the vault</p>}
+                {inCitationGraph(p.id) && (
+                  <p className="paper-techs small">
+                    <Link to={citationGraphHref(p.id)}>See it in the citation graph</Link>
+                  </p>
+                )}
               </div>
             </li>
           );
