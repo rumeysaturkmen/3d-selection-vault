@@ -50,14 +50,9 @@
   ],
   "relationships": [
     {
-      "technique": "disocclusion-mini-map",
+      "technique": "cylinderpim",
       "type": "compared-with",
       "source": "chen-2025-assistvr"
-    },
-    {
-      "technique": "speech-filtered-bubble-ray",
-      "type": "related",
-      "note": "Both filter candidates by speech."
     }
   ],
   "review": {

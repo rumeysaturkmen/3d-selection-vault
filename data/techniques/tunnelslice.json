@@ -53,10 +53,6 @@
   ],
   "relationships": [
     {
-      "technique": "ar-region-selection",
-      "type": "related"
-    },
-    {
       "technique": "aperture-selection",
       "type": "related"
     }

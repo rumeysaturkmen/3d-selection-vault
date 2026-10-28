@@ -1,0 +1,85 @@
+{
+  "id": "cylinderpim",
+  "name": "CylinderPIM",
+  "aliases": [
+    "Disocclusion Mini-map",
+    "Cylinder Projective Interactive Map"
+  ],
+  "year": 2023,
+  "summary": "The left controller sweeps a large cone through the scene, and the objects inside appear live as small copies in a 3D cylinder held in that hand, keeping their full layout including depth; the right hand grabs the copy, which picks up the real object.",
+  "howItWorks": "While the left trigger is held, a 1.5 m wide, 20 m long cone highlights objects, and their positions in the left controller's frame are stretched to fill a cylinder 0.48 m wide and tall, so relative positions are kept in all three dimensions. The right controller hovers over a copy and the grip grabs it; the copy leaves the map and the original object is picked up. The map keeps the last state when the trigger is released, and the scene itself is never changed. With 24 participants on a Quest 2 (128–512 spheres, target always occluded), search took 7.23 s against 8.73 s for GravityZone+, 7.52 s for ConeExpand and 6.02 s for DiscPIM; repeat trials took 4.49 s against 6.62 s for GravityZone+, with less effort than GravityZone+.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ],
+    "environment": [
+      "vr"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "maslych-2023-minimap",
+      "role": "introduced"
+    },
+    {
+      "publication": "wang-2025-focalselect",
+      "role": "evaluated"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "worlds-in-miniature",
+      "type": "related",
+      "note": "Selects through a miniature proxy of the scene."
+    },
+    {
+      "technique": "discpim",
+      "type": "variant-of",
+      "note": "Same cone and grab mechanism; keeps depth in a cylinder instead of flattening onto a disc."
+    },
+    {
+      "technique": "gravityzone",
+      "type": "compared-with",
+      "source": "maslych-2023-minimap"
+    },
+    {
+      "technique": "flowercone",
+      "type": "compared-with",
+      "source": "maslych-2023-minimap",
+      "note": "Compared with ConeExpand, the authors' version of Expand/FlowerCone."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Rewritten in Oct 2026 from the full text (the earlier entry wrongly described a top-down map). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": []
+  }
+}

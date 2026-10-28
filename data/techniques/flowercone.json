@@ -50,6 +50,10 @@
     {
       "publication": "wu-2026-starpicker",
       "role": "evaluated"
+    },
+    {
+      "publication": "maslych-2023-minimap",
+      "role": "evaluated"
     }
   ],
   "relationships": [

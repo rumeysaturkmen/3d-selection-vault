@@ -63,10 +63,6 @@
     {
       "technique": "cone-casting",
       "type": "related"
-    },
-    {
-      "technique": "ar-region-selection",
-      "type": "related"
     }
   ],
   "review": {

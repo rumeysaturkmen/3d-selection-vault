@@ -69,6 +69,10 @@
     {
       "publication": "chen-2021-solarcasting",
       "role": "evaluated"
+    },
+    {
+      "publication": "maslych-2023-minimap",
+      "role": "evaluated"
     }
   ],
   "relationships": [

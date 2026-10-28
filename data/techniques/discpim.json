@@ -1,0 +1,73 @@
+{
+  "id": "discpim",
+  "name": "DiscPIM",
+  "aliases": [
+    "Disc Projective Interactive Map"
+  ],
+  "year": 2023,
+  "summary": "The left controller sweeps a large cone through the scene, and the objects inside appear live as small copies on a flat disc held in that hand, keeping their left-right and up-down layout; the right hand grabs the copy, which picks up the real object.",
+  "howItWorks": "PIM stands for Projective Interactive Map. While the left trigger is held, a 1.5 m wide, 20 m long cone highlights objects, and their positions in the left controller's frame are stretched to fill a 0.4 m disc, dropping depth. Overlapping copies under the right controller can be frozen into eight slots around the disc's edge with the right trigger. The right grip grabs a copy, which then disappears from the map while the original object is picked up. The map keeps the last state when the trigger is released. With 24 participants on a Quest 2 (128–512 spheres, target always occluded), search trials took 6.02 s with DiscPIM, 7.23 s with CylinderPIM, 7.52 s with ConeExpand and 8.73 s with GravityZone+; repeat trials 4.46, 4.49, 4.06 and 6.62 s. Both mini-maps beat GravityZone+ and needed less effort; neither differed significantly from ConeExpand.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "maslych-2023-minimap",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "flowercone",
+      "type": "compared-with",
+      "source": "maslych-2023-minimap",
+      "note": "Compared with ConeExpand, the authors' version of Expand/FlowerCone."
+    },
+    {
+      "technique": "worlds-in-miniature",
+      "type": "related"
+    },
+    {
+      "technique": "gravityzone",
+      "type": "compared-with",
+      "source": "maslych-2023-minimap"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

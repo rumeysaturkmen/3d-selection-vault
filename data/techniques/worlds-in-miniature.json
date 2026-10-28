@@ -13,8 +13,7 @@
   "primaryTask": "manipulation",
   "tasks": [
     "manipulation",
-    "selection",
-    "navigation"
+    "selection"
   ],
   "attributes": {
     "selectionTool": [

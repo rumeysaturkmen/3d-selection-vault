@@ -52,10 +52,6 @@
   ],
   "relationships": [
     {
-      "technique": "raycasting-with-reeling",
-      "type": "extends"
-    },
-    {
       "technique": "alphacursor",
       "type": "related"
     },

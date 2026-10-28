@@ -70,7 +70,7 @@
       "source": "wang-2025-focalselect"
     },
     {
-      "technique": "disocclusion-mini-map",
+      "technique": "cylinderpim",
       "type": "compared-with",
       "source": "wang-2025-focalselect",
       "note": "Compared with CylinderPIM from the same paper as the mini-map."

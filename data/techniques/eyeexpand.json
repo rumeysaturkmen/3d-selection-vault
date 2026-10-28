@@ -55,7 +55,7 @@
   ],
   "relationships": [
     {
-      "technique": "disocclusion-mini-map",
+      "technique": "cylinderpim",
       "type": "compared-with",
       "source": "xu-2025-eyeexpand",
       "note": "Compared with ConeExpand from the same line of work."

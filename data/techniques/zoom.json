@@ -61,11 +61,6 @@
       "technique": "squad",
       "type": "compared-with",
       "source": "bacim-2013-progressive"
-    },
-    {
-      "technique": "arm",
-      "type": "related",
-      "note": "ARM uses zooming as a refinement step."
     }
   ],
   "review": {

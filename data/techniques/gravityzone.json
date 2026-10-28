@@ -1,0 +1,79 @@
+{
+  "id": "gravityzone",
+  "name": "GravityZone",
+  "aliases": [
+    "GravityZone+",
+    "Gravity Zone"
+  ],
+  "year": 2020,
+  "summary": "Instead of moving a cursor, the user tilts the joystick to pull every object in the scene toward themselves or push it away; objects that come closer than a threshold turn fully transparent, so the layers in front of a hidden target are peeled off, and the target is then selected with a ray.",
+  "howItWorks": "All selectable objects are translated together along the user's view, so their positions and apparent sizes change but their relative layout does not. Unselectable objects are hidden during selection. In GravityZone+ the speed follows how far the joystick is tilted (Maslych et al. later used a squared, accelerating curve). Raycasting with the trigger selects. In Yu et al.'s first study (21 participants, Rift CV1) it was the fastest of seven techniques for low-complexity search and was ranked highest, but slowed down in dense scenes with many occlusion layers. In the second study (16 participants) GravityZone+ was slower than LassoGrid+ but faster than MagicBall+, with 5.96% errors.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yu-2020-fullyoccluded",
+      "role": "introduced"
+    },
+    {
+      "publication": "maslych-2023-minimap",
+      "role": "evaluated"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "alphacursor",
+      "type": "compared-with",
+      "source": "yu-2020-fullyoccluded",
+      "note": "Both peel off occluders by depth; AlphaCursor moves a cursor instead of the scene."
+    },
+    {
+      "technique": "lassogrid",
+      "type": "compared-with",
+      "source": "yu-2020-fullyoccluded"
+    },
+    {
+      "technique": "discpim",
+      "type": "compared-with",
+      "source": "yu-2020-fullyoccluded"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

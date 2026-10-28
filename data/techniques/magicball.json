@@ -1,0 +1,73 @@
+{
+  "id": "magicball",
+  "name": "MagicBall",
+  "aliases": [
+    "MagicBall+",
+    "Magic Ball"
+  ],
+  "year": 2020,
+  "summary": "A transparent sphere in front of the user holds a scaled-down 3D copy of all the selectable objects, keeping their relative sizes and positions; the user selects by touching a copy with the tip of a virtual stick.",
+  "howItWorks": "Unselectable objects are removed and every selectable object gets a proxy inside the sphere; the joystick rotated and moved the mini-map. In MagicBall+ the joystick instead resizes a transparent point cursor on the stick, and when it encloses several proxies on trigger press they are laid out on a grid for a second step, while a single proxy is selected at once. In study 1 it was the slowest of seven techniques, hampered by hand tremor on small proxies; in study 2 MagicBall+ was still slowest with 7.52% errors, but had the highest hedonic score.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yu-2020-fullyoccluded",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "worlds-in-miniature",
+      "type": "related"
+    },
+    {
+      "technique": "gravityzone",
+      "type": "compared-with",
+      "source": "yu-2020-fullyoccluded"
+    },
+    {
+      "technique": "lassogrid",
+      "type": "compared-with",
+      "source": "yu-2020-fullyoccluded"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

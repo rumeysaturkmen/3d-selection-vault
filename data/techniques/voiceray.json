@@ -85,12 +85,6 @@
       "source": "legacy-paper-voiceray"
     },
     {
-      "technique": "speech-filtered-bubble-ray",
-      "type": "related",
-      "source": "legacy-paper-voiceray",
-      "note": "Voice-based selection discussed in the paper."
-    },
-    {
       "technique": "assistvr",
       "type": "related",
       "source": "legacy-paper-voiceray",
