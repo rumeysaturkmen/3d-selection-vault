@@ -1,0 +1,78 @@
+{
+  "id": "cloudlasso",
+  "name": "CloudLasso",
+  "aliases": [
+    "Lasso-constrained Marching Cubes"
+  ],
+  "year": 2012,
+  "summary": "For particle clouds on a 2D screen, the user draws a lasso, and only the dense regions inside its frustum are selected, found with a density estimate and Marching Cubes; a slider then tunes the density threshold.",
+  "howItWorks": "Particle density is estimated on a 64³ grid with an adaptive Epanechnikov kernel inside the lasso frustum, and Marching Cubes extracts the region where density is above the average and the point projects inside the lasso. Several separate clusters behind each other can be selected at once without the empty space between them. A slider varies the threshold, and selections can be combined with union, intersection and subtraction. On a 52-inch touch display with 12 participants, it was faster than cylinder selection in three of four tasks (for example 36 s vs 119 s) and at least as accurate.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "desktop"
+    ],
+    "selectionTool": [
+      "image-plane",
+      "volume"
+    ],
+    "toolOrigin": [
+      "screen"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "touchscreen",
+      "mouse"
+    ],
+    "confirmation": [
+      "release"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yu-2012-structureaware",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "tablet-lasso",
+      "type": "compared-with",
+      "source": "yu-2012-structureaware",
+      "note": "Compared with Cylinder Selection, the lasso extrusion of Lucas et al."
+    },
+    {
+      "technique": "teddyselection",
+      "type": "related"
+    },
+    {
+      "technique": "spacecast",
+      "type": "related",
+      "note": "CAST's SpaceCast later builds on this density-based approach."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

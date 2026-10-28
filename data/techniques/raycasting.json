@@ -127,6 +127,50 @@
     {
       "publication": "li-2025-bendaimtap",
       "role": "evaluated"
+    },
+    {
+      "publication": "wu-2024-clockray",
+      "role": "evaluated"
+    },
+    {
+      "publication": "molina-2023-twostep",
+      "role": "evaluated"
+    },
+    {
+      "publication": "legacy-paper-port",
+      "role": "evaluated"
+    },
+    {
+      "publication": "yin-2019-handheldar",
+      "role": "evaluated"
+    },
+    {
+      "publication": "joos-2024-nodeselection",
+      "role": "evaluated"
+    },
+    {
+      "publication": "chaffangeon-2023-twophase",
+      "role": "evaluated"
+    },
+    {
+      "publication": "chen-2023-backtracer",
+      "role": "evaluated"
+    },
+    {
+      "publication": "bhowmick-2023-tinyhands",
+      "role": "evaluated"
+    },
+    {
+      "publication": "debarba-2013-canvas",
+      "role": "evaluated"
+    },
+    {
+      "publication": "weller-2021-lenselect",
+      "role": "evaluated"
+    },
+    {
+      "publication": "huang-2025-handbrush",
+      "role": "evaluated"
     }
   ],
   "relationships": [

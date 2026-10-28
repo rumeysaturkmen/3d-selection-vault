@@ -1,0 +1,63 @@
+{
+  "id": "magic-wand-3d",
+  "name": "3D Magic Wand",
+  "aliases": [
+    "Magic wand"
+  ],
+  "year": 2012,
+  "summary": "The user touches one seed object with a small 3D cursor, and the selection grows automatically to every object linked to it by short hops, like a paint program's magic wand; the scroll wheel sets the hop distance.",
+  "howItWorks": "Single-linkage region growing in 3D: an object joins the selection if it lies within the threshold distance of any object already selected, so clusters of any shape are captured without crossing gaps larger than the threshold. Adding seeds extends the selection. With 18 participants in an nVisor HMD selecting about 1,700 targets among 3,300 distractors in five cloud layouts, the magic wand was fastest but failed when clouds touched, the brush was rated easiest, and the box lasso needed the fewest operations; no tool suited every layout.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "stenholt-2012-largescale",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "spherical-brush-3d",
+      "type": "compared-with",
+      "source": "stenholt-2012-largescale"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

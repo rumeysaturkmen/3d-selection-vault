@@ -1,0 +1,70 @@
+{
+  "id": "volume-spread",
+  "name": "Volume Selection with Force-Directed Spread",
+  "aliases": [
+    "Volume"
+  ],
+  "year": 2024,
+  "summary": "A scalable sphere on the controller ray is placed around the target region of a 3D graph and fixed; everything outside is hidden and the nodes inside slowly drift apart with a force-directed layout until the target can be picked with the ray.",
+  "howItWorks": "The sphere moves with the ray, the joystick sets its depth, and the trigger fixes it; nodes outside fade out and are then hidden. Holding the joystick up spreads the contained nodes with a force-directed layout that keeps the network structure, and down undoes it; the target is then selected with the ray. With 18 participants on 3D node-link graphs of 50, 120 and 200 nodes (Valve Index), plain raycasting was fastest overall; the filter plane kept stable times as graphs grew and was preferred for cluttered graphs, the volume technique was liked but slow, and the fisheye needed the least effort but was liked least.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "volume",
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "joos-2024-nodeselection",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "joos-2024-nodeselection"
+    },
+    {
+      "technique": "virtual-hand",
+      "type": "compared-with",
+      "source": "joos-2024-nodeselection",
+      "note": "Compared with selecting nodes by touching them with the controller."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

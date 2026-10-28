@@ -1,0 +1,70 @@
+{
+  "id": "offset-ray-casting",
+  "name": "Offset-Ray-Casting",
+  "aliases": [],
+  "year": 2019,
+  "summary": "In handheld AR, a screen cursor appears offset from the finger so the finger does not hide it, a swipe moves the cursor, and lifting the finger casts the ray and selects.",
+  "howItWorks": "Touching places a cursor above the touch point; sliding moves the cursor with the offset kept, and the ray is cast from the camera through the cursor when the finger lifts. It reduces finger occlusion but does not help with objects hidden behind others. On an iPhone 6 with 12 participants (targets 0.2–1 cm, 20–80% occluded), error rates were 0.25% for PR-Bubble-Cursor, 1.2% for PR-Cone-Casting, 2.7% for touch Go-Go, 4.4% for 2D-Grid-Cursor, 5% for Offset-Ray-Casting and 41% for touch raycasting; times were 0.44 s for raycasting, 0.68 s PR-Cone, 1.22 s Offset, 1.29 s PR-Bubble, 2.06 s Grid and 2.75 s Go-Go. PR-Bubble-Cursor was preferred.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "screen"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "touchscreen"
+    ],
+    "confirmation": [
+      "release"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yin-2019-handheldar",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "yin-2019-handheldar"
+    },
+    {
+      "technique": "go-go",
+      "type": "compared-with",
+      "source": "yin-2019-handheldar",
+      "note": "Compared with a touch version of Go-Go where a swipe sets arm length."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

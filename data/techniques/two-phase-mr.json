@@ -1,10 +1,12 @@
 {
   "id": "two-phase-mr",
-  "name": "Two-Phase Technique (MR)",
-  "aliases": [],
+  "name": "Look&MidAir",
+  "aliases": [
+    "Two-Phase Technique (MR)"
+  ],
   "year": 2023,
-  "summary": "Mixed-reality selection in two phases: a ray picks a group of objects, then the target is chosen from a sublist shown near the hand.",
-  "howItWorks": "In the first phase the user points a ray at the region of the target; the intersected objects are copied into an AR sublist placed within comfortable reach. In the second phase the user selects the target from the sublist by touch or gesture, reducing arm fatigue.",
+  "summary": "Eye gaze aims a narrow cone and opening the index finger pre-selects what it covers; the candidates are copied into a list in front of the user, and touching the right copy with the hand selects it, keeping the arm low in the first phase.",
+  "howItWorks": "A 2° cone follows the eye gaze. Half-opening the non-dominant index finger shows it and fully opening it pre-selects every object it intersects; closing the hand cancels, and with a single candidate it is selected at once. Otherwise the candidates are copied into a list 60 cm in front of the user, linked to the originals, and the user touches the intended copy with the dominant hand (mid-air). On a HoloLens 2 with 12 participants it took 3.41 s against 9.65 s for the arm raycasting of HoloLens 2 and 4.31 s for the microgesture variant Look&Micro, with lower reported fatigue.",
   "advantages": [],
   "limitations": [],
   "primaryTask": "selection",
@@ -13,10 +15,10 @@
   ],
   "attributes": {
     "selectionTool": [
-      "ray"
+      "cone"
     ],
     "toolOrigin": [
-      "hand"
+      "eye"
     ],
     "motorVisualSpace": [
       "remote"
@@ -26,11 +28,11 @@
       "progressive"
     ],
     "inputModality": [
+      "gaze",
       "hand"
     ],
     "confirmation": [
-      "touch",
-      "gesture"
+      "touch"
     ],
     "targetDistance": [
       "far"
@@ -49,12 +51,16 @@
       "role": "introduced"
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "chaffangeon-2023-twophase"
+    }
+  ],
   "review": {
     "status": "draft",
-    "notes": "Added by snowballing from the VoiceRay paper and Bowman's 1999 thesis (Oct 2026). Attributes drafted by Claude from the survey descriptions and the original paper's abstract; not yet checked against the paper.",
-    "uncertain": [
-      "handlesOcclusion"
-    ]
+    "notes": "Corrected in Oct 2026 from the full text (earlier draft from the abstract wrongly described a hand ray). Attributes coded by Claude; not yet reviewed by the team.",
+    "uncertain": []
   }
 }

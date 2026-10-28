@@ -1,0 +1,70 @@
+{
+  "id": "box-select-deselect",
+  "name": "Box Selection with Deselection",
+  "aliases": [
+    "VSVD",
+    "VSPD"
+  ],
+  "year": 2023,
+  "summary": "With one controller, pressing the trigger fixes a corner of a box and moving the hand stretches it; releasing selects everything inside, and a mode switch lets the same box, or a touch, remove objects from the selection.",
+  "howItWorks": "In VSVD the box is used both to select and to deselect, with a button toggling the mode (green box to add, yellow to remove). In VSPD the box selects and touching an object with the controller deselects it. With 12 participants on a Quest 2, selecting objects within arm's reach one by one with a touch was faster and more robust in random layouts, while the box variants were faster in a structured bookshelf scene; deselection was used mostly to fix mistakes.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "release"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wu-2023-pointvolume",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "two-corners",
+      "type": "variant-of",
+      "note": "A one-handed version of the two-corner box."
+    },
+    {
+      "technique": "virtual-hand",
+      "type": "compared-with",
+      "source": "wu-2023-pointvolume",
+      "note": "Compared with touching objects one at a time (PSPD)."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

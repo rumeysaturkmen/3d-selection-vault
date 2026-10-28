@@ -1,0 +1,75 @@
+{
+  "id": "through-the-lens-selection",
+  "name": "Through-the-Lens Remote Selection",
+  "aliases": [
+    "TTL remote object manipulation"
+  ],
+  "year": 2002,
+  "summary": "A window on a hand-held pad shows a second view of a remote part of the world; the user reaches the stylus through the window to select and manipulate the objects seen there.",
+  "howItWorks": "Uses the Personal Interaction Panel (tracked pad and pen) in an HMD. The pad shows a secondary viewpoint of the scene, set with through-the-lens navigation tools (scene-in-hand, a miniature, eyeball-in-hand). Once the secondary view is fixed in space, the pen pushed into its frustum through the window acts as if it were at the remote place, so remote objects can be selected, dragged and dropped between the local and remote volumes. The paper gives a taxonomy of such techniques and reports only informal use.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "manipulation"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "tangible"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "stoev-2002-ttl",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "worlds-in-miniature",
+      "type": "related"
+    },
+    {
+      "technique": "viewfindervr",
+      "type": "related"
+    },
+    {
+      "technique": "voodoo-dolls",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "confirmation",
+      "handlesOcclusion"
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "disambiguation-canvas",
+  "name": "Disambiguation Canvas",
+  "aliases": [
+    "DCanvas"
+  ],
+  "year": 2013,
+  "summary": "A phone's orientation aims a sphere or cone at the target area; touching the screen lays all the objects caught out on a flat canvas mapped one-to-one to the touchscreen, and sliding the thumb onto the target and lifting selects it in one step.",
+  "howItWorks": "In an HMD with an iPhone or iPod Touch, the device orientation points a 12° sphere or cone. On touch, the pre-selected objects animate (250 ms) into a grid on a rectangle parallel to the image plane, laid out within the thumb's comfortable reach (with a calibration of each user's reach); an arrow follows the thumb, and lifting off over an object selects it, or over empty space cancels. Against orientation-based raycasting (6 participants) it was slightly slower overall (2.37 s vs 2.29 s) but far more accurate and faster for the smallest targets; against SQUAD (11 participants) it was faster at every density, with hundreds of candidates handled in one step.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "volume",
+      "cone"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "touchscreen"
+    ],
+    "confirmation": [
+      "release"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "debarba-2013-canvas",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "debarba-2013-canvas"
+    },
+    {
+      "technique": "squad",
+      "type": "compared-with",
+      "source": "debarba-2013-canvas"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

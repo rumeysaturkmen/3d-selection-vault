@@ -1,0 +1,75 @@
+{
+  "id": "gazering",
+  "name": "GazeRing",
+  "aliases": [
+    "GazeRing-Slide",
+    "GazeRing-Tap"
+  ],
+  "year": 2024,
+  "summary": "A pressure-sensing ring on the index finger works with gaze: a long press opens a cone around the gaze, thumb slides or taps on the ring refine the cone and step through the objects in it by depth, and another long press selects.",
+  "howItWorks": "On a HoloLens 2, a flexible pressure sensor on a ring is operated by the thumb in two modes: sliding in eight directions (GR-S) or tapping five areas (GR-T). A 1.5 s press opens a 6° gaze cone; sliding or tapping shifts it to correct eye-tracking error; up and down step through the objects inside by depth, making the others transparent; a long press confirms. The hand can stay out of the cameras' view. With 16 participants, both GazeRing modes were faster than gaze-and-speech and gaze dwell when targets were occluded or eye tracking was off by 2–3°, and GR-T was preferred.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "gaze",
+      "tangible"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "near-distant",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wang-2024-gazering",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "eye-gaze-selection",
+      "type": "compared-with",
+      "source": "wang-2024-gazering",
+      "note": "Compared with gaze dwell selection."
+    },
+    {
+      "technique": "gaze-position-guided",
+      "type": "related",
+      "note": "Same lab and task design."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

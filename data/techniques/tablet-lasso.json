@@ -1,0 +1,72 @@
+{
+  "id": "tablet-lasso",
+  "name": "Tablet Freehand Lasso",
+  "aliases": [
+    "CylinderSelection",
+    "Cylinder Selection"
+  ],
+  "year": 2005,
+  "summary": "On a camera view shown on a tracked tablet, the user draws a freehand lasso with a pen; the lasso is extruded from the camera into a 3D volume and every object inside is selected at once.",
+  "howItWorks": "Uses the same tablet and camera placement as Tablet Tapping. The drawn lasso is triangulated and extruded from the camera position into a generalized cylinder or cone, and all objects in it are selected, with separate select and deselect modes so selections can be combined. Later work calls it Cylinder Selection and uses it as the baseline for lasso selection in point clouds. In a summative study (18 participants) on a wall of 100 cubes with 9, 36 or 64 targets, the parallel techniques were much faster than serial ones as the number of targets grew; whether the context was 3D or the tablet image made no difference.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "image-plane",
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "tangible"
+    ],
+    "confirmation": [
+      "release"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "legacy-paper-port",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "legacy-paper-port"
+    },
+    {
+      "technique": "tablet-tapping",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

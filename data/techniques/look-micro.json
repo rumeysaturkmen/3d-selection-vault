@@ -1,0 +1,69 @@
+{
+  "id": "look-micro",
+  "name": "Look&Micro",
+  "aliases": [
+    "Gaze + microgesture selection"
+  ],
+  "year": 2023,
+  "summary": "Eye gaze aims a narrow cone and opening the index finger pre-selects what it covers; thumb taps on the index finger then step a cursor through the candidates, shown both in the scene and as a list, and straightening the finger selects.",
+  "howItWorks": "The first phase is shared with Look&MidAir: a 2° cone follows the eye gaze, half-opening the non-dominant index finger shows it and fully opening it pre-selects the objects it intersects, while closing the hand cancels. With one candidate, it is selected at once. Otherwise a red cursor, linked between the objects in the scene and copies listed 60 cm in front, is moved by tapping the thumb on the index finger's top or middle phalanx, and straightening the index validates. Microgestures were sensed with a pressure-and-flex glove. Against HoloLens 2 arm raycasting (12 participants) it took 4.31 s vs 9.65 s with lower fatigue; Look&MidAir took 3.41 s.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "gaze",
+      "hand"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "chaffangeon-2023-twophase",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "two-phase-mr",
+      "type": "variant-of",
+      "note": "Same gaze-cone phase; disambiguates with microgestures instead of touching the list."
+    },
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "chaffangeon-2023-twophase"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

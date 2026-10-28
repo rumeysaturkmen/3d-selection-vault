@@ -1,0 +1,73 @@
+{
+  "id": "virtual-multiview-panels",
+  "name": "Virtual MultiView Panels",
+  "aliases": [
+    "Drone camera panels"
+  ],
+  "year": 2023,
+  "summary": "The user places virtual drone cameras around the scene and sees their views on floating panels; pointing the ray into a panel selects the object seen there, and a world-anchored panel works as a portal to reach or walk through.",
+  "howItWorks": "On an HP Reverb G2, cameras are spawned by raycasting (dragging sets the view direction), from a map or miniature, or from inside another view. They can be moved by grabbing them with the ray, flown with the joystick or anchored to an object. Their viewports are arranged in a semicircle around the user, fixed in the world or held in the hand, and the controller ray pointed into a viewport selects the object shown at that point. A study with 18 participants (crane alignment against teleport and mirror; ghost hunting against teleport and portal) found similar times with fewer jumps and less travel, SUS about 72 and higher mental demand. Selection through the panels was not evaluated separately.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection",
+    "navigation"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "image-plane",
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "berwaldt-2023-multiview",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "viewfindervr",
+      "type": "related"
+    },
+    {
+      "technique": "portal",
+      "type": "compared-with",
+      "source": "berwaldt-2023-multiview"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "confirmation",
+      "handlesOcclusion"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "mirror-3d",
+  "name": "3D Mirrored Object Selection",
+  "aliases": [
+    "3D mirror selection"
+  ],
+  "year": 2020,
+  "summary": "The objects along the gaze ray are shown again in a virtual 3D mirror next to the gaze point, seen from another angle with the occluders removed, so a hidden target can be picked in the mirror by dwelling on it.",
+  "howItWorks": "Built for a 55-inch stereoscopic display with a Tobii eye tracker and a gamepad. The gaze ray collects every object it passes through, and a virtual camera at an angle renders them into a mirror plane beside the gaze point; objects between the camera and the candidates are culled, and the mirror follows the gaze direction. The shoulder buttons step through the candidates along the depth axis or move the mirror, a dwell on the target in the mirror selects it, and another button cancels. Study 1 (21 participants) against gaze selection with navigation: 7.99 s vs 18.54 s and 0.8% vs 12.3% errors; study 2 (13 participants, mixed shapes) 9.15 s vs 24.8 s.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "desktop"
+    ],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "eye"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "gaze",
+      "controller"
+    ],
+    "confirmation": [
+      "dwell"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "lee-2020-mirror3d",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "eye-gaze-selection",
+      "type": "compared-with",
+      "source": "lee-2020-mirror3d",
+      "note": "Compared with gaze selection plus navigation to a better viewpoint."
+    },
+    {
+      "technique": "vmirror",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "environment",
+      "targetDistance"
+    ]
+  }
+}

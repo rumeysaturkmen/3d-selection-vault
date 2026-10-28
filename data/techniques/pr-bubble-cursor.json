@@ -1,0 +1,76 @@
+{
+  "id": "pr-bubble-cursor",
+  "name": "PR-Bubble-Cursor",
+  "aliases": [
+    "Progressive refinement bubble cursor"
+  ],
+  "year": 2019,
+  "summary": "In handheld AR, a 3D bubble is placed with a touch and adjusted in depth and size by swipes; the objects inside appear as 2D clones and the target is tapped among them.",
+  "howItWorks": "Touching places the bubble; swiping up or down changes its depth and left or right its size. The candidates inside it are shown as flat clones near the cursor and a tap on a clone selects. It had the lowest error rate (0.25%) and was the most preferred. On an iPhone 6 with 12 participants (targets 0.2–1 cm, 20–80% occluded), error rates were 0.25% for PR-Bubble-Cursor, 1.2% for PR-Cone-Casting, 2.7% for touch Go-Go, 4.4% for 2D-Grid-Cursor, 5% for Offset-Ray-Casting and 41% for touch raycasting; times were 0.44 s for raycasting, 0.68 s PR-Cone, 1.22 s Offset, 1.29 s PR-Bubble, 2.06 s Grid and 2.75 s Go-Go. PR-Bubble-Cursor was preferred.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "screen"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "touchscreen"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yin-2019-handheldar",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "yin-2019-handheldar"
+    },
+    {
+      "technique": "go-go",
+      "type": "compared-with",
+      "source": "yin-2019-handheldar",
+      "note": "Compared with a touch version of Go-Go where a swipe sets arm length."
+    },
+    {
+      "technique": "bubble-cursor",
+      "type": "variant-of"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

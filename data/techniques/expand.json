@@ -61,6 +61,14 @@
       "publication": "weise-2019",
       "role": "surveyed",
       "where": "Table 1"
+    },
+    {
+      "publication": "weller-2021-lenselect",
+      "role": "evaluated"
+    },
+    {
+      "publication": "chen-2021-solarcasting",
+      "role": "evaluated"
     }
   ],
   "relationships": [

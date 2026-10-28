@@ -1,0 +1,73 @@
+{
+  "id": "filter-plane",
+  "name": "Filter Plane",
+  "aliases": [
+    "Filter"
+  ],
+  "year": 2024,
+  "summary": "A glass-like plane is placed in a 3D graph by hand or with the ray; nodes in front of it are hidden, and the ray passes through the plane to select nodes behind it.",
+  "howItWorks": "The plane can be grabbed directly or targeted by the ray on its grey edge, with the joystick setting its depth and the hand its rotation. Nodes between the user and the plane are hidden, nodes behind stay visible, and the blue part of the plane lets the ray through for selection with the trigger. With 18 participants on 3D node-link graphs of 50, 120 and 200 nodes (Valve Index), plain raycasting was fastest overall; the filter plane kept stable times as graphs grew and was preferred for cluttered graphs, the volume technique was liked but slow, and the fisheye needed the least effort but was liked least.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "joos-2024-nodeselection",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "joos-2024-nodeselection"
+    },
+    {
+      "technique": "virtual-hand",
+      "type": "compared-with",
+      "source": "joos-2024-nodeselection",
+      "note": "Compared with selecting nodes by touching them with the controller."
+    },
+    {
+      "technique": "tiltcasting",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

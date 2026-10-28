@@ -85,6 +85,14 @@
     {
       "publication": "mutasim-2021-pinchclickdwell",
       "role": "evaluated"
+    },
+    {
+      "publication": "lee-2020-mirror3d",
+      "role": "evaluated"
+    },
+    {
+      "publication": "wang-2024-gazering",
+      "role": "evaluated"
     }
   ],
   "relationships": [],

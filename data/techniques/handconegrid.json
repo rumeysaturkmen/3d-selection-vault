@@ -50,6 +50,10 @@
     {
       "publication": "shi-2023-barehanddense",
       "role": "introduced"
+    },
+    {
+      "publication": "huang-2025-handbrush",
+      "role": "evaluated"
     }
   ],
   "relationships": [

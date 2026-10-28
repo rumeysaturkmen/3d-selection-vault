@@ -1,0 +1,74 @@
+{
+  "id": "neighborhood-hopping",
+  "name": "Neighborhood Hopping",
+  "aliases": [
+    "Neighborhood"
+  ],
+  "year": 2024,
+  "summary": "After the ray selects a node near the target in a 3D graph, the joystick hops the selection to neighbouring nodes in the direction pushed, until the target is reached.",
+  "howItWorks": "Nodes within a radius of the selected node are projected onto the camera plane around it, so each lies at an angle that the joystick direction can pick, and a button follows that virtual edge. Connecting only real graph edges was tried first but dropped because close nodes are not always linked. With 18 participants on 3D node-link graphs of 50, 120 and 200 nodes (Valve Index), plain raycasting was fastest overall; the filter plane kept stable times as graphs grew and was preferred for cluttered graphs, the volume technique was liked but slow, and the fisheye needed the least effort but was liked least.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "joos-2024-nodeselection",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "joos-2024-nodeselection"
+    },
+    {
+      "technique": "virtual-hand",
+      "type": "compared-with",
+      "source": "joos-2024-nodeselection",
+      "note": "Compared with selecting nodes by touching them with the controller."
+    },
+    {
+      "technique": "ray-neighbour-hopping",
+      "type": "related",
+      "note": "Same idea of hopping to neighbours with the thumb after a ray pick."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

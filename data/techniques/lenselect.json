@@ -1,0 +1,79 @@
+{
+  "id": "lenselect",
+  "name": "LenSelect",
+  "aliases": [
+    "Dynamic object scaling"
+  ],
+  "year": 2021,
+  "summary": "Objects inside a 15° cone around the controller ray are enlarged in place, the more the closer they are to the ray, like a lens, so small, distant or partly hidden targets become easier to hit with the ray.",
+  "howItWorks": "Each object in the cone is scaled by its normalised distance to the ray axis: Root scaling uses a fourth-root falloff, and Combined scaling also normalises screen size with distance. The cone is drawn faintly and the object hit by the ray is selected with the trigger. With 20 participants (Vive Pro) in nine test scenes, some with moving targets, LenSelect was about as fast as raycasting with 44% fewer errors; IntenSelect was best for fast-moving targets and Expand had few errors but was slowest.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray",
+      "cone"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "weller-2021-lenselect",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "weller-2021-lenselect"
+    },
+    {
+      "technique": "intenselect",
+      "type": "compared-with",
+      "source": "weller-2021-lenselect"
+    },
+    {
+      "technique": "expand",
+      "type": "compared-with",
+      "source": "weller-2021-lenselect"
+    },
+    {
+      "technique": "expanding-targets-disocclusion",
+      "type": "related",
+      "note": "An earlier take on enlarging targets near the ray."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

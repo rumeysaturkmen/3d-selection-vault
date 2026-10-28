@@ -1,0 +1,20 @@
+{
+  "id": "joos-2024-nodeselection",
+  "title": "Evaluating Node Selection Techniques for Network Visualizations in Virtual Reality",
+  "authors": [
+    "Lucas Joos",
+    "Uzay Durdu",
+    "Jonathan Wieland",
+    "Harald Reiterer",
+    "Daniel A. Keim",
+    "Johannes Fuchs",
+    "Maximilian T. Fischer"
+  ],
+  "year": 2024,
+  "venue": "ACM Symposium on Spatial User Interaction (SUI '24)",
+  "doi": "10.1145/3677386.3682102",
+  "url": "https://doi.org/10.1145/3677386.3682102",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

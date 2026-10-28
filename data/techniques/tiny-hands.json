@@ -1,0 +1,68 @@
+{
+  "id": "tiny-hands",
+  "name": "Tiny Hands",
+  "aliases": [
+    "Adaptive virtual hands"
+  ],
+  "year": 2023,
+  "summary": "The user shrinks their virtual hand to as little as a tenth of its size and then touches tiny objects directly inside a dense structure within arm's reach.",
+  "howItWorks": "With Quest hand tracking, holding the non-dominant palm face-down in view for 2 s activates scaling, and moving that hand up or down enlarges or shrinks the dominant virtual hand between 1.0 and 0.1; holding the palm out again for 2 s deactivates it. The target is selected by touching it with the small hand. Participants mostly chose sizes of 0.2–0.5. With 22 participants selecting 0.4 mm spheres in a 1,192-sphere molecule 0.4 m away, it took 44 s for five targets against 65 s for raycasting and 76 s for pinch-to-select, with no errors.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "bhowmick-2023-tinyhands",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "bhowmick-2023-tinyhands"
+    },
+    {
+      "technique": "virtual-hand",
+      "type": "variant-of",
+      "note": "A virtual hand whose size the user scales down."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

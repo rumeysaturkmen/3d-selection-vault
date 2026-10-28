@@ -1,0 +1,17 @@
+{
+  "id": "yu-2012-structureaware",
+  "title": "Efficient Structure-Aware Selection Techniques for 3D Point Cloud Visualizations with 2DOF Input",
+  "authors": [
+    "Lingyun Yu",
+    "Konstantinos Efstathiou",
+    "Petra Isenberg",
+    "Tobias Isenberg"
+  ],
+  "year": 2012,
+  "venue": "IEEE Transactions on Visualization and Computer Graphics 18(12), 2245-2254",
+  "doi": "10.1109/TVCG.2012.217",
+  "url": "https://doi.org/10.1109/TVCG.2012.217",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

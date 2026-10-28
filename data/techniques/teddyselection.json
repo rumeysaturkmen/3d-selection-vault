@@ -1,0 +1,66 @@
+{
+  "id": "teddyselection",
+  "name": "TeddySelection",
+  "aliases": [],
+  "year": 2012,
+  "summary": "For particle clouds on a 2D screen, the user draws a lasso and it is inflated into a 3D selection volume, Teddy-style, whose depth is fitted to where the dense clusters lie inside the lasso.",
+  "howItWorks": "The lasso is closed, resampled and triangulated around its spine. Particles are binned in depth, first over the whole lasso frustum and then per triangle, to find the nearest and farthest dense bins, and the mesh is inflated to those depths. Works with mouse or touch. Feedback from three astronomers was positive; it can include empty space between clusters and works poorly in sparse regions, which led to CloudLasso.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "desktop"
+    ],
+    "selectionTool": [
+      "image-plane",
+      "volume"
+    ],
+    "toolOrigin": [
+      "screen"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "heuristic"
+    ],
+    "inputModality": [
+      "touchscreen",
+      "mouse"
+    ],
+    "confirmation": [
+      "release"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yu-2012-structureaware",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "tablet-lasso",
+      "type": "extends",
+      "note": "Fits the lasso's extrusion to the data instead of selecting the whole cylinder."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

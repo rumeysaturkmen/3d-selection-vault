@@ -1,0 +1,67 @@
+{
+  "id": "smartphone-countmarks-refinement",
+  "name": "Multi-Touch Smartphone Progressive Refinement",
+  "aliases": [
+    "Smartphone SQUAD with CountMarks"
+  ],
+  "year": 2022,
+  "summary": "A SQUAD-style progressive refinement in VR driven by a smartphone: a sphere cast gathers candidates into four quadrants, and when a quadrant holds few items the user picks one directly by touching with that many fingers and swiping toward it.",
+  "howItWorks": "With a Rift CV1 and a Galaxy S8 used as the controller, a sphere is cast at the ray's hit point and the objects inside are spread over a four-quadrant menu (up to 16 per quadrant). If a quadrant holds four or fewer items, touching the screen with N fingers highlights the Nth item in every quadrant and swiping toward a quadrant selects it in one step (CountMarks); otherwise a swipe chooses the quadrant and refinement repeats. Presented as a poster without a user study.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "touchscreen"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "samimi-2022-countmarks",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "squad",
+      "type": "variant-of",
+      "note": "Adds multi-finger CountMarks shortcuts to SQUAD's quad-menu refinement on a phone."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "toolOrigin",
+      "targetDistance"
+    ]
+  }
+}

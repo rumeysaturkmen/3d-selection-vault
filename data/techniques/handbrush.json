@@ -1,0 +1,75 @@
+{
+  "id": "handbrush",
+  "name": "HandBrush",
+  "aliases": [
+    "Line mode",
+    "Block mode"
+  ],
+  "year": 2025,
+  "summary": "The bare hand works like a paintbrush for grouping objects: sweeping the fingertip or palm strings the touched objects together into a group, drawing a loop around objects in view groups them all, and further strokes erase, split or join groups.",
+  "howItWorks": "With Pico Neo3 hand tracking and six gestures. Line mode uses the fingertip (thin brush) or the palm (wide brush); objects in the swept space are selected and linked by a line in sweep order, and a confirm gesture makes them a group. Block mode draws a closed loop in view and groups the objects inside it, shown as a coloured block. Erase mode removes objects or whole groups; a stroke across one line or block splits it, and a stroke across several connects them. With 16 participants grouping objects on a plane 10 m away, it was faster and more accurate than ray, screen-rectangle and cone selection, and Split and Connect made changing groups faster.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "image-plane",
+      "other"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "hand"
+    ],
+    "confirmation": [
+      "gesture"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "huang-2025-handbrush",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "huang-2025-handbrush"
+    },
+    {
+      "technique": "handconegrid",
+      "type": "compared-with",
+      "source": "huang-2025-handbrush",
+      "note": "Compared with the Cone method of Shi et al."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "selectionTool",
+      "motorVisualSpace"
+    ]
+  }
+}

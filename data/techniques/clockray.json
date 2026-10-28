@@ -1,0 +1,74 @@
+{
+  "id": "clockray",
+  "name": "ClockRay",
+  "aliases": [
+    "Wrist-rotation depth cursor"
+  ],
+  "year": 2024,
+  "summary": "A controller ray is locked onto a group of overlapping objects, and then turning the wrist like a clock hand steps a depth cursor from one intersected object to the next.",
+  "howItWorks": "On an HTC Vive controller the user aims the ray and presses the touchpad to lock it. While the touchpad is held, pronation and supination of the wrist (0–90°) is split into steps of 11.25°, and each step moves the depth cursor to the next object along the locked ray; the other intersected objects turn translucent and a pie-chart dial shows the current position. Releasing the touchpad selects the object under the cursor. A 1€ filter smooths the ray. With 36 participants (60 or 90 balls of 4 or 8 cm at 1 and 4 m), ClockRay took 2.28 s against 2.53 s for RayCursor and 3.18 s for raycasting, with error rates close to RayCursor (5% vs 3%) and far below raycasting (23%).",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "release"
+    ],
+    "targetDistance": [
+      "near-distant",
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "wu-2024-clockray",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycursor",
+      "type": "compared-with",
+      "source": "wu-2024-clockray"
+    },
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "wu-2024-clockray"
+    },
+    {
+      "technique": "lock-ray",
+      "type": "extends",
+      "note": "Locks the ray first, then uses wrist rotation instead of hand movement to move along it."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

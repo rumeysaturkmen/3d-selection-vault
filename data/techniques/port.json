@@ -1,10 +1,13 @@
 {
   "id": "port",
-  "name": "PORT",
-  "aliases": [],
+  "name": "Selection Box (PORT)",
+  "aliases": [
+    "PORT",
+    "Selection-Volume box"
+  ],
   "year": 2005,
-  "summary": "A 3D multiple object selection technique that allows users to select a group of objects in an immersive virtual environment using a spatial region-based interaction.",
-  "howItWorks": "The user specifies a spatial selection region around the desired objects. Objects that fall within the defined region are selected as a group, reducing the need for repeated single-object selections.",
+  "summary": "A persistent, semi-transparent box is placed around a group of objects in the scene and all objects inside are selected; the box is moved remotely like a held object and resized by pushing the joystick in the direction of a face.",
+  "howItWorks": "The box is a selection volume that stays in the scene. It is moved with Go-Go (later HOMER) as if it were an object, so it can be placed at a distance, and it is resized with PORT, which grows or shrinks the box along the axis the user points at. Objects inside the box are selected as a group.",
   "advantages": [
     "Selecting multiple objects at once, especially when targets are grouped, clustered, or when selecting objects one by one would be inefficient."
   ],
@@ -54,18 +57,26 @@
   "publications": [
     {
       "publication": "legacy-paper-port",
-      "role": "reference"
+      "role": "introduced"
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "technique": "tablet-tapping",
+      "type": "compared-with",
+      "source": "legacy-paper-port"
+    },
+    {
+      "technique": "tablet-lasso",
+      "type": "compared-with",
+      "source": "legacy-paper-port"
+    }
+  ],
   "review": {
     "status": "draft",
-    "notes": "Attributes drafted by Claude from the technique description and the 2013 survey classification; not yet checked against the paper.",
+    "notes": "Rewritten in Oct 2026 from Lucas's full text (the earlier entry described only the resizing method PORT). Attributes coded by Claude; not yet reviewed by the team.",
     "uncertain": [
-      "motorVisualSpace",
-      "handlesOcclusion",
-      "inputModality",
-      "environment"
+      "handlesOcclusion"
     ]
   }
 }

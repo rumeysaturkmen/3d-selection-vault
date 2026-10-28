@@ -1,0 +1,76 @@
+{
+  "id": "pr-cone-casting",
+  "name": "PR-Cone-Casting",
+  "aliases": [
+    "Progressive refinement cone casting"
+  ],
+  "year": 2019,
+  "summary": "In handheld AR, touching the screen casts a cone through the camera view, a sideways swipe widens or narrows it, and the objects inside appear as 2D clones around a ring cursor so the target can be tapped.",
+  "howItWorks": "One-handed on a phone. Touching sets the cone's direction under a ring cursor and swiping left or right changes the apex angle. The candidates inside the cone are shown as flat clones arranged near the ring, and tapping a clone selects that object, so hidden objects are reachable. On an iPhone 6 with 12 participants (targets 0.2–1 cm, 20–80% occluded), error rates were 0.25% for PR-Bubble-Cursor, 1.2% for PR-Cone-Casting, 2.7% for touch Go-Go, 4.4% for 2D-Grid-Cursor, 5% for Offset-Ray-Casting and 41% for touch raycasting; times were 0.44 s for raycasting, 0.68 s PR-Cone, 1.22 s Offset, 1.29 s PR-Bubble, 2.06 s Grid and 2.75 s Go-Go. PR-Bubble-Cursor was preferred.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "cone"
+    ],
+    "toolOrigin": [
+      "screen"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "touchscreen"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "yin-2019-handheldar",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "yin-2019-handheldar"
+    },
+    {
+      "technique": "go-go",
+      "type": "compared-with",
+      "source": "yin-2019-handheldar",
+      "note": "Compared with a touch version of Go-Go where a swipe sets arm length."
+    },
+    {
+      "technique": "cone-casting",
+      "type": "variant-of"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

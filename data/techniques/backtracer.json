@@ -1,0 +1,73 @@
+{
+  "id": "backtracer",
+  "name": "BackTracer",
+  "aliases": [
+    "Interaction-history backtracking"
+  ],
+  "year": 2023,
+  "summary": "When the trigger is pressed, the ray's recent history is checked and the object it rested on most during a short window before the press is selected, with a longer window for smaller objects, which cancels hand tremor and the jerk of pressing.",
+  "howItWorks": "A buffer records which object the controller ray hit each frame. On press, each object's window runs from TS = 94·A − 348 ms (A its angular size in degrees, so about 310 ms for the smallest) to 58 ms before the press, and its score is the share of frames it was hit in that window; the highest score wins. The model was fitted with 24 participants on a Vive. Against raycasting, selecting at press onset and VOTE (16 participants each): error 2.4% vs 3.8%, 16% and 19% for small targets, and 15.6% vs 24–33% for heavily occluded ones, without extra time. Added to continuous zoom it cut errors from 8.1% to 1.6%.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "behavioural"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "chen-2023-backtracer",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "chen-2023-backtracer"
+    },
+    {
+      "technique": "zoom",
+      "type": "compared-with",
+      "source": "chen-2023-backtracer",
+      "note": "Combined with continuous zoom ray-casting and compared with it."
+    },
+    {
+      "technique": "smart-ray",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

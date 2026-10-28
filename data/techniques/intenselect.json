@@ -73,6 +73,10 @@
     {
       "publication": "wang-2025-focalselect",
       "role": "evaluated"
+    },
+    {
+      "publication": "weller-2021-lenselect",
+      "role": "evaluated"
     }
   ],
   "relationships": [],

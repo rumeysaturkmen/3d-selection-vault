@@ -61,6 +61,11 @@
       "technique": "grid-wall",
       "type": "compared-with",
       "source": "wu-2026-starpicker"
+    },
+    {
+      "technique": "clockray",
+      "type": "related",
+      "note": "Same group's earlier wrist-rotation technique for occluded targets."
     }
   ],
   "review": {

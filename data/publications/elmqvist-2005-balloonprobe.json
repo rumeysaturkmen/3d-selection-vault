@@ -1,0 +1,14 @@
+{
+  "id": "elmqvist-2005-balloonprobe",
+  "title": "BalloonProbe: Reducing Occlusion in 3D Using Interactive Space Distortion",
+  "authors": [
+    "Niklas Elmqvist"
+  ],
+  "year": 2005,
+  "venue": "Proceedings of the ACM Symposium on Virtual Reality Software and Technology (VRST '05), 134-137",
+  "doi": "10.1145/1101616.1101643",
+  "url": "https://doi.org/10.1145/1101616.1101643",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

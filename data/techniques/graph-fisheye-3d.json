@@ -1,0 +1,69 @@
+{
+  "id": "graph-fisheye-3d",
+  "name": "3D Fisheye Node Selection",
+  "aliases": [
+    "Fisheye"
+  ],
+  "year": 2024,
+  "summary": "The user picks a node near the target in a 3D graph as a focus and holds the joystick to apply a fisheye distortion that spreads the nodes around it apart, then selects the target with the ray.",
+  "howItWorks": "A 3D version of the graphical fisheye: each node moves away from the focus toward the graph's bounding box along the ray from the focus through it, with a strength set by the joystick. Choosing a new focus resets the layout. With 18 participants on 3D node-link graphs of 50, 120 and 200 nodes (Valve Index), plain raycasting was fastest overall; the filter plane kept stable times as graphs grew and was preferred for cluttered graphs, the volume technique was liked but slow, and the fisheye needed the least effort but was liked least.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "progressive"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "joos-2024-nodeselection",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "joos-2024-nodeselection"
+    },
+    {
+      "technique": "virtual-hand",
+      "type": "compared-with",
+      "source": "joos-2024-nodeselection",
+      "note": "Compared with selecting nodes by touching them with the controller."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

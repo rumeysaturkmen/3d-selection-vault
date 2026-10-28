@@ -47,6 +47,10 @@
     {
       "publication": "yu-2016-cast",
       "role": "introduced"
+    },
+    {
+      "publication": "besancon-2019-tangiblebrush",
+      "role": "evaluated"
     }
   ],
   "relationships": [

@@ -69,6 +69,10 @@
       "publication": "leusmann-2021",
       "role": "surveyed",
       "where": "4.4.2"
+    },
+    {
+      "publication": "chen-2021-solarcasting",
+      "role": "evaluated"
     }
   ],
   "relationships": [

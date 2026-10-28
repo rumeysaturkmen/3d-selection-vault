@@ -1,0 +1,17 @@
+{
+  "id": "chen-2023-backtracer",
+  "title": "BackTracer: Improving ray-casting 3D target acquisition by backtracking the interaction history",
+  "authors": [
+    "Kaiqi Chen",
+    "Huagen Wan",
+    "Shengdong Zhao",
+    "Xutao Liu"
+  ],
+  "year": 2023,
+  "venue": "International Journal of Human-Computer Studies 176, 103045",
+  "doi": "10.1016/j.ijhcs.2023.103045",
+  "url": "https://doi.org/10.1016/j.ijhcs.2023.103045",
+  "type": "paper",
+  "citation": null,
+  "bibtex": null
+}

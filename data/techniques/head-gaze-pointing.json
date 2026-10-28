@@ -79,6 +79,10 @@
     {
       "publication": "blattgerste-2018-eyevshead",
       "role": "evaluated"
+    },
+    {
+      "publication": "ozacar-2017-mobilearhmd",
+      "role": "evaluated"
     }
   ],
   "relationships": [

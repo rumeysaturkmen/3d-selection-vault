@@ -1,0 +1,65 @@
+{
+  "id": "ray-neighbour-hopping",
+  "name": "Ray + Neighbour Hopping",
+  "aliases": [
+    "Ray+Arrows",
+    "Ray+Colors",
+    "Two-step neighbour selection"
+  ],
+  "year": 2023,
+  "summary": "After selecting a small element with a ray, the user can hop from it to one of its up to eight neighbours by pressing the controller touchpad in that direction, until the intended element is highlighted.",
+  "howItWorks": "Built for molecular models in VR (HTC Vive). Clicking the touchpad raycasts and picks an atom. Its neighbours within a radius are projected onto a plane facing the user and split into eight sectors, keeping the nearest one per sector; pressing the touchpad toward a sector moves the highlight to that neighbour, and the trigger confirms. Two feedback variants were built: Ray+Arrows, with yellow arrows pointing to the neighbours, and Ray+Colors, with coloured rings in a colour-blind-safe palette and a matching widget on the controller. Studies with 16 participants on molecules of 14K and 30K atoms found plain raycasting faster for exposed atoms, no time difference for occluded ones, and the hopping variants more comfortable and preferred.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "molina-2023-twostep",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "molina-2023-twostep"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

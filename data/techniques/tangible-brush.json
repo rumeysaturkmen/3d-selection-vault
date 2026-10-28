@@ -1,0 +1,73 @@
+{
+  "id": "tangible-brush",
+  "name": "Tangible Brush",
+  "aliases": [],
+  "year": 2019,
+  "summary": "The user draws a lasso on a frozen orthographic view on a tablet and then extrudes it into a 3D selection volume by physically moving the tablet, while a separate screen shows the data and the tablet's virtual position.",
+  "howItWorks": "Built for point clouds and volumes on a large 2D screen with a tracked tablet. The view on the tablet is frozen so the lasso can be drawn precisely; moving the tablet then sweeps the lasso through the data, either freely in 6 DoF or constrained along the tablet's normal, and Boolean operations combine sweeps. Compared with SpaceCast it was slower but more accurate and more flexible, with high reported mental effort. Described here from Sereno et al. (2022), who reimplemented it as their baseline.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "desktop"
+    ],
+    "selectionTool": [
+      "image-plane",
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "touchscreen",
+      "tangible"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "besancon-2019-tangiblebrush",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "spacecast",
+      "type": "compared-with",
+      "source": "besancon-2019-tangiblebrush"
+    },
+    {
+      "technique": "tablet-lasso",
+      "type": "related",
+      "note": "Also extrudes a lasso drawn on a tablet view."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "confirmation",
+      "targetDistance",
+      "handlesOcclusion"
+    ]
+  }
+}

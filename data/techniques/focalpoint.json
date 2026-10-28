@@ -1,0 +1,76 @@
+{
+  "id": "focalpoint",
+  "name": "FocalPoint",
+  "aliases": [
+    "Adaptive selection cylinder"
+  ],
+  "year": 2023,
+  "summary": "In smartphone AR with the free hand reaching into the scene, a selection cylinder cast from the screen adapts to where on the screen the user tends to select, a plane attached to the hand makes everything in front see-through, and the best-scoring object snaps to the pinch.",
+  "howItWorks": "The phone is held in one hand and the other hand is tracked (Leap Motion on the phone, or MediaPipe). The focal region is a circle fitted to the screen positions of the last ten selections and extruded from the screen into a cylinder; candidates within twice its radius are scored by their screen distance to the focal centre and their distance to the hand, and the best one is outlined in red. A pinch within 3 mm snaps it to the hand. An occlusion plane 3 mm behind the hand makes objects in front of it transparent and unselectable, and object opacity encodes depth. With 12 participants selecting 3 mm cubes from piles, accuracy was 70% against 24% for a direct-manipulation baseline and selection was 5.5 s faster.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "screen",
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "behavioural",
+      "heuristic"
+    ],
+    "inputModality": [
+      "hand",
+      "tangible"
+    ],
+    "confirmation": [
+      "pinch"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "ma-2023-focalpoint",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "phonecursor",
+      "type": "related"
+    },
+    {
+      "technique": "drillsample",
+      "type": "related"
+    },
+    {
+      "technique": "intent-driven-selection",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "inputModality"
+    ]
+  }
+}

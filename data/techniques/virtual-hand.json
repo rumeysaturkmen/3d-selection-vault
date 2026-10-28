@@ -100,6 +100,18 @@
     {
       "publication": "velloso-2015-gazemidair",
       "role": "evaluated"
+    },
+    {
+      "publication": "ozacar-2017-mobilearhmd",
+      "role": "evaluated"
+    },
+    {
+      "publication": "joos-2024-nodeselection",
+      "role": "evaluated"
+    },
+    {
+      "publication": "wu-2023-pointvolume",
+      "role": "evaluated"
     }
   ],
   "relationships": [

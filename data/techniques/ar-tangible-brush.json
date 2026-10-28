@@ -1,0 +1,74 @@
+{
+  "id": "ar-tangible-brush",
+  "name": "AR Tangible Brush",
+  "aliases": [
+    "Relative-Aligned Tangible Brush"
+  ],
+  "year": 2022,
+  "summary": "Tangible Brush moved into an AR headset: the lasso is drawn on the tablet and swept through the data by moving the tablet, while the headset shows the data and a virtual tablet in 3D, either at the real tablet's position or driven by relative motion from afar.",
+  "howItWorks": "With a HoloLens 2 and a VICON-tracked Galaxy Tab S4. Three mappings were studied: the virtual tablet coincides with the real one (NA); it moves with relative motion and the same orientation (RA); or it moves with clutched relative motion in its own frame (RF). Constrained sweeps along the normal and Boolean AND, OR and NOT are kept. Study 1 (18 participants): RA was preferred, RF was slightly more accurate and NA was least liked. Study 2 (18 participants): RA against the original 2D-screen version had similar time and accuracy but clearly lower workload, and participants used unconstrained 6 DoF sweeps more in AR.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "image-plane",
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "touchscreen",
+      "tangible"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "sereno-2022-artangible",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "tangible-brush",
+      "type": "variant-of"
+    },
+    {
+      "technique": "tangible-brush",
+      "type": "compared-with",
+      "source": "sereno-2022-artangible",
+      "note": "Compared with the original 2D-screen version."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "confirmation",
+      "targetDistance"
+    ]
+  }
+}

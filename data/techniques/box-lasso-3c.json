@@ -1,0 +1,67 @@
+{
+  "id": "box-lasso-3c",
+  "name": "3C Box Lasso",
+  "aliases": [
+    "3D box lasso"
+  ],
+  "year": 2012,
+  "summary": "Clicking three corners of a box in space with the tracked hands defines an arbitrary 3D box, and all objects inside are selected.",
+  "howItWorks": "Uses the 3+3+3 DoF variant of the 3C box-shaping method: the hand is placed at each corner and clicked, and the box is previewed from the first corner on. Boxes can also deselect. With 18 participants in an nVisor HMD selecting about 1,700 targets among 3,300 distractors in five cloud layouts, the magic wand was fastest but failed when clouds touched, the brush was rated easiest, and the box lasso needed the fewest operations; no tool suited every layout.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "motorVisualSpace": [
+      "direct"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near"
+    ],
+    "handlesOcclusion": [
+      "partly"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "stenholt-2012-largescale",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "magic-wand-3d",
+      "type": "compared-with",
+      "source": "stenholt-2012-largescale"
+    },
+    {
+      "technique": "port",
+      "type": "related"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

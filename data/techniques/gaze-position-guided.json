@@ -1,0 +1,69 @@
+{
+  "id": "gaze-position-guided",
+  "name": "Gaze Position Guided Selection",
+  "aliases": [
+    "Gaze Beam Guided selection"
+  ],
+  "year": 2023,
+  "summary": "Pinching places an indicator where the user is looking at a fixed depth; the pinching hand then moves it remotely through the scene, objects nearer than it turn transparent, and releasing the pinch selects the object closest to it.",
+  "howItWorks": "On a HoloLens 2 with added eye cameras, the indicator appears on the gaze ray 2 m away and is moved in 3D by remote hand motion, including in depth, so occluding objects can be skipped. It is the selection step of the authors' Gaze Position Guided and Gaze Beam Guided interactions, which differ only in how the selected object is then moved. With 15 participants in a heavily occluded scene, it took about half the selection time of gaze-plus-pinch selection and produced far fewer selections of occluders.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "ar"
+    ],
+    "selectionTool": [
+      "point"
+    ],
+    "toolOrigin": [
+      "eye",
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "gaze",
+      "hand"
+    ],
+    "confirmation": [
+      "release"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "bao-2023-gazeguidance",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "gaze-pinch",
+      "type": "compared-with",
+      "source": "bao-2023-gazeguidance",
+      "note": "Compared with Remote Hand, gaze selection of the nearest object with pinch confirmation."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

@@ -68,6 +68,10 @@
     {
       "publication": "lai-2025-adaptique",
       "role": "evaluated"
+    },
+    {
+      "publication": "wu-2024-clockray",
+      "role": "evaluated"
     }
   ],
   "relationships": [

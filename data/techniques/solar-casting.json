@@ -1,0 +1,81 @@
+{
+  "id": "solar-casting",
+  "name": "Solar-Casting",
+  "aliases": [
+    "Solar"
+  ],
+  "year": 2021,
+  "summary": "A sphere centred on the user's head grows as they swipe on the phone, and everything inside it becomes see-through and unselectable, so the phone's ray reaches objects hidden behind others anywhere around the user.",
+  "howItWorks": "With a phone-driven VR headset, holding a touch for 300 ms turns the sphere on and vertical swipes change its radius with a speed-dependent gain. Objects inside it and in view become semi-transparent (Hide and Rotate modes were also tried). The ray snaps to objects on or outside the sphere, a bubble picks the nearest one when it misses, and a 1€ filter smooths it. In study 1 (12 participants, target marked) it matched Expand and Depth Ray in speed; in study 2 (12 participants, no marker, full occlusion) it had the fewest errors (10.7% vs 14.9% for Depth-Casting and 16.0% for Depth Ray) at the same speed as Depth Ray.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray",
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand",
+      "head"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual",
+      "heuristic"
+    ],
+    "inputModality": [
+      "touchscreen"
+    ],
+    "confirmation": [
+      "touch"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "chen-2021-solarcasting",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "expand",
+      "type": "compared-with",
+      "source": "chen-2021-solarcasting"
+    },
+    {
+      "technique": "depth-ray",
+      "type": "compared-with",
+      "source": "chen-2021-solarcasting",
+      "note": "Compared with Depth Ray with local transparency."
+    },
+    {
+      "technique": "tiltcasting",
+      "type": "compared-with",
+      "source": "chen-2021-solarcasting",
+      "note": "Compared with Depth-Casting, a phone-tilt variant of TiltCasting."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "confirmation"
+    ]
+  }
+}

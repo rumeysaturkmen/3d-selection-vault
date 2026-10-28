@@ -1,0 +1,66 @@
+{
+  "id": "tablet-tapping",
+  "name": "Tablet Tapping",
+  "aliases": [],
+  "year": 2005,
+  "summary": "A camera placed in the scene shows its view on a tracked hand-held tablet, and the user taps objects one by one on that image with a pen to add them to a multiple selection.",
+  "howItWorks": "With a V8 HMD, an IS900 wand and a tracked Plexiglas tablet. The user travels to a viewpoint and a 3 s countdown places a camera there; its view is mapped onto the tablet. A pen crosshair shown on the image within 10 cm of the tablet aims, and the button casts a ray from the camera through that point, toggling the object hit. In a summative study (18 participants) on a wall of 100 cubes with 9, 36 or 64 targets, the parallel techniques were much faster than serial ones as the number of targets grew; whether the context was 3D or the tablet image made no difference.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "image-plane",
+      "ray"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "offset"
+    ],
+    "disambiguation": [
+      "none"
+    ],
+    "inputModality": [
+      "tangible",
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "no"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "legacy-paper-port",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "raycasting",
+      "type": "compared-with",
+      "source": "legacy-paper-port"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "targetDistance"
+    ]
+  }
+}

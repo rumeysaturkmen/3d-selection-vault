@@ -1,0 +1,63 @@
+{
+  "id": "balloonprobe",
+  "name": "BalloonProbe",
+  "aliases": [
+    "Interactive space distortion"
+  ],
+  "year": 2005,
+  "summary": "A 3D cursor inflates a spherical force field that pushes the objects inside it out onto the sphere's surface, so objects hidden in a dense 3D scene become visible and reachable; deflating returns them to their places.",
+  "howItWorks": "On a desktop PC the probe is a 3D cursor moved with the mouse and keyboard or a P5 glove. Holding a key inflates the balloon with a smooth animation; objects inside are displaced onto its surface, with ghosted traces back to their original positions, and the mouse wheel sets its size. Releasing deflates it. Displacement can be limited to certain object types, and the camera orbits around the probe so the displaced objects can be inspected and accessed. Only an informal test with a few users was reported; the paper treats it as an occlusion-reduction aid for discovering and accessing objects rather than a full selection technique.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "desktop"
+    ],
+    "selectionTool": [
+      "volume"
+    ],
+    "toolOrigin": [
+      "hand"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "mouse",
+      "hand"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "near-distant"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "elmqvist-2005-balloonprobe",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team.",
+    "uncertain": [
+      "selectionTool",
+      "confirmation",
+      "targetDistance"
+    ]
+  }
+}

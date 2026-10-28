@@ -1,0 +1,66 @@
+{
+  "id": "folding-rays",
+  "name": "Folding Rays",
+  "aliases": [],
+  "year": 2023,
+  "summary": "Crossing a second ray from the other hand with the main ray marks a fold point; a camera placed there shows its view in a window, and the ray continues through that window, so it can bend around occluders as many times as needed.",
+  "howItWorks": "With two VR controllers, the point where the off-hand ray comes close to the main ray is shown as a sphere, and a button creates a camera there facing the user's view direction. Its view appears in a window 1.5 m in front of the user that follows the head, and the main ray pointed into the window continues from the fold point; new folds can be made inside the window. The trigger selects the object hit. No user study was reported.",
+  "advantages": [],
+  "limitations": [],
+  "primaryTask": "selection",
+  "tasks": [
+    "selection"
+  ],
+  "attributes": {
+    "environment": [
+      "vr"
+    ],
+    "selectionTool": [
+      "ray"
+    ],
+    "toolOrigin": [
+      "both-hands"
+    ],
+    "motorVisualSpace": [
+      "remote"
+    ],
+    "disambiguation": [
+      "manual"
+    ],
+    "inputModality": [
+      "controller"
+    ],
+    "confirmation": [
+      "button"
+    ],
+    "targetDistance": [
+      "far"
+    ],
+    "handlesOcclusion": [
+      "yes"
+    ]
+  },
+  "tags": [],
+  "publications": [
+    {
+      "publication": "kim-2023-foldingrays",
+      "role": "introduced"
+    }
+  ],
+  "relationships": [
+    {
+      "technique": "portal",
+      "type": "related",
+      "note": "From the same group; also views a remote place through a window."
+    },
+    {
+      "technique": "isith",
+      "type": "related",
+      "note": "Also uses the crossing of two hand rays to mark a point."
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Added from the paper the user provided; coded from the full text (Oct 2026). Attributes coded by Claude from the full text; not yet reviewed by the team."
+  }
+}

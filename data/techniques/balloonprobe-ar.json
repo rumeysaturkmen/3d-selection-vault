@@ -64,6 +64,11 @@
       "type": "compared-with",
       "source": "truillet-2025-occlusionar",
       "note": "Compared with vMirrorAR, an AR adaptation of vMirror."
+    },
+    {
+      "technique": "balloonprobe",
+      "type": "variant-of",
+      "note": "AR version of Elmqvist's BalloonProbe."
     }
   ],
   "review": {
